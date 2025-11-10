@@ -1,0 +1,198 @@
+[0.000000] (-) TimerEvent: {}
+[0.000372] (interfaces) JobQueued: {'identifier': 'interfaces', 'dependencies': OrderedDict()}
+[0.001118] (realsense2_camera_msgs) JobQueued: {'identifier': 'realsense2_camera_msgs', 'dependencies': OrderedDict()}
+[0.001798] (servo) JobQueued: {'identifier': 'servo', 'dependencies': OrderedDict()}
+[0.002594] (realsense2_camera) JobQueued: {'identifier': 'realsense2_camera', 'dependencies': OrderedDict({'realsense2_camera_msgs': '/home/jimmy/ros2_ws/install/realsense2_camera_msgs'})}
+[0.002798] (realsense2_description) JobQueued: {'identifier': 'realsense2_description', 'dependencies': OrderedDict({'realsense2_camera_msgs': '/home/jimmy/ros2_ws/install/realsense2_camera_msgs'})}
+[0.002838] (realsense2_camera_msgs) JobStarted: {'identifier': 'realsense2_camera_msgs'}
+[0.021975] (interfaces) JobStarted: {'identifier': 'interfaces'}
+[0.028875] (servo) JobStarted: {'identifier': 'servo'}
+[0.039779] (realsense2_camera_msgs) JobProgress: {'identifier': 'realsense2_camera_msgs', 'progress': 'cmake'}
+[0.040605] (realsense2_camera_msgs) Command: {'cmd': ['/usr/bin/cmake', '/home/jimmy/ros2_ws/src/realsense-ros/realsense2_camera_msgs', '-DAMENT_CMAKE_SYMLINK_INSTALL=1', '-DCMAKE_INSTALL_PREFIX=/home/jimmy/ros2_ws/install/realsense2_camera_msgs'], 'cwd': '/home/jimmy/ros2_ws/build/realsense2_camera_msgs', 'env': OrderedDict({'LESSOPEN': '| /usr/bin/lesspipe %s', 'CONDA_PROMPT_MODIFIER': '(base)', 'USER': 'jimmy', 'XDG_SESSION_TYPE': 'wayland', 'CLUTTER_DISABLE_MIPMAPPED_TEXT': '1', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/home/jimmy/ros2_ws/install/realsense2_camera/lib:/home/jimmy/ros2_ws/install/realsense2_camera_msgs/lib:/home/jimmy/ros2_ws/install/interfaces/lib:/opt/ros/jazzy/opt/rviz_ogre_vendor/lib:/opt/ros/jazzy/lib/aarch64-linux-gnu:/opt/ros/jazzy/opt/gz_math_vendor/lib:/opt/ros/jazzy/opt/gz_utils_vendor/lib:/opt/ros/jazzy/opt/gz_cmake_vendor/lib:/opt/ros/jazzy/lib', 'HOME': '/home/jimmy', 'CONDA_SHLVL': '1', 'OLDPWD': '/home/jimmy/Desktop', 'DESKTOP_SESSION': 'ubuntu', 'ROS_PYTHON_VERSION': '3', 'GNOME_SHELL_SESSION_MODE': 'ubuntu', 'GTK_MODULES': 'gail:atk-bridge', 'SYSTEMD_EXEC_PID': '1897', 'GSM_SKIP_SSH_AGENT_WORKAROUND': 'true', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLORTERM': 'truecolor', '_CE_M': '', '_CONDA_ROOT': '/home/jimmy/miniconda3', 'DEBUGINFOD_URLS': 'https://debuginfod.ubuntu.com', 'IM_CONFIG_PHASE': '1', 'WAYLAND_DISPLAY': 'wayland-0', 'COLCON_PREFIX_PATH': '/home/jimmy/ros2_ws/install', 'ROS_DISTRO': 'jazzy', 'LOGNAME': 'jimmy', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'MEMORY_PRESSURE_WATCH': '/sys/fs/cgroup/user.slice/user-1000.slice/user@1000.service/session.slice/org.gnome.Shell@wayland.service/memory.pressure', 'XDG_SESSION_CLASS': 'user', 'USERNAME': 'jimmy', 'TERM': 'xterm-256color', 'GNOME_DESKTOP_SESSION_ID': 'this-is-deprecated', '_CE_CONDA': '', 'PATH': '/home/jimmy/miniconda3/bin:/home/jimmy/miniconda3/condabin:/opt/ros/jazzy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin', 'SESSION_MANAGER': 'local/jimmy-desktop:@/tmp/.ICE-unix/1844,unix/jimmy-desktop:/tmp/.ICE-unix/1844', 'XDG_MENU_PREFIX': 'gnome-', 'GNOME_TERMINAL_SCREEN': '/org/gnome/Terminal/screen/fbd3b3d8_bce9_4a69_b313_75ab3d31d6dc', 'GNOME_SETUP_DISPLAY': ':1', 'XDG_RUNTIME_DIR': '/run/user/1000', 'DISPLAY': ':0', 'LANG': 'en_US.UTF-8', 'XDG_CURRENT_DESKTOP': 'ubuntu:GNOME', 'XMODIFIERS': '@im=ibus', 'XDG_SESSION_DESKTOP': 'ubuntu', 'XAUTHORITY': '/run/user/1000/.mutter-Xwaylandauth.988ZF3', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=00:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.avif=01;35:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:*~=00;90:*#=00;90:*.bak=00;90:*.crdownload=00;90:*.dpkg-dist=00;90:*.dpkg-new=00;90:*.dpkg-old=00;90:*.dpkg-tmp=00;90:*.old=00;90:*.orig=00;90:*.part=00;90:*.rej=00;90:*.rpmnew=00;90:*.rpmorig=00;90:*.rpmsave=00;90:*.swp=00;90:*.tmp=00;90:*.ucf-dist=00;90:*.ucf-new=00;90:*.ucf-old=00;90:', 'GNOME_TERMINAL_SERVICE': ':1.131', 'SSH_AUTH_SOCK': '/run/user/1000/keyring/ssh', 'ROS_DOMAIN_ID': '0', 'AMENT_PREFIX_PATH': '/home/jimmy/ros2_ws/install/servo:/home/jimmy/ros2_ws/install/realsense2_description:/home/jimmy/ros2_ws/install/realsense2_camera_msgs:/home/jimmy/ros2_ws/install/interfaces:/opt/ros/jazzy', 'CONDA_PYTHON_EXE': '/home/jimmy/miniconda3/bin/python', 'SHELL': '/bin/bash', 'QT_ACCESSIBILITY': '1', 'GDMSESSION': 'ubuntu', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'CONDA_DEFAULT_ENV': 'base', '_CONDA_EXE': '/home/jimmy/miniconda3/bin/conda', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'SUBNET', 'QT_IM_MODULE': 'ibus', 'PWD': '/home/jimmy/ros2_ws/build/realsense2_camera_msgs', 'LC_ALL': 'en_US.UTF-8', 'XDG_CONFIG_DIRS': '/etc/xdg/xdg-ubuntu:/etc/xdg', 'CONDA_EXE': '/home/jimmy/miniconda3/bin/conda', 'XDG_DATA_DIRS': '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop', 'PYTHONPATH': '/home/jimmy/ros2_ws/install/realsense2_camera/lib/python3.12/site-packages:/home/jimmy/ros2_ws/install/realsense2_camera_msgs/lib/python3.12/site-packages:/home/jimmy/ros2_ws/install/interfaces/lib/python3.12/site-packages:/opt/ros/jazzy/lib/python3.12/site-packages', 'CONDA_PREFIX': '/home/jimmy/miniconda3', 'COLCON': '1', 'MEMORY_PRESSURE_WRITE': 'c29tZSAyMDAwMDAgMjAwMDAwMAA=', 'VTE_VERSION': '7600', 'CMAKE_PREFIX_PATH': '/home/jimmy/ros2_ws/install/servo:/home/jimmy/ros2_ws/install/realsense2_description:/home/jimmy/ros2_ws/install/realsense2_camera:/home/jimmy/ros2_ws/install/realsense2_camera_msgs:/home/jimmy/ros2_ws/install/interfaces:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy'}), 'shell': False}
+[0.045324] (interfaces) JobProgress: {'identifier': 'interfaces', 'progress': 'cmake'}
+[0.046820] (interfaces) Command: {'cmd': ['/usr/bin/cmake', '/home/jimmy/ros2_ws/src/interfaces', '-DAMENT_CMAKE_SYMLINK_INSTALL=1', '-DCMAKE_INSTALL_PREFIX=/home/jimmy/ros2_ws/install/interfaces'], 'cwd': '/home/jimmy/ros2_ws/build/interfaces', 'env': OrderedDict({'LESSOPEN': '| /usr/bin/lesspipe %s', 'CONDA_PROMPT_MODIFIER': '(base)', 'USER': 'jimmy', 'XDG_SESSION_TYPE': 'wayland', 'CLUTTER_DISABLE_MIPMAPPED_TEXT': '1', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/home/jimmy/ros2_ws/install/realsense2_camera/lib:/home/jimmy/ros2_ws/install/realsense2_camera_msgs/lib:/home/jimmy/ros2_ws/install/interfaces/lib:/opt/ros/jazzy/opt/rviz_ogre_vendor/lib:/opt/ros/jazzy/lib/aarch64-linux-gnu:/opt/ros/jazzy/opt/gz_math_vendor/lib:/opt/ros/jazzy/opt/gz_utils_vendor/lib:/opt/ros/jazzy/opt/gz_cmake_vendor/lib:/opt/ros/jazzy/lib', 'HOME': '/home/jimmy', 'CONDA_SHLVL': '1', 'OLDPWD': '/home/jimmy/Desktop', 'DESKTOP_SESSION': 'ubuntu', 'ROS_PYTHON_VERSION': '3', 'GNOME_SHELL_SESSION_MODE': 'ubuntu', 'GTK_MODULES': 'gail:atk-bridge', 'SYSTEMD_EXEC_PID': '1897', 'GSM_SKIP_SSH_AGENT_WORKAROUND': 'true', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLORTERM': 'truecolor', '_CE_M': '', '_CONDA_ROOT': '/home/jimmy/miniconda3', 'DEBUGINFOD_URLS': 'https://debuginfod.ubuntu.com', 'IM_CONFIG_PHASE': '1', 'WAYLAND_DISPLAY': 'wayland-0', 'COLCON_PREFIX_PATH': '/home/jimmy/ros2_ws/install', 'ROS_DISTRO': 'jazzy', 'LOGNAME': 'jimmy', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'MEMORY_PRESSURE_WATCH': '/sys/fs/cgroup/user.slice/user-1000.slice/user@1000.service/session.slice/org.gnome.Shell@wayland.service/memory.pressure', 'XDG_SESSION_CLASS': 'user', 'USERNAME': 'jimmy', 'TERM': 'xterm-256color', 'GNOME_DESKTOP_SESSION_ID': 'this-is-deprecated', '_CE_CONDA': '', 'PATH': '/home/jimmy/miniconda3/bin:/home/jimmy/miniconda3/condabin:/opt/ros/jazzy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin', 'SESSION_MANAGER': 'local/jimmy-desktop:@/tmp/.ICE-unix/1844,unix/jimmy-desktop:/tmp/.ICE-unix/1844', 'XDG_MENU_PREFIX': 'gnome-', 'GNOME_TERMINAL_SCREEN': '/org/gnome/Terminal/screen/fbd3b3d8_bce9_4a69_b313_75ab3d31d6dc', 'GNOME_SETUP_DISPLAY': ':1', 'XDG_RUNTIME_DIR': '/run/user/1000', 'DISPLAY': ':0', 'LANG': 'en_US.UTF-8', 'XDG_CURRENT_DESKTOP': 'ubuntu:GNOME', 'XMODIFIERS': '@im=ibus', 'XDG_SESSION_DESKTOP': 'ubuntu', 'XAUTHORITY': '/run/user/1000/.mutter-Xwaylandauth.988ZF3', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=00:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.avif=01;35:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:*~=00;90:*#=00;90:*.bak=00;90:*.crdownload=00;90:*.dpkg-dist=00;90:*.dpkg-new=00;90:*.dpkg-old=00;90:*.dpkg-tmp=00;90:*.old=00;90:*.orig=00;90:*.part=00;90:*.rej=00;90:*.rpmnew=00;90:*.rpmorig=00;90:*.rpmsave=00;90:*.swp=00;90:*.tmp=00;90:*.ucf-dist=00;90:*.ucf-new=00;90:*.ucf-old=00;90:', 'GNOME_TERMINAL_SERVICE': ':1.131', 'SSH_AUTH_SOCK': '/run/user/1000/keyring/ssh', 'ROS_DOMAIN_ID': '0', 'AMENT_PREFIX_PATH': '/home/jimmy/ros2_ws/install/servo:/home/jimmy/ros2_ws/install/realsense2_description:/home/jimmy/ros2_ws/install/realsense2_camera_msgs:/home/jimmy/ros2_ws/install/interfaces:/opt/ros/jazzy', 'CONDA_PYTHON_EXE': '/home/jimmy/miniconda3/bin/python', 'SHELL': '/bin/bash', 'QT_ACCESSIBILITY': '1', 'GDMSESSION': 'ubuntu', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'CONDA_DEFAULT_ENV': 'base', '_CONDA_EXE': '/home/jimmy/miniconda3/bin/conda', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'SUBNET', 'QT_IM_MODULE': 'ibus', 'PWD': '/home/jimmy/ros2_ws/build/interfaces', 'LC_ALL': 'en_US.UTF-8', 'XDG_CONFIG_DIRS': '/etc/xdg/xdg-ubuntu:/etc/xdg', 'CONDA_EXE': '/home/jimmy/miniconda3/bin/conda', 'XDG_DATA_DIRS': '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop', 'PYTHONPATH': '/home/jimmy/ros2_ws/install/realsense2_camera/lib/python3.12/site-packages:/home/jimmy/ros2_ws/install/realsense2_camera_msgs/lib/python3.12/site-packages:/home/jimmy/ros2_ws/install/interfaces/lib/python3.12/site-packages:/opt/ros/jazzy/lib/python3.12/site-packages', 'CONDA_PREFIX': '/home/jimmy/miniconda3', 'COLCON': '1', 'MEMORY_PRESSURE_WRITE': 'c29tZSAyMDAwMDAgMjAwMDAwMAA=', 'VTE_VERSION': '7600', 'CMAKE_PREFIX_PATH': '/home/jimmy/ros2_ws/install/servo:/home/jimmy/ros2_ws/install/realsense2_description:/home/jimmy/ros2_ws/install/realsense2_camera:/home/jimmy/ros2_ws/install/realsense2_camera_msgs:/home/jimmy/ros2_ws/install/interfaces:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy'}), 'shell': False}
+[0.057443] (servo) JobProgress: {'identifier': 'servo', 'progress': 'cmake'}
+[0.062651] (servo) Command: {'cmd': ['/usr/bin/cmake', '/home/jimmy/ros2_ws/src/servo', '-DAMENT_CMAKE_SYMLINK_INSTALL=1', '-DCMAKE_INSTALL_PREFIX=/home/jimmy/ros2_ws/install/servo'], 'cwd': '/home/jimmy/ros2_ws/build/servo', 'env': OrderedDict({'LESSOPEN': '| /usr/bin/lesspipe %s', 'CONDA_PROMPT_MODIFIER': '(base)', 'USER': 'jimmy', 'XDG_SESSION_TYPE': 'wayland', 'CLUTTER_DISABLE_MIPMAPPED_TEXT': '1', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/home/jimmy/ros2_ws/install/realsense2_camera/lib:/home/jimmy/ros2_ws/install/realsense2_camera_msgs/lib:/home/jimmy/ros2_ws/install/interfaces/lib:/opt/ros/jazzy/opt/rviz_ogre_vendor/lib:/opt/ros/jazzy/lib/aarch64-linux-gnu:/opt/ros/jazzy/opt/gz_math_vendor/lib:/opt/ros/jazzy/opt/gz_utils_vendor/lib:/opt/ros/jazzy/opt/gz_cmake_vendor/lib:/opt/ros/jazzy/lib', 'HOME': '/home/jimmy', 'CONDA_SHLVL': '1', 'OLDPWD': '/home/jimmy/Desktop', 'DESKTOP_SESSION': 'ubuntu', 'ROS_PYTHON_VERSION': '3', 'GNOME_SHELL_SESSION_MODE': 'ubuntu', 'GTK_MODULES': 'gail:atk-bridge', 'SYSTEMD_EXEC_PID': '1897', 'GSM_SKIP_SSH_AGENT_WORKAROUND': 'true', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLORTERM': 'truecolor', '_CE_M': '', '_CONDA_ROOT': '/home/jimmy/miniconda3', 'DEBUGINFOD_URLS': 'https://debuginfod.ubuntu.com', 'IM_CONFIG_PHASE': '1', 'WAYLAND_DISPLAY': 'wayland-0', 'COLCON_PREFIX_PATH': '/home/jimmy/ros2_ws/install', 'ROS_DISTRO': 'jazzy', 'LOGNAME': 'jimmy', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'MEMORY_PRESSURE_WATCH': '/sys/fs/cgroup/user.slice/user-1000.slice/user@1000.service/session.slice/org.gnome.Shell@wayland.service/memory.pressure', 'XDG_SESSION_CLASS': 'user', 'USERNAME': 'jimmy', 'TERM': 'xterm-256color', 'GNOME_DESKTOP_SESSION_ID': 'this-is-deprecated', '_CE_CONDA': '', 'PATH': '/home/jimmy/miniconda3/bin:/home/jimmy/miniconda3/condabin:/opt/ros/jazzy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin', 'SESSION_MANAGER': 'local/jimmy-desktop:@/tmp/.ICE-unix/1844,unix/jimmy-desktop:/tmp/.ICE-unix/1844', 'XDG_MENU_PREFIX': 'gnome-', 'GNOME_TERMINAL_SCREEN': '/org/gnome/Terminal/screen/fbd3b3d8_bce9_4a69_b313_75ab3d31d6dc', 'GNOME_SETUP_DISPLAY': ':1', 'XDG_RUNTIME_DIR': '/run/user/1000', 'DISPLAY': ':0', 'LANG': 'en_US.UTF-8', 'XDG_CURRENT_DESKTOP': 'ubuntu:GNOME', 'XMODIFIERS': '@im=ibus', 'XDG_SESSION_DESKTOP': 'ubuntu', 'XAUTHORITY': '/run/user/1000/.mutter-Xwaylandauth.988ZF3', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=00:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.avif=01;35:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:*~=00;90:*#=00;90:*.bak=00;90:*.crdownload=00;90:*.dpkg-dist=00;90:*.dpkg-new=00;90:*.dpkg-old=00;90:*.dpkg-tmp=00;90:*.old=00;90:*.orig=00;90:*.part=00;90:*.rej=00;90:*.rpmnew=00;90:*.rpmorig=00;90:*.rpmsave=00;90:*.swp=00;90:*.tmp=00;90:*.ucf-dist=00;90:*.ucf-new=00;90:*.ucf-old=00;90:', 'GNOME_TERMINAL_SERVICE': ':1.131', 'SSH_AUTH_SOCK': '/run/user/1000/keyring/ssh', 'ROS_DOMAIN_ID': '0', 'AMENT_PREFIX_PATH': '/home/jimmy/ros2_ws/install/servo:/home/jimmy/ros2_ws/install/realsense2_description:/home/jimmy/ros2_ws/install/realsense2_camera_msgs:/home/jimmy/ros2_ws/install/interfaces:/opt/ros/jazzy', 'CONDA_PYTHON_EXE': '/home/jimmy/miniconda3/bin/python', 'SHELL': '/bin/bash', 'QT_ACCESSIBILITY': '1', 'GDMSESSION': 'ubuntu', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'CONDA_DEFAULT_ENV': 'base', '_CONDA_EXE': '/home/jimmy/miniconda3/bin/conda', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'SUBNET', 'QT_IM_MODULE': 'ibus', 'PWD': '/home/jimmy/ros2_ws/build/servo', 'LC_ALL': 'en_US.UTF-8', 'XDG_CONFIG_DIRS': '/etc/xdg/xdg-ubuntu:/etc/xdg', 'CONDA_EXE': '/home/jimmy/miniconda3/bin/conda', 'XDG_DATA_DIRS': '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop', 'PYTHONPATH': '/home/jimmy/ros2_ws/install/realsense2_camera/lib/python3.12/site-packages:/home/jimmy/ros2_ws/install/realsense2_camera_msgs/lib/python3.12/site-packages:/home/jimmy/ros2_ws/install/interfaces/lib/python3.12/site-packages:/opt/ros/jazzy/lib/python3.12/site-packages', 'CONDA_PREFIX': '/home/jimmy/miniconda3', 'COLCON': '1', 'MEMORY_PRESSURE_WRITE': 'c29tZSAyMDAwMDAgMjAwMDAwMAA=', 'VTE_VERSION': '7600', 'CMAKE_PREFIX_PATH': '/home/jimmy/ros2_ws/install/servo:/home/jimmy/ros2_ws/install/realsense2_description:/home/jimmy/ros2_ws/install/realsense2_camera:/home/jimmy/ros2_ws/install/realsense2_camera_msgs:/home/jimmy/ros2_ws/install/interfaces:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy'}), 'shell': False}
+[0.099706] (-) TimerEvent: {}
+[0.200639] (-) TimerEvent: {}
+[0.301080] (-) TimerEvent: {}
+[0.401491] (-) TimerEvent: {}
+[0.498666] (realsense2_camera_msgs) StdoutLine: {'line': b'-- The C compiler identification is GNU 13.3.0\n'}
+[0.499577] (servo) StdoutLine: {'line': b'-- The C compiler identification is GNU 13.3.0\n'}
+[0.499948] (interfaces) StdoutLine: {'line': b'-- The C compiler identification is GNU 13.3.0\n'}
+[0.501589] (-) TimerEvent: {}
+[0.602069] (-) TimerEvent: {}
+[0.702532] (-) TimerEvent: {}
+[0.802976] (-) TimerEvent: {}
+[0.903449] (-) TimerEvent: {}
+[1.007001] (-) TimerEvent: {}
+[1.021671] (realsense2_camera_msgs) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 13.3.0\n'}
+[1.025774] (servo) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 13.3.0\n'}
+[1.026128] (interfaces) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 13.3.0\n'}
+[1.072422] (servo) StdoutLine: {'line': b'-- Detecting C compiler ABI info\n'}
+[1.072773] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Detecting C compiler ABI info\n'}
+[1.074317] (interfaces) StdoutLine: {'line': b'-- Detecting C compiler ABI info\n'}
+[1.107106] (-) TimerEvent: {}
+[1.207939] (-) TimerEvent: {}
+[1.310725] (-) TimerEvent: {}
+[1.333757] (servo) StdoutLine: {'line': b'-- Detecting C compiler ABI info - done\n'}
+[1.334031] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Detecting C compiler ABI info - done\n'}
+[1.344587] (interfaces) StdoutLine: {'line': b'-- Detecting C compiler ABI info - done\n'}
+[1.349861] (servo) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc - skipped\n'}
+[1.350109] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc - skipped\n'}
+[1.351148] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Detecting C compile features\n'}
+[1.351504] (servo) StdoutLine: {'line': b'-- Detecting C compile features\n'}
+[1.353079] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Detecting C compile features - done\n'}
+[1.353378] (servo) StdoutLine: {'line': b'-- Detecting C compile features - done\n'}
+[1.360695] (interfaces) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc - skipped\n'}
+[1.361207] (interfaces) StdoutLine: {'line': b'-- Detecting C compile features\n'}
+[1.361953] (interfaces) StdoutLine: {'line': b'-- Detecting C compile features - done\n'}
+[1.370462] (servo) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[1.371334] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[1.379039] (interfaces) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[1.410850] (-) TimerEvent: {}
+[1.512651] (-) TimerEvent: {}
+[1.616503] (-) TimerEvent: {}
+[1.645837] (servo) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[1.646476] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[1.652321] (interfaces) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[1.661454] (servo) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++ - skipped\n'}
+[1.661741] (servo) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[1.661984] (servo) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[1.663888] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++ - skipped\n'}
+[1.664683] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[1.665502] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[1.666860] (interfaces) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++ - skipped\n'}
+[1.667285] (interfaces) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[1.667979] (interfaces) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[1.674342] (servo) StdoutLine: {'line': b'-- Found ament_cmake: 2.5.4 (/opt/ros/jazzy/share/ament_cmake/cmake)\n'}
+[1.674671] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Found ament_cmake: 2.5.4 (/opt/ros/jazzy/share/ament_cmake/cmake)\n'}
+[1.675014] (interfaces) StdoutLine: {'line': b'-- Found ament_cmake: 2.5.4 (/opt/ros/jazzy/share/ament_cmake/cmake)\n'}
+[1.716581] (-) TimerEvent: {}
+[1.817456] (-) TimerEvent: {}
+[1.917996] (-) TimerEvent: {}
+[1.969360] (servo) StdoutLine: {'line': b'-- Found Python3: /home/jimmy/miniconda3/bin/python3 (found version "3.13.9") found components: Interpreter \n'}
+[1.971639] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Found Python3: /home/jimmy/miniconda3/bin/python3 (found version "3.13.9") found components: Interpreter \n'}
+[1.993619] (interfaces) StdoutLine: {'line': b'-- Found Python3: /home/jimmy/miniconda3/bin/python3 (found version "3.13.9") found components: Interpreter \n'}
+[2.019329] (-) TimerEvent: {}
+[2.119747] (-) TimerEvent: {}
+[2.200850] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Override CMake install command with custom implementation using symlinks instead of copying resources\n'}
+[2.211711] (servo) StdoutLine: {'line': b'-- Override CMake install command with custom implementation using symlinks instead of copying resources\n'}
+[2.214942] (interfaces) StdoutLine: {'line': b'-- Override CMake install command with custom implementation using symlinks instead of copying resources\n'}
+[2.219843] (-) TimerEvent: {}
+[2.283596] (servo) StdoutLine: {'line': b'-- Found ament_lint_auto: 0.17.3 (/opt/ros/jazzy/share/ament_lint_auto/cmake)\n'}
+[2.284010] (interfaces) StdoutLine: {'line': b'-- Found rosidl_default_generators: 1.6.0 (/opt/ros/jazzy/share/rosidl_default_generators/cmake)\n'}
+[2.284244] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Found rosidl_default_generators: 1.6.0 (/opt/ros/jazzy/share/rosidl_default_generators/cmake)\n'}
+[2.300859] (interfaces) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[2.301753] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[2.319953] (-) TimerEvent: {}
+[2.336583] (servo) StderrLine: {'line': b'Traceback (most recent call last):\n'}
+[2.341960] (servo) StderrLine: {'line': b'  File "/opt/ros/jazzy/share/ament_cmake_core/cmake/core/package_xml_2_cmake.py", line 22, in <module>\n'}
+[2.342297] (servo) StderrLine: {'line': b'    from catkin_pkg.package import parse_package_string\n'}
+[2.342433] (servo) StderrLine: {'line': b"ModuleNotFoundError: No module named 'catkin_pkg'\n"}
+[2.360624] (servo) StderrLine: {'line': b'\x1b[31mCMake Error at /opt/ros/jazzy/share/ament_cmake_core/cmake/core/ament_package_xml.cmake:95 (message):\n'}
+[2.360977] (servo) StderrLine: {'line': b'  execute_process(/home/jimmy/miniconda3/bin/python3\n'}
+[2.361117] (servo) StderrLine: {'line': b'  /opt/ros/jazzy/share/ament_cmake_core/cmake/core/package_xml_2_cmake.py\n'}
+[2.361299] (servo) StderrLine: {'line': b'  /home/jimmy/ros2_ws/src/servo/package.xml\n'}
+[2.361451] (servo) StderrLine: {'line': b'  /home/jimmy/ros2_ws/build/servo/ament_cmake_core/package.cmake) returned\n'}
+[2.361547] (servo) StderrLine: {'line': b'  error code 1\n'}
+[2.361631] (servo) StderrLine: {'line': b'Call Stack (most recent call first):\n'}
+[2.361713] (servo) StderrLine: {'line': b'  /opt/ros/jazzy/share/ament_cmake_core/cmake/core/ament_package_xml.cmake:49 (_ament_package_xml)\n'}
+[2.361796] (servo) StderrLine: {'line': b'  /opt/ros/jazzy/share/ament_lint_auto/cmake/ament_lint_auto_find_test_dependencies.cmake:31 (ament_package_xml)\n'}
+[2.361877] (servo) StderrLine: {'line': b'  CMakeLists.txt:23 (ament_lint_auto_find_test_dependencies)\n'}
+[2.361964] (servo) StderrLine: {'line': b'\n'}
+[2.362047] (servo) StderrLine: {'line': b'\x1b[0m\n'}
+[2.362245] (servo) StdoutLine: {'line': b'-- Configuring incomplete, errors occurred!\n'}
+[2.371968] (servo) CommandEnded: {'returncode': 1}
+[2.424308] (-) TimerEvent: {}
+[2.450082] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[2.451115] (interfaces) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[2.465297] (servo) JobEnded: {'identifier': 'servo', 'rc': 1}
+[2.526318] (-) TimerEvent: {}
+[2.613136] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Found rosidl_adapter: 4.6.6 (/opt/ros/jazzy/share/rosidl_adapter/cmake)\n'}
+[2.613500] (interfaces) StdoutLine: {'line': b'-- Found rosidl_adapter: 4.6.6 (/opt/ros/jazzy/share/rosidl_adapter/cmake)\n'}
+[2.626269] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Found builtin_interfaces: 2.0.3 (/opt/ros/jazzy/share/builtin_interfaces/cmake)\n'}
+[2.626567] (-) TimerEvent: {}
+[2.666867] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Found std_msgs: 5.3.6 (/opt/ros/jazzy/share/std_msgs/cmake)\n'}
+[2.705735] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Found sensor_msgs: 5.3.6 (/opt/ros/jazzy/share/sensor_msgs/cmake)\n'}
+[2.726722] (-) TimerEvent: {}
+[2.827209] (-) TimerEvent: {}
+[2.927702] (-) TimerEvent: {}
+[2.958321] (interfaces) StderrLine: {'line': b'\x1b[31mCMake Error at /opt/ros/jazzy/share/rosidl_adapter/cmake/rosidl_adapt_interfaces.cmake:57 (message):\n'}
+[2.958641] (interfaces) StderrLine: {'line': b'  execute_process(/home/jimmy/miniconda3/bin/python3 -m rosidl_adapter\n'}
+[2.958760] (interfaces) StderrLine: {'line': b'  --package-name interfaces --arguments-file\n'}
+[2.958858] (interfaces) StderrLine: {'line': b'  /home/jimmy/ros2_ws/build/interfaces/rosidl_adapter__arguments__interfaces.json\n'}
+[2.958951] (interfaces) StderrLine: {'line': b'  --output-dir /home/jimmy/ros2_ws/build/interfaces/rosidl_adapter/interfaces\n'}
+[2.959042] (interfaces) StderrLine: {'line': b'  --output-file\n'}
+[2.959136] (interfaces) StderrLine: {'line': b'  /home/jimmy/ros2_ws/build/interfaces/rosidl_adapter/interfaces.idls)\n'}
+[2.959262] (interfaces) StderrLine: {'line': b'  returned error code 1:\n'}
+[2.959458] (interfaces) StderrLine: {'line': b'\n'}
+[2.959571] (interfaces) StderrLine: {'line': b'  Traceback (most recent call last):\n'}
+[2.959664] (interfaces) StderrLine: {'line': b'\n'}
+[2.959760] (interfaces) StderrLine: {'line': b'    File "<frozen runpy>", line 198, in _run_module_as_main\n'}
+[2.959852] (interfaces) StderrLine: {'line': b'    File "<frozen runpy>", line 88, in _run_code\n'}
+[2.959948] (interfaces) StderrLine: {'line': b'    File "/opt/ros/jazzy/lib/python3.12/site-packages/rosidl_adapter/__main__.py", line 19, in <module>\n'}
+[2.960046] (interfaces) StderrLine: {'line': b'      sys.exit(main())\n'}
+[2.960142] (interfaces) StderrLine: {'line': b'               ~~~~^^\n'}
+[2.960251] (interfaces) StderrLine: {'line': b'    File "/opt/ros/jazzy/lib/python3.12/site-packages/rosidl_adapter/main.py", line 53, in main\n'}
+[2.960366] (interfaces) StderrLine: {'line': b'      abs_idl_file = convert_to_idl(\n'}
+[2.960455] (interfaces) StderrLine: {'line': b'          pathlib.Path(basepath), args.package_name,\n'}
+[2.960537] (interfaces) StderrLine: {'line': b'          pathlib.Path(relative_path), output_dir)\n'}
+[2.960625] (interfaces) StderrLine: {'line': b'    File "/opt/ros/jazzy/lib/python3.12/site-packages/rosidl_adapter/__init__.py", line 18, in convert_to_idl\n'}
+[2.960718] (interfaces) StderrLine: {'line': b'      from rosidl_adapter.msg import convert_msg_to_idl\n'}
+[2.960804] (interfaces) StderrLine: {'line': b'    File "/opt/ros/jazzy/lib/python3.12/site-packages/rosidl_adapter/msg/__init__.py", line 16, in <module>\n'}
+[2.960894] (interfaces) StderrLine: {'line': b'      from rosidl_adapter.resource import expand_template\n'}
+[2.960977] (interfaces) StderrLine: {'line': b'    File "/opt/ros/jazzy/lib/python3.12/site-packages/rosidl_adapter/resource/__init__.py", line 19, in <module>\n'}
+[2.961066] (interfaces) StderrLine: {'line': b'      import em\n'}
+[2.961152] (interfaces) StderrLine: {'line': b'\n'}
+[2.961262] (interfaces) StderrLine: {'line': b"  ModuleNotFoundError: No module named 'em'\n"}
+[2.961434] (interfaces) StderrLine: {'line': b'\n'}
+[2.961537] (interfaces) StderrLine: {'line': b'Call Stack (most recent call first):\n'}
+[2.961635] (interfaces) StderrLine: {'line': b'  /opt/ros/jazzy/share/rosidl_cmake/cmake/rosidl_generate_interfaces.cmake:132 (rosidl_adapt_interfaces)\n'}
+[2.961727] (interfaces) StderrLine: {'line': b'  CMakeLists.txt:14 (rosidl_generate_interfaces)\n'}
+[2.961810] (interfaces) StderrLine: {'line': b'\n'}
+[2.961892] (interfaces) StderrLine: {'line': b'\x1b[0m\n'}
+[2.961979] (interfaces) StdoutLine: {'line': b'-- Configuring incomplete, errors occurred!\n'}
+[2.976622] (interfaces) JobEnded: {'identifier': 'interfaces', 'rc': 'SIGINT'}
+[3.027837] (-) TimerEvent: {}
+[3.128304] (-) TimerEvent: {}
+[3.136663] (realsense2_camera_msgs) StderrLine: {'line': b'\x1b[31mCMake Error at /opt/ros/jazzy/share/rosidl_adapter/cmake/rosidl_adapt_interfaces.cmake:57 (message):\n'}
+[3.137218] (realsense2_camera_msgs) StderrLine: {'line': b'  execute_process(/home/jimmy/miniconda3/bin/python3 -m rosidl_adapter\n'}
+[3.137379] (realsense2_camera_msgs) StderrLine: {'line': b'  --package-name realsense2_camera_msgs --arguments-file\n'}
+[3.137485] (realsense2_camera_msgs) StderrLine: {'line': b'  /home/jimmy/ros2_ws/build/realsense2_camera_msgs/rosidl_adapter__arguments__realsense2_camera_msgs.json\n'}
+[3.137630] (realsense2_camera_msgs) StderrLine: {'line': b'  --output-dir\n'}
+[3.137715] (realsense2_camera_msgs) StderrLine: {'line': b'  /home/jimmy/ros2_ws/build/realsense2_camera_msgs/rosidl_adapter/realsense2_camera_msgs\n'}
+[3.137797] (realsense2_camera_msgs) StderrLine: {'line': b'  --output-file\n'}
+[3.137873] (realsense2_camera_msgs) StderrLine: {'line': b'  /home/jimmy/ros2_ws/build/realsense2_camera_msgs/rosidl_adapter/realsense2_camera_msgs.idls)\n'}
+[3.137953] (realsense2_camera_msgs) StderrLine: {'line': b'  returned error code 1:\n'}
+[3.138029] (realsense2_camera_msgs) StderrLine: {'line': b'\n'}
+[3.138105] (realsense2_camera_msgs) StderrLine: {'line': b'  Traceback (most recent call last):\n'}
+[3.138180] (realsense2_camera_msgs) StderrLine: {'line': b'\n'}
+[3.138324] (realsense2_camera_msgs) StderrLine: {'line': b'    File "<frozen runpy>", line 198, in _run_module_as_main\n'}
+[3.138461] (realsense2_camera_msgs) StderrLine: {'line': b'    File "<frozen runpy>", line 88, in _run_code\n'}
+[3.138544] (realsense2_camera_msgs) StderrLine: {'line': b'    File "/opt/ros/jazzy/lib/python3.12/site-packages/rosidl_adapter/__main__.py", line 19, in <module>\n'}
+[3.138626] (realsense2_camera_msgs) StderrLine: {'line': b'      sys.exit(main())\n'}
+[3.138705] (realsense2_camera_msgs) StderrLine: {'line': b'               ~~~~^^\n'}
+[3.138784] (realsense2_camera_msgs) StderrLine: {'line': b'    File "/opt/ros/jazzy/lib/python3.12/site-packages/rosidl_adapter/main.py", line 53, in main\n'}
+[3.138861] (realsense2_camera_msgs) StderrLine: {'line': b'      abs_idl_file = convert_to_idl(\n'}
+[3.138939] (realsense2_camera_msgs) StderrLine: {'line': b'          pathlib.Path(basepath), args.package_name,\n'}
+[3.139022] (realsense2_camera_msgs) StderrLine: {'line': b'          pathlib.Path(relative_path), output_dir)\n'}
+[3.139101] (realsense2_camera_msgs) StderrLine: {'line': b'    File "/opt/ros/jazzy/lib/python3.12/site-packages/rosidl_adapter/__init__.py", line 18, in convert_to_idl\n'}
+[3.139181] (realsense2_camera_msgs) StderrLine: {'line': b'      from rosidl_adapter.msg import convert_msg_to_idl\n'}
+[3.139281] (realsense2_camera_msgs) StderrLine: {'line': b'    File "/opt/ros/jazzy/lib/python3.12/site-packages/rosidl_adapter/msg/__init__.py", line 16, in <module>\n'}
+[3.139369] (realsense2_camera_msgs) StderrLine: {'line': b'      from rosidl_adapter.resource import expand_template\n'}
+[3.139447] (realsense2_camera_msgs) StderrLine: {'line': b'    File "/opt/ros/jazzy/lib/python3.12/site-packages/rosidl_adapter/resource/__init__.py", line 19, in <module>\n'}
+[3.139525] (realsense2_camera_msgs) StderrLine: {'line': b'      import em\n'}
+[3.139607] (realsense2_camera_msgs) StderrLine: {'line': b'\n'}
+[3.139684] (realsense2_camera_msgs) StderrLine: {'line': b"  ModuleNotFoundError: No module named 'em'\n"}
+[3.139761] (realsense2_camera_msgs) StderrLine: {'line': b'\n'}
+[3.139838] (realsense2_camera_msgs) StderrLine: {'line': b'Call Stack (most recent call first):\n'}
+[3.139939] (realsense2_camera_msgs) StderrLine: {'line': b'  /opt/ros/jazzy/share/rosidl_cmake/cmake/rosidl_generate_interfaces.cmake:132 (rosidl_adapt_interfaces)\n'}
+[3.140097] (realsense2_camera_msgs) StderrLine: {'line': b'  CMakeLists.txt:43 (rosidl_generate_interfaces)\n'}
+[3.140331] (realsense2_camera_msgs) StderrLine: {'line': b'\n'}
+[3.140611] (realsense2_camera_msgs) StderrLine: {'line': b'\x1b[0m\n'}
+[3.140733] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Configuring incomplete, errors occurred!\n'}
+[3.152319] (realsense2_camera_msgs) JobEnded: {'identifier': 'realsense2_camera_msgs', 'rc': 'SIGINT'}
+[3.154493] (realsense2_camera) JobSkipped: {'identifier': 'realsense2_camera'}
+[3.154978] (realsense2_description) JobSkipped: {'identifier': 'realsense2_description'}
+[3.155029] (-) EventReactorShutdown: {}

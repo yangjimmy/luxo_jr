@@ -1,0 +1,129 @@
+[0.029s] Invoking command in '/home/jimmy/ros2_ws/build/realsense2_camera': CMAKE_PREFIX_PATH=/home/jimmy/ros2_ws/install/realsense2_camera_msgs:/home/jimmy/ros2_ws/install/servo:/home/jimmy/ros2_ws/install/realsense2_description:/home/jimmy/ros2_ws/install/realsense2_camera:/home/jimmy/ros2_ws/install/interfaces:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy CONDA_PROMPT_MODIFIER=(base) DEBUGINFOD_URLS=https://debuginfod.ubuntu.com LD_LIBRARY_PATH=/home/jimmy/ros2_ws/install/realsense2_camera_msgs/lib:/home/jimmy/ros2_ws/install/realsense2_camera/lib:/home/jimmy/ros2_ws/install/interfaces/lib:/opt/ros/jazzy/opt/rviz_ogre_vendor/lib:/opt/ros/jazzy/lib/aarch64-linux-gnu:/opt/ros/jazzy/opt/gz_math_vendor/lib:/opt/ros/jazzy/opt/gz_utils_vendor/lib:/opt/ros/jazzy/opt/gz_cmake_vendor/lib:/opt/ros/jazzy/lib /usr/bin/cmake --build /home/jimmy/ros2_ws/build/realsense2_camera -- -j4 -l4
+[0.315s] -- Create Release Build.
+[0.316s] -- Found ament_cmake: 2.5.4 (/opt/ros/jazzy/share/ament_cmake/cmake)
+[0.688s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[0.723s] -- Found builtin_interfaces: 2.0.3 (/opt/ros/jazzy/share/builtin_interfaces/cmake)
+[0.779s] -- Found rosidl_generator_c: 4.6.6 (/opt/ros/jazzy/share/rosidl_generator_c/cmake)
+[0.798s] -- Found rosidl_generator_cpp: 4.6.6 (/opt/ros/jazzy/share/rosidl_generator_cpp/cmake)
+[0.827s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.855s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.881s] -- Found cv_bridge: 4.1.0 (/opt/ros/jazzy/share/cv_bridge/cmake)
+[1.102s] -- Found rmw_implementation_cmake: 7.3.2 (/opt/ros/jazzy/share/rmw_implementation_cmake/cmake)
+[1.109s] -- Found rmw_fastrtps_cpp: 8.4.3 (/opt/ros/jazzy/share/rmw_fastrtps_cpp/cmake)
+[1.237s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[1.363s] -- Found image_transport: 5.1.7 (/opt/ros/jazzy/share/image_transport/cmake)
+[1.394s] -- Found rclcpp_action: 28.1.12 (/opt/ros/jazzy/share/rclcpp_action/cmake)
+[1.471s] -- Found rclcpp_components: 28.1.12 (/opt/ros/jazzy/share/rclcpp_components/cmake)
+[1.519s] -- Found realsense2_camera_msgs: 4.56.4 (/home/jimmy/ros2_ws/install/realsense2_camera_msgs/share/realsense2_camera_msgs/cmake)
+[1.571s] -- Found std_srvs: 5.3.6 (/opt/ros/jazzy/share/std_srvs/cmake)
+[1.601s] -- Found nav_msgs: 5.3.6 (/opt/ros/jazzy/share/nav_msgs/cmake)
+[1.644s] -- Found tf2_ros: 0.36.14 (/opt/ros/jazzy/share/tf2_ros/cmake)
+[1.712s] -- Found diagnostic_updater: 4.2.6 (/opt/ros/jazzy/share/diagnostic_updater/cmake)
+[1.761s] -- Build for ROS2 Jazzy
+[1.985s] -- Found ament_cmake_gtest: 2.5.4 (/opt/ros/jazzy/share/ament_cmake_gtest/cmake)
+[1.988s] -- Found gtest sources under '/opt/ros/jazzy/src/gtest_vendor': C++ tests using 'Google Test' will be built
+[1.998s] -- Found ament_cmake_pytest: 2.5.4 (/opt/ros/jazzy/share/ament_cmake_pytest/cmake)
+[8.030s] -- rs_device_info:
+[8.030s] --  09/11 22:45:00,809 ERROR [281472934154272] (context.cpp:40) No valid configuration file found at : /home/jimmy/.realsense-config.json loading defaults
+[8.030s] Device Name                   Serial Number       Firmware Version
+[8.031s] Intel RealSense D435I         947522072317        5.12.7.100
+[8.031s] 
+[8.031s] -- D455 device found
+[13.904s] -- Configuring done (13.6s)
+[14.048s] -- Generating done (0.1s)
+[14.078s] -- Build files have been written to: /home/jimmy/ros2_ws/build/realsense2_camera
+[14.187s] [  0%] Built target ament_cmake_python_symlink_realsense2_camera
+[14.271s] [  7%] Built target gtest_main
+[14.273s] [ 14%] Built target realsense2_frame_latency_node
+[14.273s] [ 21%] Built target realsense2_camera_node
+[14.343s] [ 28%] Built target gtest
+[14.400s] [ 35%] Built target gtest_template
+[14.425s] [100%] Built target realsense2_camera
+[14.620s] running egg_info
+[14.621s] creating realsense2_camera.egg-info
+[14.648s] writing realsense2_camera.egg-info/PKG-INFO
+[14.649s] writing dependency_links to realsense2_camera.egg-info/dependency_links.txt
+[14.649s] writing top-level names to realsense2_camera.egg-info/top_level.txt
+[14.649s] writing manifest file 'realsense2_camera.egg-info/SOURCES.txt'
+[14.727s] reading manifest file 'realsense2_camera.egg-info/SOURCES.txt'
+[14.728s] writing manifest file 'realsense2_camera.egg-info/SOURCES.txt'
+[14.812s] [100%] Built target ament_cmake_python_build_realsense2_camera_egg
+[14.835s] Invoked command in '/home/jimmy/ros2_ws/build/realsense2_camera' returned '0': CMAKE_PREFIX_PATH=/home/jimmy/ros2_ws/install/realsense2_camera_msgs:/home/jimmy/ros2_ws/install/servo:/home/jimmy/ros2_ws/install/realsense2_description:/home/jimmy/ros2_ws/install/realsense2_camera:/home/jimmy/ros2_ws/install/interfaces:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy CONDA_PROMPT_MODIFIER=(base) DEBUGINFOD_URLS=https://debuginfod.ubuntu.com LD_LIBRARY_PATH=/home/jimmy/ros2_ws/install/realsense2_camera_msgs/lib:/home/jimmy/ros2_ws/install/realsense2_camera/lib:/home/jimmy/ros2_ws/install/interfaces/lib:/opt/ros/jazzy/opt/rviz_ogre_vendor/lib:/opt/ros/jazzy/lib/aarch64-linux-gnu:/opt/ros/jazzy/opt/gz_math_vendor/lib:/opt/ros/jazzy/opt/gz_utils_vendor/lib:/opt/ros/jazzy/opt/gz_cmake_vendor/lib:/opt/ros/jazzy/lib /usr/bin/cmake --build /home/jimmy/ros2_ws/build/realsense2_camera -- -j4 -l4
+[14.859s] Invoking command in '/home/jimmy/ros2_ws/build/realsense2_camera': CMAKE_PREFIX_PATH=/home/jimmy/ros2_ws/install/realsense2_camera_msgs:/home/jimmy/ros2_ws/install/servo:/home/jimmy/ros2_ws/install/realsense2_description:/home/jimmy/ros2_ws/install/realsense2_camera:/home/jimmy/ros2_ws/install/interfaces:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy CONDA_PROMPT_MODIFIER=(base) DEBUGINFOD_URLS=https://debuginfod.ubuntu.com LD_LIBRARY_PATH=/home/jimmy/ros2_ws/install/realsense2_camera_msgs/lib:/home/jimmy/ros2_ws/install/realsense2_camera/lib:/home/jimmy/ros2_ws/install/interfaces/lib:/opt/ros/jazzy/opt/rviz_ogre_vendor/lib:/opt/ros/jazzy/lib/aarch64-linux-gnu:/opt/ros/jazzy/opt/gz_math_vendor/lib:/opt/ros/jazzy/opt/gz_utils_vendor/lib:/opt/ros/jazzy/opt/gz_cmake_vendor/lib:/opt/ros/jazzy/lib /usr/bin/cmake --install /home/jimmy/ros2_ws/build/realsense2_camera
+[14.874s] -- Install configuration: "Release"
+[14.875s] -- Execute custom install script
+[14.876s] -- Up-to-date symlink: /home/jimmy/ros2_ws/install/realsense2_camera/share/realsense2_camera/config/global_settings.yaml
+[14.877s] -- Up-to-date symlink: /home/jimmy/ros2_ws/install/realsense2_camera/lib/realsense2_camera/realsense2_camera_node
+[14.878s] -- Up-to-date symlink: /home/jimmy/ros2_ws/install/realsense2_camera/lib/realsense2_camera/realsense2_frame_latency_node
+[14.878s] -- Up-to-date symlink: /home/jimmy/ros2_ws/install/realsense2_camera/lib/librealsense2_camera.so
+[14.879s] -- Up-to-date symlink: /home/jimmy/ros2_ws/install/realsense2_camera/include/align_depth_filter.h
+[14.880s] -- Up-to-date symlink: /home/jimmy/ros2_ws/install/realsense2_camera/include/base_realsense_node.h
+[14.880s] -- Up-to-date symlink: /home/jimmy/ros2_ws/install/realsense2_camera/include/constants.h
+[14.880s] -- Up-to-date symlink: /home/jimmy/ros2_ws/install/realsense2_camera/include/dynamic_params.h
+[14.881s] -- Up-to-date symlink: /home/jimmy/ros2_ws/install/realsense2_camera/include/gl_window.h
+[14.881s] -- Up-to-date symlink: /home/jimmy/ros2_ws/install/realsense2_camera/include/image_publisher.h
+[14.881s] -- Up-to-date symlink: /home/jimmy/ros2_ws/install/realsense2_camera/include/named_filter.h
+[14.882s] -- Up-to-date symlink: /home/jimmy/ros2_ws/install/realsense2_camera/include/pointcloud_filter.h
+[14.882s] -- Up-to-date symlink: /home/jimmy/ros2_ws/install/realsense2_camera/include/profile_manager.h
+[14.882s] -- Up-to-date symlink: /home/jimmy/ros2_ws/install/realsense2_camera/include/realsense_node_factory.h
+[14.883s] -- Up-to-date symlink: /home/jimmy/ros2_ws/install/realsense2_camera/include/ros_node_base.h
+[14.883s] -- Up-to-date symlink: /home/jimmy/ros2_ws/install/realsense2_camera/include/ros_param_backend.h
+[14.883s] -- Up-to-date symlink: /home/jimmy/ros2_ws/install/realsense2_camera/include/ros_sensor.h
+[14.884s] -- Up-to-date symlink: /home/jimmy/ros2_ws/install/realsense2_camera/include/ros_utils.h
+[14.884s] -- Up-to-date symlink: /home/jimmy/ros2_ws/install/realsense2_camera/include/sensor_params.h
+[14.885s] -- Up-to-date symlink: /home/jimmy/ros2_ws/install/realsense2_camera/share/realsense2_camera/launch/default.rviz
+[14.885s] -- Up-to-date symlink: /home/jimmy/ros2_ws/install/realsense2_camera/share/realsense2_camera/launch/rs_intra_process_demo_launch.py
+[14.886s] -- Up-to-date symlink: /home/jimmy/ros2_ws/install/realsense2_camera/share/realsense2_camera/launch/rs_launch.py
+[14.886s] -- Up-to-date symlink: /home/jimmy/ros2_ws/install/realsense2_camera/share/realsense2_camera/launch/rs_multi_camera_launch.py
+[14.886s] -- Up-to-date symlink: /home/jimmy/ros2_ws/install/realsense2_camera/share/realsense2_camera/launch/rs_multi_camera_launch_sync.py
+[14.889s] -- Up-to-date symlink: /home/jimmy/ros2_ws/install/realsense2_camera/share/realsense2_camera/examples/align_depth/README.md
+[14.890s] -- Up-to-date symlink: /home/jimmy/ros2_ws/install/realsense2_camera/share/realsense2_camera/examples/align_depth/rs_align_depth_launch.py
+[14.890s] -- Up-to-date symlink: /home/jimmy/ros2_ws/install/realsense2_camera/share/realsense2_camera/examples/d500_tables/calib_config_example.json
+[14.891s] -- Up-to-date symlink: /home/jimmy/ros2_ws/install/realsense2_camera/share/realsense2_camera/examples/dual_camera/README.md
+[14.891s] -- Up-to-date symlink: /home/jimmy/ros2_ws/install/realsense2_camera/share/realsense2_camera/examples/dual_camera/rs_dual_camera_launch.py
+[14.892s] -- Up-to-date symlink: /home/jimmy/ros2_ws/install/realsense2_camera/share/realsense2_camera/examples/dual_camera/rviz/dual_camera_pointcloud.rviz
+[14.893s] -- Up-to-date symlink: /home/jimmy/ros2_ws/install/realsense2_camera/share/realsense2_camera/examples/launch_from_rosbag/README.md
+[14.894s] -- Up-to-date symlink: /home/jimmy/ros2_ws/install/realsense2_camera/share/realsense2_camera/examples/launch_from_rosbag/rs_launch_from_rosbag.py
+[14.894s] -- Up-to-date symlink: /home/jimmy/ros2_ws/install/realsense2_camera/share/realsense2_camera/examples/launch_params_from_file/README.md
+[14.895s] -- Up-to-date symlink: /home/jimmy/ros2_ws/install/realsense2_camera/share/realsense2_camera/examples/launch_params_from_file/config/config.yaml
+[14.895s] -- Up-to-date symlink: /home/jimmy/ros2_ws/install/realsense2_camera/share/realsense2_camera/examples/launch_params_from_file/rs_launch_get_params_from_yaml.py
+[14.896s] -- Up-to-date symlink: /home/jimmy/ros2_ws/install/realsense2_camera/share/realsense2_camera/examples/pointcloud/README.md
+[14.897s] -- Up-to-date symlink: /home/jimmy/ros2_ws/install/realsense2_camera/share/realsense2_camera/examples/pointcloud/rs_d405_pointcloud_launch.py
+[14.897s] -- Up-to-date symlink: /home/jimmy/ros2_ws/install/realsense2_camera/share/realsense2_camera/examples/pointcloud/rs_d455_pointcloud_launch.py
+[14.897s] -- Up-to-date symlink: /home/jimmy/ros2_ws/install/realsense2_camera/share/realsense2_camera/examples/pointcloud/rs_pointcloud_infra_launch.py
+[14.898s] -- Up-to-date symlink: /home/jimmy/ros2_ws/install/realsense2_camera/share/realsense2_camera/examples/pointcloud/rs_pointcloud_launch.py
+[14.898s] -- Up-to-date symlink: /home/jimmy/ros2_ws/install/realsense2_camera/share/realsense2_camera/examples/pointcloud/rviz/pointcloud.rviz
+[14.899s] -- Up-to-date symlink: /home/jimmy/ros2_ws/install/realsense2_camera/share/realsense2_camera/examples/pointcloud/rviz/urdf_pointcloud.rviz
+[14.899s] -- Symlinking: /home/jimmy/ros2_ws/install/realsense2_camera/share/realsense2_camera/realsense2_camera/__init__.py
+[14.919s] -- Symlinking: /home/jimmy/ros2_ws/install/realsense2_camera/share/realsense2_camera/environment/pythonpath.sh
+[14.937s] -- Symlinking: /home/jimmy/ros2_ws/install/realsense2_camera/share/realsense2_camera/environment/pythonpath.dsv
+[14.959s] -- Symlinking: /home/jimmy/ros2_ws/install/realsense2_camera/lib/python3.12/site-packages/realsense2_camera-4.56.4-py3.12.egg-info/PKG-INFO
+[14.977s] -- Symlinking: /home/jimmy/ros2_ws/install/realsense2_camera/lib/python3.12/site-packages/realsense2_camera-4.56.4-py3.12.egg-info/SOURCES.txt
+[14.994s] -- Symlinking: /home/jimmy/ros2_ws/install/realsense2_camera/lib/python3.12/site-packages/realsense2_camera-4.56.4-py3.12.egg-info/dependency_links.txt
+[15.012s] -- Symlinking: /home/jimmy/ros2_ws/install/realsense2_camera/lib/python3.12/site-packages/realsense2_camera-4.56.4-py3.12.egg-info/top_level.txt
+[15.029s] -- Symlinking: /home/jimmy/ros2_ws/install/realsense2_camera/lib/python3.12/site-packages/realsense2_camera/__init__.py
+[15.046s] -- Symlinking: /home/jimmy/ros2_ws/install/realsense2_camera/lib/realsense2_camera/rs2_predict.py
+[15.069s] -- Up-to-date symlink: /home/jimmy/ros2_ws/install/realsense2_camera/share/realsense2_camera/environment/library_path.sh
+[15.069s] -- Up-to-date symlink: /home/jimmy/ros2_ws/install/realsense2_camera/share/realsense2_camera/environment/library_path.dsv
+[15.070s] -- Up-to-date symlink: /home/jimmy/ros2_ws/install/realsense2_camera/share/ament_index/resource_index/package_run_dependencies/realsense2_camera
+[15.070s] -- Up-to-date symlink: /home/jimmy/ros2_ws/install/realsense2_camera/share/ament_index/resource_index/parent_prefix_path/realsense2_camera
+[15.071s] -- Up-to-date symlink: /home/jimmy/ros2_ws/install/realsense2_camera/share/realsense2_camera/environment/ament_prefix_path.sh
+[15.071s] -- Up-to-date symlink: /home/jimmy/ros2_ws/install/realsense2_camera/share/realsense2_camera/environment/ament_prefix_path.dsv
+[15.071s] -- Up-to-date symlink: /home/jimmy/ros2_ws/install/realsense2_camera/share/realsense2_camera/environment/path.sh
+[15.072s] -- Up-to-date symlink: /home/jimmy/ros2_ws/install/realsense2_camera/share/realsense2_camera/environment/path.dsv
+[15.072s] -- Up-to-date symlink: /home/jimmy/ros2_ws/install/realsense2_camera/share/realsense2_camera/local_setup.bash
+[15.072s] -- Up-to-date symlink: /home/jimmy/ros2_ws/install/realsense2_camera/share/realsense2_camera/local_setup.sh
+[15.073s] -- Up-to-date symlink: /home/jimmy/ros2_ws/install/realsense2_camera/share/realsense2_camera/local_setup.zsh
+[15.073s] -- Up-to-date symlink: /home/jimmy/ros2_ws/install/realsense2_camera/share/realsense2_camera/local_setup.dsv
+[15.073s] -- Symlinking: /home/jimmy/ros2_ws/install/realsense2_camera/share/realsense2_camera/package.dsv
+[15.093s] -- Up-to-date symlink: /home/jimmy/ros2_ws/install/realsense2_camera/share/ament_index/resource_index/packages/realsense2_camera
+[15.094s] -- Up-to-date symlink: /home/jimmy/ros2_ws/install/realsense2_camera/share/ament_index/resource_index/rclcpp_components/realsense2_camera
+[15.095s] -- Up-to-date symlink: /home/jimmy/ros2_ws/install/realsense2_camera/share/realsense2_camera/cmake/ament_cmake_export_include_directories-extras.cmake
+[15.096s] -- Up-to-date symlink: /home/jimmy/ros2_ws/install/realsense2_camera/share/realsense2_camera/cmake/ament_cmake_export_libraries-extras.cmake
+[15.096s] -- Up-to-date symlink: /home/jimmy/ros2_ws/install/realsense2_camera/share/realsense2_camera/cmake/ament_cmake_export_dependencies-extras.cmake
+[15.096s] -- Up-to-date symlink: /home/jimmy/ros2_ws/install/realsense2_camera/share/realsense2_camera/cmake/realsense2_cameraConfig.cmake
+[15.097s] -- Up-to-date symlink: /home/jimmy/ros2_ws/install/realsense2_camera/share/realsense2_camera/cmake/realsense2_cameraConfig-version.cmake
+[15.097s] -- Up-to-date symlink: /home/jimmy/ros2_ws/install/realsense2_camera/share/realsense2_camera/package.xml
+[15.163s] Listing '/home/jimmy/ros2_ws/install/realsense2_camera/lib/python3.12/site-packages/realsense2_camera'...
+[15.163s] Compiling '/home/jimmy/ros2_ws/install/realsense2_camera/lib/python3.12/site-packages/realsense2_camera/__init__.py'...
+[15.183s] Invoked command in '/home/jimmy/ros2_ws/build/realsense2_camera' returned '0': CMAKE_PREFIX_PATH=/home/jimmy/ros2_ws/install/realsense2_camera_msgs:/home/jimmy/ros2_ws/install/servo:/home/jimmy/ros2_ws/install/realsense2_description:/home/jimmy/ros2_ws/install/realsense2_camera:/home/jimmy/ros2_ws/install/interfaces:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy CONDA_PROMPT_MODIFIER=(base) DEBUGINFOD_URLS=https://debuginfod.ubuntu.com LD_LIBRARY_PATH=/home/jimmy/ros2_ws/install/realsense2_camera_msgs/lib:/home/jimmy/ros2_ws/install/realsense2_camera/lib:/home/jimmy/ros2_ws/install/interfaces/lib:/opt/ros/jazzy/opt/rviz_ogre_vendor/lib:/opt/ros/jazzy/lib/aarch64-linux-gnu:/opt/ros/jazzy/opt/gz_math_vendor/lib:/opt/ros/jazzy/opt/gz_utils_vendor/lib:/opt/ros/jazzy/opt/gz_cmake_vendor/lib:/opt/ros/jazzy/lib /usr/bin/cmake --install /home/jimmy/ros2_ws/build/realsense2_camera

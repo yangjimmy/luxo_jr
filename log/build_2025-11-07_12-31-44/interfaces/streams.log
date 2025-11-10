@@ -1,0 +1,63 @@
+[0.023s] Invoking command in '/home/jimmy/ros2_ws/build/interfaces': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake /home/jimmy/ros2_ws/src/interfaces -DCMAKE_INSTALL_PREFIX=/home/jimmy/ros2_ws/install/interfaces
+[0.146s] -- The C compiler identification is GNU 13.3.0
+[0.259s] -- The CXX compiler identification is GNU 13.3.0
+[0.289s] -- Detecting C compiler ABI info
+[0.461s] -- Detecting C compiler ABI info - done
+[0.477s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.477s] -- Detecting C compile features
+[0.478s] -- Detecting C compile features - done
+[0.492s] -- Detecting CXX compiler ABI info
+[0.680s] -- Detecting CXX compiler ABI info - done
+[0.696s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.697s] -- Detecting CXX compile features
+[0.698s] -- Detecting CXX compile features - done
+[0.703s] -- Found ament_cmake: 2.5.4 (/opt/ros/jazzy/share/ament_cmake/cmake)
+[0.932s] -- Found Python3: /usr/bin/python3 (found version "3.12.3") found components: Interpreter 
+[1.098s] -- Found rosidl_default_generators: 1.6.0 (/opt/ros/jazzy/share/rosidl_default_generators/cmake)
+[1.112s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[1.215s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[1.295s] -- Found rosidl_adapter: 4.6.6 (/opt/ros/jazzy/share/rosidl_adapter/cmake)
+[1.773s] [31mCMake Error at /opt/ros/jazzy/share/rosidl_adapter/cmake/rosidl_adapt_interfaces.cmake:57 (message):
+[1.773s]   execute_process(/usr/bin/python3 -m rosidl_adapter --package-name
+[1.773s]   interfaces --arguments-file
+[1.773s]   /home/jimmy/ros2_ws/build/interfaces/rosidl_adapter__arguments__interfaces.json
+[1.774s]   --output-dir /home/jimmy/ros2_ws/build/interfaces/rosidl_adapter/interfaces
+[1.774s]   --output-file
+[1.774s]   /home/jimmy/ros2_ws/build/interfaces/rosidl_adapter/interfaces.idls)
+[1.774s]   returned error code 1:
+[1.774s] 
+[1.774s]   Traceback (most recent call last):
+[1.774s] 
+[1.774s]     File "<frozen runpy>", line 198, in _run_module_as_main
+[1.774s]     File "<frozen runpy>", line 88, in _run_code
+[1.774s]     File "/opt/ros/jazzy/lib/python3.12/site-packages/rosidl_adapter/__main__.py", line 19, in <module>
+[1.774s]       sys.exit(main())
+[1.774s]                ^^^^^^
+[1.774s]     File "/opt/ros/jazzy/lib/python3.12/site-packages/rosidl_adapter/main.py", line 53, in main
+[1.774s]       abs_idl_file = convert_to_idl(
+[1.775s]                      ^^^^^^^^^^^^^^^
+[1.775s]     File "/opt/ros/jazzy/lib/python3.12/site-packages/rosidl_adapter/__init__.py", line 19, in convert_to_idl
+[1.775s]       return convert_msg_to_idl(
+[1.775s]              ^^^^^^^^^^^^^^^^^^^
+[1.775s]     File "/opt/ros/jazzy/lib/python3.12/site-packages/rosidl_adapter/msg/__init__.py", line 28, in convert_msg_to_idl
+[1.775s]       msg = parse_message_string(package_name, input_file.stem, content)
+[1.775s]             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[1.775s]     File "/opt/ros/jazzy/lib/python3.12/site-packages/rosidl_adapter/parser.py", line 545, in parse_message_string
+[1.775s]       msg = MessageSpecification(pkg_name, msg_name, fields, constants)
+[1.775s]             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[1.775s]     File "/opt/ros/jazzy/lib/python3.12/site-packages/rosidl_adapter/parser.py", line 389, in __init__
+[1.775s]       self.base_type = BaseType(
+[1.776s]                        ^^^^^^^^^
+[1.776s]     File "/opt/ros/jazzy/lib/python3.12/site-packages/rosidl_adapter/parser.py", line 206, in __init__
+[1.776s]       raise InvalidResourceName(
+[1.776s] 
+[1.776s]   rosidl_adapter.parser.InvalidResourceName: 'motor_cmds' is an invalid
+[1.776s]   message name.  It should have the pattern '^[A-Z][A-Za-z0-9]*$'
+[1.776s] 
+[1.776s] Call Stack (most recent call first):
+[1.776s]   /opt/ros/jazzy/share/rosidl_cmake/cmake/rosidl_generate_interfaces.cmake:132 (rosidl_adapt_interfaces)
+[1.776s]   CMakeLists.txt:14 (rosidl_generate_interfaces)
+[1.776s] 
+[1.777s] [0m
+[1.777s] -- Configuring incomplete, errors occurred!
+[1.790s] Invoked command in '/home/jimmy/ros2_ws/build/interfaces' returned '1': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake /home/jimmy/ros2_ws/src/interfaces -DCMAKE_INSTALL_PREFIX=/home/jimmy/ros2_ws/install/interfaces

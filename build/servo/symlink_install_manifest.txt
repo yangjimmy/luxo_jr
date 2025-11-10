@@ -1,0 +1,15 @@
+/home/jimmy/ros2_ws/install/servo/share/ament_index/resource_index/package_run_dependencies/servo
+/home/jimmy/ros2_ws/install/servo/share/ament_index/resource_index/parent_prefix_path/servo
+/home/jimmy/ros2_ws/install/servo/share/servo/environment/ament_prefix_path.sh
+/home/jimmy/ros2_ws/install/servo/share/servo/environment/ament_prefix_path.dsv
+/home/jimmy/ros2_ws/install/servo/share/servo/environment/path.sh
+/home/jimmy/ros2_ws/install/servo/share/servo/environment/path.dsv
+/home/jimmy/ros2_ws/install/servo/share/servo/local_setup.bash
+/home/jimmy/ros2_ws/install/servo/share/servo/local_setup.sh
+/home/jimmy/ros2_ws/install/servo/share/servo/local_setup.zsh
+/home/jimmy/ros2_ws/install/servo/share/servo/local_setup.dsv
+/home/jimmy/ros2_ws/install/servo/share/servo/package.dsv
+/home/jimmy/ros2_ws/install/servo/share/ament_index/resource_index/packages/servo
+/home/jimmy/ros2_ws/install/servo/share/servo/cmake/servoConfig.cmake
+/home/jimmy/ros2_ws/install/servo/share/servo/cmake/servoConfig-version.cmake
+/home/jimmy/ros2_ws/install/servo/share/servo/package.xml

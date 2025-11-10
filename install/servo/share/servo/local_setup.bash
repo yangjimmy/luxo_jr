@@ -1,0 +1,1 @@
+/home/jimmy/ros2_ws/build/servo/ament_cmake_environment_hooks/local_setup.bash

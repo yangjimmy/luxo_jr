@@ -1,0 +1,43 @@
+[0.035s] Invoking command in '/home/jimmy/ros2_ws/build/interfaces': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake /home/jimmy/ros2_ws/src/interfaces -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/jimmy/ros2_ws/install/interfaces
+[0.081s] -- Found ament_cmake: 2.5.4 (/opt/ros/jazzy/share/ament_cmake/cmake)
+[0.661s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[0.675s] -- Found rosidl_default_generators: 1.6.0 (/opt/ros/jazzy/share/rosidl_default_generators/cmake)
+[0.679s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.734s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.787s] -- Found rosidl_adapter: 4.6.6 (/opt/ros/jazzy/share/rosidl_adapter/cmake)
+[1.289s] [31mCMake Error at /opt/ros/jazzy/share/rosidl_adapter/cmake/rosidl_adapt_interfaces.cmake:57 (message):
+[1.291s]   execute_process(/home/jimmy/miniconda3/bin/python3 -m rosidl_adapter
+[1.292s]   --package-name interfaces --arguments-file
+[1.292s]   /home/jimmy/ros2_ws/build/interfaces/rosidl_adapter__arguments__interfaces.json
+[1.292s]   --output-dir /home/jimmy/ros2_ws/build/interfaces/rosidl_adapter/interfaces
+[1.292s]   --output-file
+[1.292s]   /home/jimmy/ros2_ws/build/interfaces/rosidl_adapter/interfaces.idls)
+[1.292s]   returned error code 1:
+[1.292s] 
+[1.293s]   Traceback (most recent call last):
+[1.293s] 
+[1.293s]     File "<frozen runpy>", line 198, in _run_module_as_main
+[1.293s]     File "<frozen runpy>", line 88, in _run_code
+[1.293s]     File "/opt/ros/jazzy/lib/python3.12/site-packages/rosidl_adapter/__main__.py", line 19, in <module>
+[1.293s]       sys.exit(main())
+[1.293s]                ~~~~^^
+[1.293s]     File "/opt/ros/jazzy/lib/python3.12/site-packages/rosidl_adapter/main.py", line 53, in main
+[1.294s]       abs_idl_file = convert_to_idl(
+[1.294s]           pathlib.Path(basepath), args.package_name,
+[1.294s]           pathlib.Path(relative_path), output_dir)
+[1.294s]     File "/opt/ros/jazzy/lib/python3.12/site-packages/rosidl_adapter/__init__.py", line 18, in convert_to_idl
+[1.294s]       from rosidl_adapter.msg import convert_msg_to_idl
+[1.294s]     File "/opt/ros/jazzy/lib/python3.12/site-packages/rosidl_adapter/msg/__init__.py", line 16, in <module>
+[1.295s]       from rosidl_adapter.resource import expand_template
+[1.295s]     File "/opt/ros/jazzy/lib/python3.12/site-packages/rosidl_adapter/resource/__init__.py", line 19, in <module>
+[1.295s]       import em
+[1.295s] 
+[1.295s]   ModuleNotFoundError: No module named 'em'
+[1.295s] 
+[1.295s] Call Stack (most recent call first):
+[1.295s]   /opt/ros/jazzy/share/rosidl_cmake/cmake/rosidl_generate_interfaces.cmake:132 (rosidl_adapt_interfaces)
+[1.296s]   CMakeLists.txt:14 (rosidl_generate_interfaces)
+[1.296s] 
+[1.296s] [0m
+[1.296s] -- Configuring incomplete, errors occurred!
+[1.311s] Invoked command in '/home/jimmy/ros2_ws/build/interfaces' returned '1': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake /home/jimmy/ros2_ws/src/interfaces -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/jimmy/ros2_ws/install/interfaces

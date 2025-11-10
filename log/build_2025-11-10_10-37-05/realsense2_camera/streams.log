@@ -1,0 +1,34 @@
+[0.030s] Invoking command in '/home/jimmy/ros2_ws/build/realsense2_camera': CMAKE_PREFIX_PATH=/home/jimmy/ros2_ws/install/realsense2_camera_msgs:/home/jimmy/ros2_ws/install/servo:/home/jimmy/ros2_ws/install/realsense2_description:/home/jimmy/ros2_ws/install/realsense2_camera:/home/jimmy/ros2_ws/install/interfaces:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy CONDA_PROMPT_MODIFIER=(base) DEBUGINFOD_URLS=https://debuginfod.ubuntu.com LD_LIBRARY_PATH=/home/jimmy/ros2_ws/install/realsense2_camera_msgs/lib:/home/jimmy/ros2_ws/install/realsense2_camera/lib:/home/jimmy/ros2_ws/install/interfaces/lib:/opt/ros/jazzy/opt/rviz_ogre_vendor/lib:/opt/ros/jazzy/lib/aarch64-linux-gnu:/opt/ros/jazzy/opt/gz_math_vendor/lib:/opt/ros/jazzy/opt/gz_utils_vendor/lib:/opt/ros/jazzy/opt/gz_cmake_vendor/lib:/opt/ros/jazzy/lib PYTHONPATH=/home/jimmy/ros2_ws/install/realsense2_camera_msgs/lib/python3.12/site-packages:/home/jimmy/ros2_ws/install/realsense2_camera/lib/python3.13/site-packages:/home/jimmy/ros2_ws/install/realsense2_camera_msgs/lib/python3.13/site-packages:/home/jimmy/ros2_ws/install/interfaces/lib/python3.13/site-packages:/home/jimmy/ros2_ws/install/realsense2_camera/lib/python3.12/site-packages:/home/jimmy/ros2_ws/install/interfaces/lib/python3.12/site-packages:/opt/ros/jazzy/lib/python3.12/site-packages /usr/bin/cmake --build /home/jimmy/ros2_ws/build/realsense2_camera -- -j4 -l4
+[0.087s] -- Create Release Build.
+[0.088s] -- Found ament_cmake: 2.5.4 (/opt/ros/jazzy/share/ament_cmake/cmake)
+[0.458s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[0.468s] -- Found builtin_interfaces: 2.0.3 (/opt/ros/jazzy/share/builtin_interfaces/cmake)
+[0.500s] -- Found rosidl_generator_c: 4.6.6 (/opt/ros/jazzy/share/rosidl_generator_c/cmake)
+[0.513s] -- Found rosidl_generator_cpp: 4.6.6 (/opt/ros/jazzy/share/rosidl_generator_cpp/cmake)
+[0.533s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.552s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.568s] -- Found cv_bridge: 4.1.0 (/opt/ros/jazzy/share/cv_bridge/cmake)
+[0.715s] -- Found rmw_implementation_cmake: 7.3.2 (/opt/ros/jazzy/share/rmw_implementation_cmake/cmake)
+[0.717s] -- Found rmw_fastrtps_cpp: 8.4.3 (/opt/ros/jazzy/share/rmw_fastrtps_cpp/cmake)
+[0.813s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[0.899s] -- Found image_transport: 5.1.7 (/opt/ros/jazzy/share/image_transport/cmake)
+[0.915s] -- Found rclcpp_action: 28.1.12 (/opt/ros/jazzy/share/rclcpp_action/cmake)
+[0.969s] -- Found rclcpp_components: 28.1.12 (/opt/ros/jazzy/share/rclcpp_components/cmake)
+[1.000s] -- Found realsense2_camera_msgs: 4.56.4 (/home/jimmy/ros2_ws/install/realsense2_camera_msgs/share/realsense2_camera_msgs/cmake)
+[1.045s] -- Found std_srvs: 5.3.6 (/opt/ros/jazzy/share/std_srvs/cmake)
+[1.066s] -- Found nav_msgs: 5.3.6 (/opt/ros/jazzy/share/nav_msgs/cmake)
+[1.098s] -- Found tf2_ros: 0.36.14 (/opt/ros/jazzy/share/tf2_ros/cmake)
+[1.148s] -- Found diagnostic_updater: 4.2.6 (/opt/ros/jazzy/share/diagnostic_updater/cmake)
+[1.182s] -- Build for ROS2 Jazzy
+[1.354s] [31mCMake Error at /opt/ros/jazzy/share/ament_cmake_python/cmake/ament_python_install_package.cmake:66 (message):
+[1.354s]   ament_python_install_package() the Python package folder
+[1.354s]   '/home/jimmy/ros2_ws/src/realsense-ros/realsense2_camera/realsense2_camera'
+[1.354s]   doesn't contain an '__init__.py' file
+[1.354s] Call Stack (most recent call first):
+[1.355s]   /opt/ros/jazzy/share/ament_cmake_python/cmake/ament_python_install_package.cmake:39 (_ament_cmake_python_install_package)
+[1.355s]   CMakeLists.txt:365 (ament_python_install_package)
+[1.355s] 
+[1.355s] [0m
+[1.355s] -- Configuring incomplete, errors occurred!
+[1.375s] gmake: *** [Makefile:824: cmake_check_build_system] Error 1
+[1.378s] Invoked command in '/home/jimmy/ros2_ws/build/realsense2_camera' returned '2': CMAKE_PREFIX_PATH=/home/jimmy/ros2_ws/install/realsense2_camera_msgs:/home/jimmy/ros2_ws/install/servo:/home/jimmy/ros2_ws/install/realsense2_description:/home/jimmy/ros2_ws/install/realsense2_camera:/home/jimmy/ros2_ws/install/interfaces:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy CONDA_PROMPT_MODIFIER=(base) DEBUGINFOD_URLS=https://debuginfod.ubuntu.com LD_LIBRARY_PATH=/home/jimmy/ros2_ws/install/realsense2_camera_msgs/lib:/home/jimmy/ros2_ws/install/realsense2_camera/lib:/home/jimmy/ros2_ws/install/interfaces/lib:/opt/ros/jazzy/opt/rviz_ogre_vendor/lib:/opt/ros/jazzy/lib/aarch64-linux-gnu:/opt/ros/jazzy/opt/gz_math_vendor/lib:/opt/ros/jazzy/opt/gz_utils_vendor/lib:/opt/ros/jazzy/opt/gz_cmake_vendor/lib:/opt/ros/jazzy/lib PYTHONPATH=/home/jimmy/ros2_ws/install/realsense2_camera_msgs/lib/python3.12/site-packages:/home/jimmy/ros2_ws/install/realsense2_camera/lib/python3.13/site-packages:/home/jimmy/ros2_ws/install/realsense2_camera_msgs/lib/python3.13/site-packages:/home/jimmy/ros2_ws/install/interfaces/lib/python3.13/site-packages:/home/jimmy/ros2_ws/install/realsense2_camera/lib/python3.12/site-packages:/home/jimmy/ros2_ws/install/interfaces/lib/python3.12/site-packages:/opt/ros/jazzy/lib/python3.12/site-packages /usr/bin/cmake --build /home/jimmy/ros2_ws/build/realsense2_camera -- -j4 -l4

@@ -1,0 +1,68 @@
+-- Create Release Build.
+-- Found ament_cmake: 2.5.4 (/opt/ros/jazzy/share/ament_cmake/cmake)
+-- Override CMake install command with custom implementation using symlinks instead of copying resources
+-- Found builtin_interfaces: 2.0.3 (/opt/ros/jazzy/share/builtin_interfaces/cmake)
+-- Found rosidl_generator_c: 4.6.6 (/opt/ros/jazzy/share/rosidl_generator_c/cmake)
+-- Found rosidl_generator_cpp: 4.6.6 (/opt/ros/jazzy/share/rosidl_generator_cpp/cmake)
+-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+-- Found cv_bridge: 4.1.0 (/opt/ros/jazzy/share/cv_bridge/cmake)
+-- Found rmw_implementation_cmake: 7.3.2 (/opt/ros/jazzy/share/rmw_implementation_cmake/cmake)
+-- Found rmw_fastrtps_cpp: 8.4.3 (/opt/ros/jazzy/share/rmw_fastrtps_cpp/cmake)
+-- Using RMW implementation 'rmw_fastrtps_cpp' as default
+-- Found image_transport: 5.1.7 (/opt/ros/jazzy/share/image_transport/cmake)
+-- Found rclcpp_action: 28.1.12 (/opt/ros/jazzy/share/rclcpp_action/cmake)
+-- Found rclcpp_components: 28.1.12 (/opt/ros/jazzy/share/rclcpp_components/cmake)
+-- Found realsense2_camera_msgs: 4.56.4 (/home/jimmy/ros2_ws/install/realsense2_camera_msgs/share/realsense2_camera_msgs/cmake)
+-- Found std_srvs: 5.3.6 (/opt/ros/jazzy/share/std_srvs/cmake)
+-- Found nav_msgs: 5.3.6 (/opt/ros/jazzy/share/nav_msgs/cmake)
+-- Found tf2_ros: 0.36.14 (/opt/ros/jazzy/share/tf2_ros/cmake)
+-- Found diagnostic_updater: 4.2.6 (/opt/ros/jazzy/share/diagnostic_updater/cmake)
+-- Build for ROS2 Jazzy
+[31mCMake Error at /opt/ros/jazzy/share/ament_cmake_python/cmake/ament_python_install_package.cmake:106 (add_custom_target):
+  add_custom_target cannot create target
+  "ament_cmake_python_symlink_realsense2_camera" because another target with
+  the same name already exists.  The existing target is a custom target
+  created in source directory
+  "/home/jimmy/ros2_ws/src/realsense-ros/realsense2_camera".  See
+  documentation for policy CMP0002 for more details.
+Call Stack (most recent call first):
+  /opt/ros/jazzy/share/ament_cmake_python/cmake/ament_python_install_package.cmake:39 (_ament_cmake_python_install_package)
+  CMakeLists.txt:372 (ament_python_install_package)
+
+[0m
+[31mCMake Error at /opt/ros/jazzy/share/ament_cmake_python/cmake/ament_python_install_package.cmake:114 (add_custom_target):
+  add_custom_target cannot create target
+  "ament_cmake_python_symlink_realsense2_camera_setup" because another target
+  with the same name already exists.  The existing target is a custom target
+  created in source directory
+  "/home/jimmy/ros2_ws/src/realsense-ros/realsense2_camera".  See
+  documentation for policy CMP0002 for more details.
+Call Stack (most recent call first):
+  /opt/ros/jazzy/share/ament_cmake_python/cmake/ament_python_install_package.cmake:39 (_ament_cmake_python_install_package)
+  CMakeLists.txt:372 (ament_python_install_package)
+
+[0m
+[31mCMake Error at /opt/ros/jazzy/share/ament_cmake_python/cmake/ament_python_install_package.cmake:144 (add_custom_target):
+  add_custom_target cannot create target
+  "ament_cmake_python_build_realsense2_camera_egg" because another target
+  with the same name already exists.  The existing target is a custom target
+  created in source directory
+  "/home/jimmy/ros2_ws/src/realsense-ros/realsense2_camera".  See
+  documentation for policy CMP0002 for more details.
+Call Stack (most recent call first):
+  /opt/ros/jazzy/share/ament_cmake_python/cmake/ament_python_install_package.cmake:39 (_ament_cmake_python_install_package)
+  CMakeLists.txt:372 (ament_python_install_package)
+
+[0m
+-- Found ament_cmake_gtest: 2.5.4 (/opt/ros/jazzy/share/ament_cmake_gtest/cmake)
+-- Found gtest sources under '/opt/ros/jazzy/src/gtest_vendor': C++ tests using 'Google Test' will be built
+-- Found ament_cmake_pytest: 2.5.4 (/opt/ros/jazzy/share/ament_cmake_pytest/cmake)
+-- rs_device_info:
+--  10/11 10:32:17,133 ERROR [281473706102816] (context.cpp:40) No valid configuration file found at : /home/jimmy/.realsense-config.json loading defaults
+Device Name                   Serial Number       Firmware Version
+Intel RealSense D435I         947522072317        5.12.7.100
+
+-- D455 device found
+-- Configuring incomplete, errors occurred!
+gmake: *** [Makefile:824: cmake_check_build_system] Error 1

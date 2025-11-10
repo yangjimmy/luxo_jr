@@ -1,0 +1,46 @@
+[0.075s] Invoking command in '/home/jimmy/ros2_ws/build/realsense2_camera_msgs': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake /home/jimmy/ros2_ws/src/realsense-ros/realsense2_camera_msgs -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/jimmy/ros2_ws/install/realsense2_camera_msgs
+[0.110s] -- Found ament_cmake: 2.5.4 (/opt/ros/jazzy/share/ament_cmake/cmake)
+[0.682s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[0.701s] -- Found rosidl_default_generators: 1.6.0 (/opt/ros/jazzy/share/rosidl_default_generators/cmake)
+[0.708s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.762s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.812s] -- Found rosidl_adapter: 4.6.6 (/opt/ros/jazzy/share/rosidl_adapter/cmake)
+[0.817s] -- Found builtin_interfaces: 2.0.3 (/opt/ros/jazzy/share/builtin_interfaces/cmake)
+[0.839s] -- Found std_msgs: 5.3.6 (/opt/ros/jazzy/share/std_msgs/cmake)
+[0.861s] -- Found sensor_msgs: 5.3.6 (/opt/ros/jazzy/share/sensor_msgs/cmake)
+[1.446s] [31mCMake Error at /opt/ros/jazzy/share/rosidl_adapter/cmake/rosidl_adapt_interfaces.cmake:57 (message):
+[1.446s]   execute_process(/home/jimmy/miniconda3/bin/python3 -m rosidl_adapter
+[1.446s]   --package-name realsense2_camera_msgs --arguments-file
+[1.446s]   /home/jimmy/ros2_ws/build/realsense2_camera_msgs/rosidl_adapter__arguments__realsense2_camera_msgs.json
+[1.446s]   --output-dir
+[1.446s]   /home/jimmy/ros2_ws/build/realsense2_camera_msgs/rosidl_adapter/realsense2_camera_msgs
+[1.446s]   --output-file
+[1.446s]   /home/jimmy/ros2_ws/build/realsense2_camera_msgs/rosidl_adapter/realsense2_camera_msgs.idls)
+[1.446s]   returned error code 1:
+[1.446s] 
+[1.447s]   Traceback (most recent call last):
+[1.447s] 
+[1.447s]     File "<frozen runpy>", line 198, in _run_module_as_main
+[1.447s]     File "<frozen runpy>", line 88, in _run_code
+[1.447s]     File "/opt/ros/jazzy/lib/python3.12/site-packages/rosidl_adapter/__main__.py", line 19, in <module>
+[1.447s]       sys.exit(main())
+[1.447s]                ~~~~^^
+[1.447s]     File "/opt/ros/jazzy/lib/python3.12/site-packages/rosidl_adapter/main.py", line 53, in main
+[1.447s]       abs_idl_file = convert_to_idl(
+[1.447s]           pathlib.Path(basepath), args.package_name,
+[1.447s]           pathlib.Path(relative_path), output_dir)
+[1.448s]     File "/opt/ros/jazzy/lib/python3.12/site-packages/rosidl_adapter/__init__.py", line 18, in convert_to_idl
+[1.448s]       from rosidl_adapter.msg import convert_msg_to_idl
+[1.448s]     File "/opt/ros/jazzy/lib/python3.12/site-packages/rosidl_adapter/msg/__init__.py", line 16, in <module>
+[1.448s]       from rosidl_adapter.resource import expand_template
+[1.448s]     File "/opt/ros/jazzy/lib/python3.12/site-packages/rosidl_adapter/resource/__init__.py", line 19, in <module>
+[1.448s]       import em
+[1.448s] 
+[1.448s]   ModuleNotFoundError: No module named 'em'
+[1.448s] 
+[1.450s] Call Stack (most recent call first):
+[1.450s]   /opt/ros/jazzy/share/rosidl_cmake/cmake/rosidl_generate_interfaces.cmake:132 (rosidl_adapt_interfaces)
+[1.450s]   CMakeLists.txt:43 (rosidl_generate_interfaces)
+[1.450s] 
+[1.450s] [0m
+[1.450s] -- Configuring incomplete, errors occurred!

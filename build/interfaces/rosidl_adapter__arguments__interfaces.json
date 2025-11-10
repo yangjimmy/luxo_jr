@@ -1,0 +1,6 @@
+{
+  "package_name": "interfaces",
+  "non_idl_tuples": [
+    "/home/jimmy/ros2_ws/src/interfaces:msg/MotorCmds.msg"
+  ]
+}

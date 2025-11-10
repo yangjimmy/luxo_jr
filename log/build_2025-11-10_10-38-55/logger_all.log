@@ -1,0 +1,469 @@
+[0.158s] DEBUG:colcon:Command line arguments: ['/usr/bin/colcon', 'build']
+[0.158s] DEBUG:colcon:Parsed command line arguments: Namespace(log_base=None, log_level=None, verb_name='build', build_base='build', install_base='install', merge_install=False, symlink_install=False, test_result_base=None, continue_on_error=False, executor='parallel', parallel_workers=4, event_handlers=None, ignore_user_meta=False, metas=['./colcon.meta'], base_paths=['.'], packages_ignore=None, packages_ignore_regex=None, paths=None, packages_up_to=None, packages_up_to_regex=None, packages_above=None, packages_above_and_dependencies=None, packages_above_depth=None, packages_select_by_dep=None, packages_skip_by_dep=None, packages_skip_up_to=None, packages_select_build_failed=False, packages_skip_build_finished=False, packages_select_test_failures=False, packages_skip_test_passed=False, packages_select=None, packages_skip=None, packages_select_regex=None, packages_skip_regex=None, packages_start=None, packages_end=None, allow_overriding=[], cmake_args=None, cmake_target=None, cmake_target_skip_unavailable=False, cmake_clean_cache=False, cmake_clean_first=False, cmake_force_configure=False, ament_cmake_args=None, catkin_cmake_args=None, catkin_skip_building_tests=False, mixin_files=None, mixin=None, verb_parser=<colcon_mixin.mixin.mixin_argument.MixinArgumentDecorator object at 0xffffb2c31040>, verb_extension=<colcon_core.verb.build.BuildVerb object at 0xffffb2dfd7c0>, main=<bound method BuildVerb.main of <colcon_core.verb.build.BuildVerb object at 0xffffb2dfd7c0>>, mixin_verb=('build',))
+[0.218s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) check parameters
+[0.218s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) check parameters
+[0.218s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) check parameters
+[0.218s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) check parameters
+[0.218s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) discover
+[0.218s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) discover
+[0.218s] INFO:colcon.colcon_core.package_discovery:Crawling recursively for packages in '/home/jimmy/ros2_ws'
+[0.218s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ignore', 'ignore_ament_install']
+[0.219s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore'
+[0.219s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore_ament_install'
+[0.219s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_pkg']
+[0.219s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_pkg'
+[0.219s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_meta']
+[0.219s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_meta'
+[0.219s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ros']
+[0.219s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ros'
+[0.260s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['cmake', 'python']
+[0.260s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'cmake'
+[0.260s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python'
+[0.261s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['python_setup_py']
+[0.261s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python_setup_py'
+[0.261s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extensions ['ignore', 'ignore_ament_install']
+[0.261s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extension 'ignore'
+[0.261s] Level 1:colcon.colcon_core.package_identification:_identify(build) ignored
+[0.261s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extensions ['ignore', 'ignore_ament_install']
+[0.261s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extension 'ignore'
+[0.261s] Level 1:colcon.colcon_core.package_identification:_identify(install) ignored
+[0.262s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extensions ['ignore', 'ignore_ament_install']
+[0.262s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extension 'ignore'
+[0.262s] Level 1:colcon.colcon_core.package_identification:_identify(log) ignored
+[0.262s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ignore', 'ignore_ament_install']
+[0.262s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore'
+[0.262s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore_ament_install'
+[0.262s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_pkg']
+[0.262s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_pkg'
+[0.262s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_meta']
+[0.262s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_meta'
+[0.262s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ros']
+[0.262s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ros'
+[0.262s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['cmake', 'python']
+[0.262s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'cmake'
+[0.262s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python'
+[0.262s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['python_setup_py']
+[0.262s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python_setup_py'
+[0.263s] Level 1:colcon.colcon_core.package_identification:_identify(src/interfaces) by extensions ['ignore', 'ignore_ament_install']
+[0.263s] Level 1:colcon.colcon_core.package_identification:_identify(src/interfaces) by extension 'ignore'
+[0.263s] Level 1:colcon.colcon_core.package_identification:_identify(src/interfaces) by extension 'ignore_ament_install'
+[0.263s] Level 1:colcon.colcon_core.package_identification:_identify(src/interfaces) by extensions ['colcon_pkg']
+[0.263s] Level 1:colcon.colcon_core.package_identification:_identify(src/interfaces) by extension 'colcon_pkg'
+[0.263s] Level 1:colcon.colcon_core.package_identification:_identify(src/interfaces) by extensions ['colcon_meta']
+[0.263s] Level 1:colcon.colcon_core.package_identification:_identify(src/interfaces) by extension 'colcon_meta'
+[0.263s] Level 1:colcon.colcon_core.package_identification:_identify(src/interfaces) by extensions ['ros']
+[0.263s] Level 1:colcon.colcon_core.package_identification:_identify(src/interfaces) by extension 'ros'
+[0.266s] DEBUG:colcon.colcon_core.package_identification:Package 'src/interfaces' with type 'ros.ament_cmake' and name 'interfaces'
+[0.266s] Level 1:colcon.colcon_core.package_identification:_identify(src/realsense-ros) by extensions ['ignore', 'ignore_ament_install']
+[0.266s] Level 1:colcon.colcon_core.package_identification:_identify(src/realsense-ros) by extension 'ignore'
+[0.267s] Level 1:colcon.colcon_core.package_identification:_identify(src/realsense-ros) by extension 'ignore_ament_install'
+[0.267s] Level 1:colcon.colcon_core.package_identification:_identify(src/realsense-ros) by extensions ['colcon_pkg']
+[0.267s] Level 1:colcon.colcon_core.package_identification:_identify(src/realsense-ros) by extension 'colcon_pkg'
+[0.267s] Level 1:colcon.colcon_core.package_identification:_identify(src/realsense-ros) by extensions ['colcon_meta']
+[0.267s] Level 1:colcon.colcon_core.package_identification:_identify(src/realsense-ros) by extension 'colcon_meta'
+[0.267s] Level 1:colcon.colcon_core.package_identification:_identify(src/realsense-ros) by extensions ['ros']
+[0.267s] Level 1:colcon.colcon_core.package_identification:_identify(src/realsense-ros) by extension 'ros'
+[0.267s] Level 1:colcon.colcon_core.package_identification:_identify(src/realsense-ros) by extensions ['cmake', 'python']
+[0.267s] Level 1:colcon.colcon_core.package_identification:_identify(src/realsense-ros) by extension 'cmake'
+[0.267s] Level 1:colcon.colcon_core.package_identification:_identify(src/realsense-ros) by extension 'python'
+[0.267s] Level 1:colcon.colcon_core.package_identification:_identify(src/realsense-ros) by extensions ['python_setup_py']
+[0.267s] Level 1:colcon.colcon_core.package_identification:_identify(src/realsense-ros) by extension 'python_setup_py'
+[0.267s] Level 1:colcon.colcon_core.package_identification:_identify(src/realsense-ros/realsense2_camera) by extensions ['ignore', 'ignore_ament_install']
+[0.267s] Level 1:colcon.colcon_core.package_identification:_identify(src/realsense-ros/realsense2_camera) by extension 'ignore'
+[0.267s] Level 1:colcon.colcon_core.package_identification:_identify(src/realsense-ros/realsense2_camera) by extension 'ignore_ament_install'
+[0.268s] Level 1:colcon.colcon_core.package_identification:_identify(src/realsense-ros/realsense2_camera) by extensions ['colcon_pkg']
+[0.268s] Level 1:colcon.colcon_core.package_identification:_identify(src/realsense-ros/realsense2_camera) by extension 'colcon_pkg'
+[0.268s] Level 1:colcon.colcon_core.package_identification:_identify(src/realsense-ros/realsense2_camera) by extensions ['colcon_meta']
+[0.268s] Level 1:colcon.colcon_core.package_identification:_identify(src/realsense-ros/realsense2_camera) by extension 'colcon_meta'
+[0.268s] Level 1:colcon.colcon_core.package_identification:_identify(src/realsense-ros/realsense2_camera) by extensions ['ros']
+[0.268s] Level 1:colcon.colcon_core.package_identification:_identify(src/realsense-ros/realsense2_camera) by extension 'ros'
+[0.276s] DEBUG:colcon.colcon_core.package_identification:Package 'src/realsense-ros/realsense2_camera' with type 'ros.ament_cmake' and name 'realsense2_camera'
+[0.276s] Level 1:colcon.colcon_core.package_identification:_identify(src/realsense-ros/realsense2_camera_msgs) by extensions ['ignore', 'ignore_ament_install']
+[0.276s] Level 1:colcon.colcon_core.package_identification:_identify(src/realsense-ros/realsense2_camera_msgs) by extension 'ignore'
+[0.276s] Level 1:colcon.colcon_core.package_identification:_identify(src/realsense-ros/realsense2_camera_msgs) by extension 'ignore_ament_install'
+[0.276s] Level 1:colcon.colcon_core.package_identification:_identify(src/realsense-ros/realsense2_camera_msgs) by extensions ['colcon_pkg']
+[0.276s] Level 1:colcon.colcon_core.package_identification:_identify(src/realsense-ros/realsense2_camera_msgs) by extension 'colcon_pkg'
+[0.276s] Level 1:colcon.colcon_core.package_identification:_identify(src/realsense-ros/realsense2_camera_msgs) by extensions ['colcon_meta']
+[0.276s] Level 1:colcon.colcon_core.package_identification:_identify(src/realsense-ros/realsense2_camera_msgs) by extension 'colcon_meta'
+[0.276s] Level 1:colcon.colcon_core.package_identification:_identify(src/realsense-ros/realsense2_camera_msgs) by extensions ['ros']
+[0.276s] Level 1:colcon.colcon_core.package_identification:_identify(src/realsense-ros/realsense2_camera_msgs) by extension 'ros'
+[0.277s] DEBUG:colcon.colcon_core.package_identification:Package 'src/realsense-ros/realsense2_camera_msgs' with type 'ros.ament_cmake' and name 'realsense2_camera_msgs'
+[0.277s] Level 1:colcon.colcon_core.package_identification:_identify(src/realsense-ros/realsense2_description) by extensions ['ignore', 'ignore_ament_install']
+[0.277s] Level 1:colcon.colcon_core.package_identification:_identify(src/realsense-ros/realsense2_description) by extension 'ignore'
+[0.278s] Level 1:colcon.colcon_core.package_identification:_identify(src/realsense-ros/realsense2_description) by extension 'ignore_ament_install'
+[0.278s] Level 1:colcon.colcon_core.package_identification:_identify(src/realsense-ros/realsense2_description) by extensions ['colcon_pkg']
+[0.278s] Level 1:colcon.colcon_core.package_identification:_identify(src/realsense-ros/realsense2_description) by extension 'colcon_pkg'
+[0.278s] Level 1:colcon.colcon_core.package_identification:_identify(src/realsense-ros/realsense2_description) by extensions ['colcon_meta']
+[0.278s] Level 1:colcon.colcon_core.package_identification:_identify(src/realsense-ros/realsense2_description) by extension 'colcon_meta'
+[0.278s] Level 1:colcon.colcon_core.package_identification:_identify(src/realsense-ros/realsense2_description) by extensions ['ros']
+[0.278s] Level 1:colcon.colcon_core.package_identification:_identify(src/realsense-ros/realsense2_description) by extension 'ros'
+[0.279s] DEBUG:colcon.colcon_core.package_identification:Package 'src/realsense-ros/realsense2_description' with type 'ros.ament_cmake' and name 'realsense2_description'
+[0.279s] Level 1:colcon.colcon_core.package_identification:_identify(src/realsense-ros/scripts) by extensions ['ignore', 'ignore_ament_install']
+[0.279s] Level 1:colcon.colcon_core.package_identification:_identify(src/realsense-ros/scripts) by extension 'ignore'
+[0.279s] Level 1:colcon.colcon_core.package_identification:_identify(src/realsense-ros/scripts) by extension 'ignore_ament_install'
+[0.279s] Level 1:colcon.colcon_core.package_identification:_identify(src/realsense-ros/scripts) by extensions ['colcon_pkg']
+[0.279s] Level 1:colcon.colcon_core.package_identification:_identify(src/realsense-ros/scripts) by extension 'colcon_pkg'
+[0.279s] Level 1:colcon.colcon_core.package_identification:_identify(src/realsense-ros/scripts) by extensions ['colcon_meta']
+[0.279s] Level 1:colcon.colcon_core.package_identification:_identify(src/realsense-ros/scripts) by extension 'colcon_meta'
+[0.279s] Level 1:colcon.colcon_core.package_identification:_identify(src/realsense-ros/scripts) by extensions ['ros']
+[0.279s] Level 1:colcon.colcon_core.package_identification:_identify(src/realsense-ros/scripts) by extension 'ros'
+[0.279s] Level 1:colcon.colcon_core.package_identification:_identify(src/realsense-ros/scripts) by extensions ['cmake', 'python']
+[0.279s] Level 1:colcon.colcon_core.package_identification:_identify(src/realsense-ros/scripts) by extension 'cmake'
+[0.280s] Level 1:colcon.colcon_core.package_identification:_identify(src/realsense-ros/scripts) by extension 'python'
+[0.280s] Level 1:colcon.colcon_core.package_identification:_identify(src/realsense-ros/scripts) by extensions ['python_setup_py']
+[0.280s] Level 1:colcon.colcon_core.package_identification:_identify(src/realsense-ros/scripts) by extension 'python_setup_py'
+[0.280s] Level 1:colcon.colcon_core.package_identification:_identify(src/servo) by extensions ['ignore', 'ignore_ament_install']
+[0.280s] Level 1:colcon.colcon_core.package_identification:_identify(src/servo) by extension 'ignore'
+[0.280s] Level 1:colcon.colcon_core.package_identification:_identify(src/servo) by extension 'ignore_ament_install'
+[0.280s] Level 1:colcon.colcon_core.package_identification:_identify(src/servo) by extensions ['colcon_pkg']
+[0.280s] Level 1:colcon.colcon_core.package_identification:_identify(src/servo) by extension 'colcon_pkg'
+[0.280s] Level 1:colcon.colcon_core.package_identification:_identify(src/servo) by extensions ['colcon_meta']
+[0.280s] Level 1:colcon.colcon_core.package_identification:_identify(src/servo) by extension 'colcon_meta'
+[0.280s] Level 1:colcon.colcon_core.package_identification:_identify(src/servo) by extensions ['ros']
+[0.280s] Level 1:colcon.colcon_core.package_identification:_identify(src/servo) by extension 'ros'
+[0.281s] DEBUG:colcon.colcon_core.package_identification:Package 'src/servo' with type 'ros.ament_cmake' and name 'servo'
+[0.281s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) using defaults
+[0.281s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) discover
+[0.281s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) using defaults
+[0.281s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) discover
+[0.281s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) using defaults
+[0.310s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) check parameters
+[0.310s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) discover
+[0.312s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 5 installed packages in /home/jimmy/ros2_ws/install
+[0.314s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 288 installed packages in /opt/ros/jazzy
+[0.316s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) using defaults
+[0.379s] Level 5:colcon.colcon_core.verb:set package 'interfaces' build argument 'cmake_args' from command line to 'None'
+[0.380s] Level 5:colcon.colcon_core.verb:set package 'interfaces' build argument 'cmake_target' from command line to 'None'
+[0.380s] Level 5:colcon.colcon_core.verb:set package 'interfaces' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.380s] Level 5:colcon.colcon_core.verb:set package 'interfaces' build argument 'cmake_clean_cache' from command line to 'False'
+[0.380s] Level 5:colcon.colcon_core.verb:set package 'interfaces' build argument 'cmake_clean_first' from command line to 'False'
+[0.380s] Level 5:colcon.colcon_core.verb:set package 'interfaces' build argument 'cmake_force_configure' from command line to 'False'
+[0.380s] Level 5:colcon.colcon_core.verb:set package 'interfaces' build argument 'ament_cmake_args' from command line to 'None'
+[0.380s] Level 5:colcon.colcon_core.verb:set package 'interfaces' build argument 'catkin_cmake_args' from command line to 'None'
+[0.380s] Level 5:colcon.colcon_core.verb:set package 'interfaces' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.380s] DEBUG:colcon.colcon_core.verb:Building package 'interfaces' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/jimmy/ros2_ws/build/interfaces', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/jimmy/ros2_ws/install/interfaces', 'merge_install': False, 'path': '/home/jimmy/ros2_ws/src/interfaces', 'symlink_install': False, 'test_result_base': None}
+[0.381s] Level 5:colcon.colcon_core.verb:set package 'realsense2_camera_msgs' build argument 'cmake_args' from command line to 'None'
+[0.381s] Level 5:colcon.colcon_core.verb:set package 'realsense2_camera_msgs' build argument 'cmake_target' from command line to 'None'
+[0.381s] Level 5:colcon.colcon_core.verb:set package 'realsense2_camera_msgs' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.381s] Level 5:colcon.colcon_core.verb:set package 'realsense2_camera_msgs' build argument 'cmake_clean_cache' from command line to 'False'
+[0.381s] Level 5:colcon.colcon_core.verb:set package 'realsense2_camera_msgs' build argument 'cmake_clean_first' from command line to 'False'
+[0.381s] Level 5:colcon.colcon_core.verb:set package 'realsense2_camera_msgs' build argument 'cmake_force_configure' from command line to 'False'
+[0.381s] Level 5:colcon.colcon_core.verb:set package 'realsense2_camera_msgs' build argument 'ament_cmake_args' from command line to 'None'
+[0.381s] Level 5:colcon.colcon_core.verb:set package 'realsense2_camera_msgs' build argument 'catkin_cmake_args' from command line to 'None'
+[0.381s] Level 5:colcon.colcon_core.verb:set package 'realsense2_camera_msgs' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.381s] DEBUG:colcon.colcon_core.verb:Building package 'realsense2_camera_msgs' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/jimmy/ros2_ws/build/realsense2_camera_msgs', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/jimmy/ros2_ws/install/realsense2_camera_msgs', 'merge_install': False, 'path': '/home/jimmy/ros2_ws/src/realsense-ros/realsense2_camera_msgs', 'symlink_install': False, 'test_result_base': None}
+[0.381s] Level 5:colcon.colcon_core.verb:set package 'servo' build argument 'cmake_args' from command line to 'None'
+[0.381s] Level 5:colcon.colcon_core.verb:set package 'servo' build argument 'cmake_target' from command line to 'None'
+[0.382s] Level 5:colcon.colcon_core.verb:set package 'servo' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.382s] Level 5:colcon.colcon_core.verb:set package 'servo' build argument 'cmake_clean_cache' from command line to 'False'
+[0.382s] Level 5:colcon.colcon_core.verb:set package 'servo' build argument 'cmake_clean_first' from command line to 'False'
+[0.382s] Level 5:colcon.colcon_core.verb:set package 'servo' build argument 'cmake_force_configure' from command line to 'False'
+[0.382s] Level 5:colcon.colcon_core.verb:set package 'servo' build argument 'ament_cmake_args' from command line to 'None'
+[0.382s] Level 5:colcon.colcon_core.verb:set package 'servo' build argument 'catkin_cmake_args' from command line to 'None'
+[0.382s] Level 5:colcon.colcon_core.verb:set package 'servo' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.382s] DEBUG:colcon.colcon_core.verb:Building package 'servo' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/jimmy/ros2_ws/build/servo', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/jimmy/ros2_ws/install/servo', 'merge_install': False, 'path': '/home/jimmy/ros2_ws/src/servo', 'symlink_install': False, 'test_result_base': None}
+[0.382s] Level 5:colcon.colcon_core.verb:set package 'realsense2_camera' build argument 'cmake_args' from command line to 'None'
+[0.382s] Level 5:colcon.colcon_core.verb:set package 'realsense2_camera' build argument 'cmake_target' from command line to 'None'
+[0.382s] Level 5:colcon.colcon_core.verb:set package 'realsense2_camera' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.382s] Level 5:colcon.colcon_core.verb:set package 'realsense2_camera' build argument 'cmake_clean_cache' from command line to 'False'
+[0.382s] Level 5:colcon.colcon_core.verb:set package 'realsense2_camera' build argument 'cmake_clean_first' from command line to 'False'
+[0.382s] Level 5:colcon.colcon_core.verb:set package 'realsense2_camera' build argument 'cmake_force_configure' from command line to 'False'
+[0.382s] Level 5:colcon.colcon_core.verb:set package 'realsense2_camera' build argument 'ament_cmake_args' from command line to 'None'
+[0.382s] Level 5:colcon.colcon_core.verb:set package 'realsense2_camera' build argument 'catkin_cmake_args' from command line to 'None'
+[0.382s] Level 5:colcon.colcon_core.verb:set package 'realsense2_camera' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.382s] DEBUG:colcon.colcon_core.verb:Building package 'realsense2_camera' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/jimmy/ros2_ws/build/realsense2_camera', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/jimmy/ros2_ws/install/realsense2_camera', 'merge_install': False, 'path': '/home/jimmy/ros2_ws/src/realsense-ros/realsense2_camera', 'symlink_install': False, 'test_result_base': None}
+[0.383s] Level 5:colcon.colcon_core.verb:set package 'realsense2_description' build argument 'cmake_args' from command line to 'None'
+[0.383s] Level 5:colcon.colcon_core.verb:set package 'realsense2_description' build argument 'cmake_target' from command line to 'None'
+[0.383s] Level 5:colcon.colcon_core.verb:set package 'realsense2_description' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.383s] Level 5:colcon.colcon_core.verb:set package 'realsense2_description' build argument 'cmake_clean_cache' from command line to 'False'
+[0.384s] Level 5:colcon.colcon_core.verb:set package 'realsense2_description' build argument 'cmake_clean_first' from command line to 'False'
+[0.384s] Level 5:colcon.colcon_core.verb:set package 'realsense2_description' build argument 'cmake_force_configure' from command line to 'False'
+[0.384s] Level 5:colcon.colcon_core.verb:set package 'realsense2_description' build argument 'ament_cmake_args' from command line to 'None'
+[0.384s] Level 5:colcon.colcon_core.verb:set package 'realsense2_description' build argument 'catkin_cmake_args' from command line to 'None'
+[0.384s] Level 5:colcon.colcon_core.verb:set package 'realsense2_description' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.384s] DEBUG:colcon.colcon_core.verb:Building package 'realsense2_description' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/jimmy/ros2_ws/build/realsense2_description', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/jimmy/ros2_ws/install/realsense2_description', 'merge_install': False, 'path': '/home/jimmy/ros2_ws/src/realsense-ros/realsense2_description', 'symlink_install': False, 'test_result_base': None}
+[0.385s] INFO:colcon.colcon_core.executor:Executing jobs using 'parallel' executor
+[0.386s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete
+[0.387s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/jimmy/ros2_ws/src/realsense-ros/realsense2_camera_msgs' with build type 'ament_cmake'
+[0.388s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/jimmy/ros2_ws/src/realsense-ros/realsense2_camera_msgs'
+[0.399s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_core.shell.bat': Not used on non-Windows systems
+[0.399s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.399s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.406s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/jimmy/ros2_ws/src/interfaces' with build type 'ament_cmake'
+[0.406s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/jimmy/ros2_ws/src/interfaces'
+[0.407s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.407s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.412s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/jimmy/ros2_ws/src/servo' with build type 'ament_cmake'
+[0.413s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/jimmy/ros2_ws/src/servo'
+[0.413s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.413s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.431s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/jimmy/ros2_ws/build/realsense2_camera_msgs': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy CONDA_PROMPT_MODIFIER=(base) DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/jimmy/ros2_ws/build/realsense2_camera_msgs -- -j4 -l4
+[0.442s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/jimmy/ros2_ws/build/interfaces': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy CONDA_PROMPT_MODIFIER=(base) DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/jimmy/ros2_ws/build/interfaces -- -j4 -l4
+[0.449s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/jimmy/ros2_ws/build/servo': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy CONDA_PROMPT_MODIFIER=(base) DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/jimmy/ros2_ws/build/servo -- -j4 -l4
+[0.575s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/jimmy/ros2_ws/build/servo' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy CONDA_PROMPT_MODIFIER=(base) DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/jimmy/ros2_ws/build/servo -- -j4 -l4
+[0.622s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/jimmy/ros2_ws/build/servo': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy CONDA_PROMPT_MODIFIER=(base) DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/jimmy/ros2_ws/build/servo
+[0.756s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(servo)
+[0.757s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/jimmy/ros2_ws/build/servo' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy CONDA_PROMPT_MODIFIER=(base) DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/jimmy/ros2_ws/build/servo
+[0.769s] Level 1:colcon.colcon_core.environment:checking '/home/jimmy/ros2_ws/install/servo' for CMake module files
+[0.770s] Level 1:colcon.colcon_core.environment:checking '/home/jimmy/ros2_ws/install/servo' for CMake config files
+[0.771s] Level 1:colcon.colcon_core.shell:create_environment_hook('servo', 'cmake_prefix_path')
+[0.774s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/jimmy/ros2_ws/install/servo/share/servo/hook/cmake_prefix_path.ps1'
+[0.776s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/jimmy/ros2_ws/install/servo/share/servo/hook/cmake_prefix_path.dsv'
+[0.780s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/jimmy/ros2_ws/install/servo/share/servo/hook/cmake_prefix_path.sh'
+[0.782s] Level 1:colcon.colcon_core.environment:checking '/home/jimmy/ros2_ws/install/servo/bin'
+[0.785s] Level 1:colcon.colcon_core.environment:checking '/home/jimmy/ros2_ws/install/servo/lib/pkgconfig/servo.pc'
+[0.786s] Level 1:colcon.colcon_core.environment:checking '/home/jimmy/ros2_ws/install/servo/lib/python3.12/site-packages'
+[0.786s] Level 1:colcon.colcon_core.environment:checking '/home/jimmy/ros2_ws/install/servo/bin'
+[0.787s] INFO:colcon.colcon_core.shell:Creating package script '/home/jimmy/ros2_ws/install/servo/share/servo/package.ps1'
+[0.789s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/jimmy/ros2_ws/install/servo/share/servo/package.dsv'
+[0.790s] INFO:colcon.colcon_core.shell:Creating package script '/home/jimmy/ros2_ws/install/servo/share/servo/package.sh'
+[0.795s] INFO:colcon.colcon_core.shell:Creating package script '/home/jimmy/ros2_ws/install/servo/share/servo/package.bash'
+[0.806s] INFO:colcon.colcon_core.shell:Creating package script '/home/jimmy/ros2_ws/install/servo/share/servo/package.zsh'
+[0.807s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/jimmy/ros2_ws/install/servo/share/colcon-core/packages/servo)
+[0.816s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(servo)
+[0.817s] Level 1:colcon.colcon_core.environment:checking '/home/jimmy/ros2_ws/install/servo' for CMake module files
+[0.818s] Level 1:colcon.colcon_core.environment:checking '/home/jimmy/ros2_ws/install/servo' for CMake config files
+[0.826s] Level 1:colcon.colcon_core.shell:create_environment_hook('servo', 'cmake_prefix_path')
+[0.827s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/jimmy/ros2_ws/install/servo/share/servo/hook/cmake_prefix_path.ps1'
+[0.828s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/jimmy/ros2_ws/install/servo/share/servo/hook/cmake_prefix_path.dsv'
+[0.839s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/jimmy/ros2_ws/install/servo/share/servo/hook/cmake_prefix_path.sh'
+[0.845s] Level 1:colcon.colcon_core.environment:checking '/home/jimmy/ros2_ws/install/servo/bin'
+[0.846s] Level 1:colcon.colcon_core.environment:checking '/home/jimmy/ros2_ws/install/servo/lib/pkgconfig/servo.pc'
+[0.854s] Level 1:colcon.colcon_core.environment:checking '/home/jimmy/ros2_ws/install/servo/lib/python3.12/site-packages'
+[0.855s] Level 1:colcon.colcon_core.environment:checking '/home/jimmy/ros2_ws/install/servo/bin'
+[0.856s] INFO:colcon.colcon_core.shell:Creating package script '/home/jimmy/ros2_ws/install/servo/share/servo/package.ps1'
+[0.866s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/jimmy/ros2_ws/install/servo/share/servo/package.dsv'
+[0.868s] INFO:colcon.colcon_core.shell:Creating package script '/home/jimmy/ros2_ws/install/servo/share/servo/package.sh'
+[0.874s] INFO:colcon.colcon_core.shell:Creating package script '/home/jimmy/ros2_ws/install/servo/share/servo/package.bash'
+[0.875s] INFO:colcon.colcon_core.shell:Creating package script '/home/jimmy/ros2_ws/install/servo/share/servo/package.zsh'
+[0.876s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/jimmy/ros2_ws/install/servo/share/colcon-core/packages/servo)
+[1.829s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/jimmy/ros2_ws/build/interfaces' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy CONDA_PROMPT_MODIFIER=(base) DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/jimmy/ros2_ws/build/interfaces -- -j4 -l4
+[1.831s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/jimmy/ros2_ws/build/interfaces': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy CONDA_PROMPT_MODIFIER=(base) DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/jimmy/ros2_ws/build/interfaces
+[1.865s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/jimmy/ros2_ws/build/realsense2_camera_msgs' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy CONDA_PROMPT_MODIFIER=(base) DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/jimmy/ros2_ws/build/realsense2_camera_msgs -- -j4 -l4
+[1.867s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/jimmy/ros2_ws/build/realsense2_camera_msgs': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy CONDA_PROMPT_MODIFIER=(base) DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/jimmy/ros2_ws/build/realsense2_camera_msgs
+[1.980s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(interfaces)
+[1.980s] Level 1:colcon.colcon_core.environment:checking '/home/jimmy/ros2_ws/install/interfaces' for CMake module files
+[1.981s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/jimmy/ros2_ws/build/interfaces' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy CONDA_PROMPT_MODIFIER=(base) DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/jimmy/ros2_ws/build/interfaces
+[1.982s] Level 1:colcon.colcon_core.environment:checking '/home/jimmy/ros2_ws/install/interfaces' for CMake config files
+[1.982s] Level 1:colcon.colcon_core.shell:create_environment_hook('interfaces', 'cmake_prefix_path')
+[1.983s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/jimmy/ros2_ws/install/interfaces/share/interfaces/hook/cmake_prefix_path.ps1'
+[1.984s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/jimmy/ros2_ws/install/interfaces/share/interfaces/hook/cmake_prefix_path.dsv'
+[1.984s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/jimmy/ros2_ws/install/interfaces/share/interfaces/hook/cmake_prefix_path.sh'
+[1.985s] Level 1:colcon.colcon_core.environment:checking '/home/jimmy/ros2_ws/install/interfaces/lib'
+[1.986s] Level 1:colcon.colcon_core.shell:create_environment_hook('interfaces', 'ld_library_path_lib')
+[1.986s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/jimmy/ros2_ws/install/interfaces/share/interfaces/hook/ld_library_path_lib.ps1'
+[1.987s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/jimmy/ros2_ws/install/interfaces/share/interfaces/hook/ld_library_path_lib.dsv'
+[1.987s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/jimmy/ros2_ws/install/interfaces/share/interfaces/hook/ld_library_path_lib.sh'
+[1.988s] Level 1:colcon.colcon_core.environment:checking '/home/jimmy/ros2_ws/install/interfaces/bin'
+[1.988s] Level 1:colcon.colcon_core.environment:checking '/home/jimmy/ros2_ws/install/interfaces/lib/pkgconfig/interfaces.pc'
+[1.989s] Level 1:colcon.colcon_core.environment:checking '/home/jimmy/ros2_ws/install/interfaces/lib/python3.12/site-packages'
+[1.989s] Level 1:colcon.colcon_core.shell:create_environment_hook('interfaces', 'pythonpath')
+[1.989s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/jimmy/ros2_ws/install/interfaces/share/interfaces/hook/pythonpath.ps1'
+[1.990s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/jimmy/ros2_ws/install/interfaces/share/interfaces/hook/pythonpath.dsv'
+[1.991s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/jimmy/ros2_ws/install/interfaces/share/interfaces/hook/pythonpath.sh'
+[1.992s] Level 1:colcon.colcon_core.environment:checking '/home/jimmy/ros2_ws/install/interfaces/bin'
+[1.993s] INFO:colcon.colcon_core.shell:Creating package script '/home/jimmy/ros2_ws/install/interfaces/share/interfaces/package.ps1'
+[1.994s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/jimmy/ros2_ws/install/interfaces/share/interfaces/package.dsv'
+[1.995s] INFO:colcon.colcon_core.shell:Creating package script '/home/jimmy/ros2_ws/install/interfaces/share/interfaces/package.sh'
+[1.996s] INFO:colcon.colcon_core.shell:Creating package script '/home/jimmy/ros2_ws/install/interfaces/share/interfaces/package.bash'
+[1.996s] INFO:colcon.colcon_core.shell:Creating package script '/home/jimmy/ros2_ws/install/interfaces/share/interfaces/package.zsh'
+[1.998s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/jimmy/ros2_ws/install/interfaces/share/colcon-core/packages/interfaces)
+[1.999s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(interfaces)
+[2.000s] Level 1:colcon.colcon_core.environment:checking '/home/jimmy/ros2_ws/install/interfaces' for CMake module files
+[2.001s] Level 1:colcon.colcon_core.environment:checking '/home/jimmy/ros2_ws/install/interfaces' for CMake config files
+[2.001s] Level 1:colcon.colcon_core.shell:create_environment_hook('interfaces', 'cmake_prefix_path')
+[2.001s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/jimmy/ros2_ws/install/interfaces/share/interfaces/hook/cmake_prefix_path.ps1'
+[2.002s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/jimmy/ros2_ws/install/interfaces/share/interfaces/hook/cmake_prefix_path.dsv'
+[2.003s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/jimmy/ros2_ws/install/interfaces/share/interfaces/hook/cmake_prefix_path.sh'
+[2.005s] Level 1:colcon.colcon_core.environment:checking '/home/jimmy/ros2_ws/install/interfaces/lib'
+[2.005s] Level 1:colcon.colcon_core.shell:create_environment_hook('interfaces', 'ld_library_path_lib')
+[2.005s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/jimmy/ros2_ws/install/interfaces/share/interfaces/hook/ld_library_path_lib.ps1'
+[2.006s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/jimmy/ros2_ws/install/interfaces/share/interfaces/hook/ld_library_path_lib.dsv'
+[2.008s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/jimmy/ros2_ws/install/interfaces/share/interfaces/hook/ld_library_path_lib.sh'
+[2.009s] Level 1:colcon.colcon_core.environment:checking '/home/jimmy/ros2_ws/install/interfaces/bin'
+[2.009s] Level 1:colcon.colcon_core.environment:checking '/home/jimmy/ros2_ws/install/interfaces/lib/pkgconfig/interfaces.pc'
+[2.009s] Level 1:colcon.colcon_core.environment:checking '/home/jimmy/ros2_ws/install/interfaces/lib/python3.12/site-packages'
+[2.009s] Level 1:colcon.colcon_core.shell:create_environment_hook('interfaces', 'pythonpath')
+[2.010s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/jimmy/ros2_ws/install/interfaces/share/interfaces/hook/pythonpath.ps1'
+[2.011s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/jimmy/ros2_ws/install/interfaces/share/interfaces/hook/pythonpath.dsv'
+[2.012s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/jimmy/ros2_ws/install/interfaces/share/interfaces/hook/pythonpath.sh'
+[2.016s] Level 1:colcon.colcon_core.environment:checking '/home/jimmy/ros2_ws/install/interfaces/bin'
+[2.016s] INFO:colcon.colcon_core.shell:Creating package script '/home/jimmy/ros2_ws/install/interfaces/share/interfaces/package.ps1'
+[2.017s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/jimmy/ros2_ws/install/interfaces/share/interfaces/package.dsv'
+[2.018s] INFO:colcon.colcon_core.shell:Creating package script '/home/jimmy/ros2_ws/install/interfaces/share/interfaces/package.sh'
+[2.019s] INFO:colcon.colcon_core.shell:Creating package script '/home/jimmy/ros2_ws/install/interfaces/share/interfaces/package.bash'
+[2.019s] INFO:colcon.colcon_core.shell:Creating package script '/home/jimmy/ros2_ws/install/interfaces/share/interfaces/package.zsh'
+[2.020s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/jimmy/ros2_ws/install/interfaces/share/colcon-core/packages/interfaces)
+[2.050s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(realsense2_camera_msgs)
+[2.051s] Level 1:colcon.colcon_core.environment:checking '/home/jimmy/ros2_ws/install/realsense2_camera_msgs' for CMake module files
+[2.052s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/jimmy/ros2_ws/build/realsense2_camera_msgs' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy CONDA_PROMPT_MODIFIER=(base) DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/jimmy/ros2_ws/build/realsense2_camera_msgs
+[2.052s] Level 1:colcon.colcon_core.environment:checking '/home/jimmy/ros2_ws/install/realsense2_camera_msgs' for CMake config files
+[2.053s] Level 1:colcon.colcon_core.shell:create_environment_hook('realsense2_camera_msgs', 'cmake_prefix_path')
+[2.053s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/jimmy/ros2_ws/install/realsense2_camera_msgs/share/realsense2_camera_msgs/hook/cmake_prefix_path.ps1'
+[2.054s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/jimmy/ros2_ws/install/realsense2_camera_msgs/share/realsense2_camera_msgs/hook/cmake_prefix_path.dsv'
+[2.055s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/jimmy/ros2_ws/install/realsense2_camera_msgs/share/realsense2_camera_msgs/hook/cmake_prefix_path.sh'
+[2.055s] Level 1:colcon.colcon_core.environment:checking '/home/jimmy/ros2_ws/install/realsense2_camera_msgs/lib'
+[2.056s] Level 1:colcon.colcon_core.shell:create_environment_hook('realsense2_camera_msgs', 'ld_library_path_lib')
+[2.056s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/jimmy/ros2_ws/install/realsense2_camera_msgs/share/realsense2_camera_msgs/hook/ld_library_path_lib.ps1'
+[2.057s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/jimmy/ros2_ws/install/realsense2_camera_msgs/share/realsense2_camera_msgs/hook/ld_library_path_lib.dsv'
+[2.057s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/jimmy/ros2_ws/install/realsense2_camera_msgs/share/realsense2_camera_msgs/hook/ld_library_path_lib.sh'
+[2.058s] Level 1:colcon.colcon_core.environment:checking '/home/jimmy/ros2_ws/install/realsense2_camera_msgs/bin'
+[2.058s] Level 1:colcon.colcon_core.environment:checking '/home/jimmy/ros2_ws/install/realsense2_camera_msgs/lib/pkgconfig/realsense2_camera_msgs.pc'
+[2.058s] Level 1:colcon.colcon_core.environment:checking '/home/jimmy/ros2_ws/install/realsense2_camera_msgs/lib/python3.12/site-packages'
+[2.059s] Level 1:colcon.colcon_core.shell:create_environment_hook('realsense2_camera_msgs', 'pythonpath')
+[2.059s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/jimmy/ros2_ws/install/realsense2_camera_msgs/share/realsense2_camera_msgs/hook/pythonpath.ps1'
+[2.060s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/jimmy/ros2_ws/install/realsense2_camera_msgs/share/realsense2_camera_msgs/hook/pythonpath.dsv'
+[2.061s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/jimmy/ros2_ws/install/realsense2_camera_msgs/share/realsense2_camera_msgs/hook/pythonpath.sh'
+[2.062s] Level 1:colcon.colcon_core.environment:checking '/home/jimmy/ros2_ws/install/realsense2_camera_msgs/bin'
+[2.063s] INFO:colcon.colcon_core.shell:Creating package script '/home/jimmy/ros2_ws/install/realsense2_camera_msgs/share/realsense2_camera_msgs/package.ps1'
+[2.064s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/jimmy/ros2_ws/install/realsense2_camera_msgs/share/realsense2_camera_msgs/package.dsv'
+[2.064s] INFO:colcon.colcon_core.shell:Creating package script '/home/jimmy/ros2_ws/install/realsense2_camera_msgs/share/realsense2_camera_msgs/package.sh'
+[2.065s] INFO:colcon.colcon_core.shell:Creating package script '/home/jimmy/ros2_ws/install/realsense2_camera_msgs/share/realsense2_camera_msgs/package.bash'
+[2.066s] INFO:colcon.colcon_core.shell:Creating package script '/home/jimmy/ros2_ws/install/realsense2_camera_msgs/share/realsense2_camera_msgs/package.zsh'
+[2.067s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/jimmy/ros2_ws/install/realsense2_camera_msgs/share/colcon-core/packages/realsense2_camera_msgs)
+[2.069s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(realsense2_camera_msgs)
+[2.069s] Level 1:colcon.colcon_core.environment:checking '/home/jimmy/ros2_ws/install/realsense2_camera_msgs' for CMake module files
+[2.070s] Level 1:colcon.colcon_core.environment:checking '/home/jimmy/ros2_ws/install/realsense2_camera_msgs' for CMake config files
+[2.071s] Level 1:colcon.colcon_core.shell:create_environment_hook('realsense2_camera_msgs', 'cmake_prefix_path')
+[2.071s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/jimmy/ros2_ws/install/realsense2_camera_msgs/share/realsense2_camera_msgs/hook/cmake_prefix_path.ps1'
+[2.072s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/jimmy/ros2_ws/install/realsense2_camera_msgs/share/realsense2_camera_msgs/hook/cmake_prefix_path.dsv'
+[2.073s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/jimmy/ros2_ws/install/realsense2_camera_msgs/share/realsense2_camera_msgs/hook/cmake_prefix_path.sh'
+[2.074s] Level 1:colcon.colcon_core.environment:checking '/home/jimmy/ros2_ws/install/realsense2_camera_msgs/lib'
+[2.074s] Level 1:colcon.colcon_core.shell:create_environment_hook('realsense2_camera_msgs', 'ld_library_path_lib')
+[2.075s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/jimmy/ros2_ws/install/realsense2_camera_msgs/share/realsense2_camera_msgs/hook/ld_library_path_lib.ps1'
+[2.075s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/jimmy/ros2_ws/install/realsense2_camera_msgs/share/realsense2_camera_msgs/hook/ld_library_path_lib.dsv'
+[2.077s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/jimmy/ros2_ws/install/realsense2_camera_msgs/share/realsense2_camera_msgs/hook/ld_library_path_lib.sh'
+[2.078s] Level 1:colcon.colcon_core.environment:checking '/home/jimmy/ros2_ws/install/realsense2_camera_msgs/bin'
+[2.078s] Level 1:colcon.colcon_core.environment:checking '/home/jimmy/ros2_ws/install/realsense2_camera_msgs/lib/pkgconfig/realsense2_camera_msgs.pc'
+[2.078s] Level 1:colcon.colcon_core.environment:checking '/home/jimmy/ros2_ws/install/realsense2_camera_msgs/lib/python3.12/site-packages'
+[2.079s] Level 1:colcon.colcon_core.shell:create_environment_hook('realsense2_camera_msgs', 'pythonpath')
+[2.079s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/jimmy/ros2_ws/install/realsense2_camera_msgs/share/realsense2_camera_msgs/hook/pythonpath.ps1'
+[2.080s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/jimmy/ros2_ws/install/realsense2_camera_msgs/share/realsense2_camera_msgs/hook/pythonpath.dsv'
+[2.083s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/jimmy/ros2_ws/install/realsense2_camera_msgs/share/realsense2_camera_msgs/hook/pythonpath.sh'
+[2.084s] Level 1:colcon.colcon_core.environment:checking '/home/jimmy/ros2_ws/install/realsense2_camera_msgs/bin'
+[2.084s] INFO:colcon.colcon_core.shell:Creating package script '/home/jimmy/ros2_ws/install/realsense2_camera_msgs/share/realsense2_camera_msgs/package.ps1'
+[2.085s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/jimmy/ros2_ws/install/realsense2_camera_msgs/share/realsense2_camera_msgs/package.dsv'
+[2.086s] INFO:colcon.colcon_core.shell:Creating package script '/home/jimmy/ros2_ws/install/realsense2_camera_msgs/share/realsense2_camera_msgs/package.sh'
+[2.087s] INFO:colcon.colcon_core.shell:Creating package script '/home/jimmy/ros2_ws/install/realsense2_camera_msgs/share/realsense2_camera_msgs/package.bash'
+[2.087s] INFO:colcon.colcon_core.shell:Creating package script '/home/jimmy/ros2_ws/install/realsense2_camera_msgs/share/realsense2_camera_msgs/package.zsh'
+[2.088s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/jimmy/ros2_ws/install/realsense2_camera_msgs/share/colcon-core/packages/realsense2_camera_msgs)
+[2.089s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/jimmy/ros2_ws/src/realsense-ros/realsense2_camera' with build type 'ament_cmake'
+[2.089s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/jimmy/ros2_ws/src/realsense-ros/realsense2_camera'
+[2.090s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[2.090s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[2.100s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/jimmy/ros2_ws/src/realsense-ros/realsense2_description' with build type 'ament_cmake'
+[2.101s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/jimmy/ros2_ws/src/realsense-ros/realsense2_description'
+[2.101s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[2.102s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[2.121s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/jimmy/ros2_ws/build/realsense2_camera': CMAKE_PREFIX_PATH=/home/jimmy/ros2_ws/install/realsense2_camera_msgs:/home/jimmy/ros2_ws/install/servo:/home/jimmy/ros2_ws/install/realsense2_description:/home/jimmy/ros2_ws/install/realsense2_camera:/home/jimmy/ros2_ws/install/interfaces:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy CONDA_PROMPT_MODIFIER=(base) DEBUGINFOD_URLS=https://debuginfod.ubuntu.com LD_LIBRARY_PATH=/home/jimmy/ros2_ws/install/realsense2_camera_msgs/lib:/home/jimmy/ros2_ws/install/realsense2_camera/lib:/home/jimmy/ros2_ws/install/interfaces/lib:/opt/ros/jazzy/opt/rviz_ogre_vendor/lib:/opt/ros/jazzy/lib/aarch64-linux-gnu:/opt/ros/jazzy/opt/gz_math_vendor/lib:/opt/ros/jazzy/opt/gz_utils_vendor/lib:/opt/ros/jazzy/opt/gz_cmake_vendor/lib:/opt/ros/jazzy/lib PYTHONPATH=/home/jimmy/ros2_ws/install/realsense2_camera_msgs/lib/python3.12/site-packages:/home/jimmy/ros2_ws/install/realsense2_camera/lib/python3.13/site-packages:/home/jimmy/ros2_ws/install/realsense2_camera_msgs/lib/python3.13/site-packages:/home/jimmy/ros2_ws/install/interfaces/lib/python3.13/site-packages:/home/jimmy/ros2_ws/install/realsense2_camera/lib/python3.12/site-packages:/home/jimmy/ros2_ws/install/interfaces/lib/python3.12/site-packages:/opt/ros/jazzy/lib/python3.12/site-packages /usr/bin/cmake --build /home/jimmy/ros2_ws/build/realsense2_camera -- -j4 -l4
+[2.126s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/jimmy/ros2_ws/build/realsense2_description': CMAKE_PREFIX_PATH=/home/jimmy/ros2_ws/install/realsense2_camera_msgs:/home/jimmy/ros2_ws/install/servo:/home/jimmy/ros2_ws/install/realsense2_description:/home/jimmy/ros2_ws/install/realsense2_camera:/home/jimmy/ros2_ws/install/interfaces:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy CONDA_PROMPT_MODIFIER=(base) DEBUGINFOD_URLS=https://debuginfod.ubuntu.com LD_LIBRARY_PATH=/home/jimmy/ros2_ws/install/realsense2_camera_msgs/lib:/home/jimmy/ros2_ws/install/realsense2_camera/lib:/home/jimmy/ros2_ws/install/interfaces/lib:/opt/ros/jazzy/opt/rviz_ogre_vendor/lib:/opt/ros/jazzy/lib/aarch64-linux-gnu:/opt/ros/jazzy/opt/gz_math_vendor/lib:/opt/ros/jazzy/opt/gz_utils_vendor/lib:/opt/ros/jazzy/opt/gz_cmake_vendor/lib:/opt/ros/jazzy/lib PYTHONPATH=/home/jimmy/ros2_ws/install/realsense2_camera_msgs/lib/python3.12/site-packages:/home/jimmy/ros2_ws/install/realsense2_camera/lib/python3.13/site-packages:/home/jimmy/ros2_ws/install/realsense2_camera_msgs/lib/python3.13/site-packages:/home/jimmy/ros2_ws/install/interfaces/lib/python3.13/site-packages:/home/jimmy/ros2_ws/install/realsense2_camera/lib/python3.12/site-packages:/home/jimmy/ros2_ws/install/interfaces/lib/python3.12/site-packages:/opt/ros/jazzy/lib/python3.12/site-packages /usr/bin/cmake --build /home/jimmy/ros2_ws/build/realsense2_description -- -j4 -l4
+[2.203s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/jimmy/ros2_ws/build/realsense2_description' returned '0': CMAKE_PREFIX_PATH=/home/jimmy/ros2_ws/install/realsense2_camera_msgs:/home/jimmy/ros2_ws/install/servo:/home/jimmy/ros2_ws/install/realsense2_description:/home/jimmy/ros2_ws/install/realsense2_camera:/home/jimmy/ros2_ws/install/interfaces:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy CONDA_PROMPT_MODIFIER=(base) DEBUGINFOD_URLS=https://debuginfod.ubuntu.com LD_LIBRARY_PATH=/home/jimmy/ros2_ws/install/realsense2_camera_msgs/lib:/home/jimmy/ros2_ws/install/realsense2_camera/lib:/home/jimmy/ros2_ws/install/interfaces/lib:/opt/ros/jazzy/opt/rviz_ogre_vendor/lib:/opt/ros/jazzy/lib/aarch64-linux-gnu:/opt/ros/jazzy/opt/gz_math_vendor/lib:/opt/ros/jazzy/opt/gz_utils_vendor/lib:/opt/ros/jazzy/opt/gz_cmake_vendor/lib:/opt/ros/jazzy/lib PYTHONPATH=/home/jimmy/ros2_ws/install/realsense2_camera_msgs/lib/python3.12/site-packages:/home/jimmy/ros2_ws/install/realsense2_camera/lib/python3.13/site-packages:/home/jimmy/ros2_ws/install/realsense2_camera_msgs/lib/python3.13/site-packages:/home/jimmy/ros2_ws/install/interfaces/lib/python3.13/site-packages:/home/jimmy/ros2_ws/install/realsense2_camera/lib/python3.12/site-packages:/home/jimmy/ros2_ws/install/interfaces/lib/python3.12/site-packages:/opt/ros/jazzy/lib/python3.12/site-packages /usr/bin/cmake --build /home/jimmy/ros2_ws/build/realsense2_description -- -j4 -l4
+[2.205s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/jimmy/ros2_ws/build/realsense2_description': CMAKE_PREFIX_PATH=/home/jimmy/ros2_ws/install/realsense2_camera_msgs:/home/jimmy/ros2_ws/install/servo:/home/jimmy/ros2_ws/install/realsense2_description:/home/jimmy/ros2_ws/install/realsense2_camera:/home/jimmy/ros2_ws/install/interfaces:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy CONDA_PROMPT_MODIFIER=(base) DEBUGINFOD_URLS=https://debuginfod.ubuntu.com LD_LIBRARY_PATH=/home/jimmy/ros2_ws/install/realsense2_camera_msgs/lib:/home/jimmy/ros2_ws/install/realsense2_camera/lib:/home/jimmy/ros2_ws/install/interfaces/lib:/opt/ros/jazzy/opt/rviz_ogre_vendor/lib:/opt/ros/jazzy/lib/aarch64-linux-gnu:/opt/ros/jazzy/opt/gz_math_vendor/lib:/opt/ros/jazzy/opt/gz_utils_vendor/lib:/opt/ros/jazzy/opt/gz_cmake_vendor/lib:/opt/ros/jazzy/lib PYTHONPATH=/home/jimmy/ros2_ws/install/realsense2_camera_msgs/lib/python3.12/site-packages:/home/jimmy/ros2_ws/install/realsense2_camera/lib/python3.13/site-packages:/home/jimmy/ros2_ws/install/realsense2_camera_msgs/lib/python3.13/site-packages:/home/jimmy/ros2_ws/install/interfaces/lib/python3.13/site-packages:/home/jimmy/ros2_ws/install/realsense2_camera/lib/python3.12/site-packages:/home/jimmy/ros2_ws/install/interfaces/lib/python3.12/site-packages:/opt/ros/jazzy/lib/python3.12/site-packages /usr/bin/cmake --install /home/jimmy/ros2_ws/build/realsense2_description
+[2.259s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(realsense2_description)
+[2.259s] Level 1:colcon.colcon_core.environment:checking '/home/jimmy/ros2_ws/install/realsense2_description' for CMake module files
+[2.260s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/jimmy/ros2_ws/build/realsense2_description' returned '0': CMAKE_PREFIX_PATH=/home/jimmy/ros2_ws/install/realsense2_camera_msgs:/home/jimmy/ros2_ws/install/servo:/home/jimmy/ros2_ws/install/realsense2_description:/home/jimmy/ros2_ws/install/realsense2_camera:/home/jimmy/ros2_ws/install/interfaces:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy CONDA_PROMPT_MODIFIER=(base) DEBUGINFOD_URLS=https://debuginfod.ubuntu.com LD_LIBRARY_PATH=/home/jimmy/ros2_ws/install/realsense2_camera_msgs/lib:/home/jimmy/ros2_ws/install/realsense2_camera/lib:/home/jimmy/ros2_ws/install/interfaces/lib:/opt/ros/jazzy/opt/rviz_ogre_vendor/lib:/opt/ros/jazzy/lib/aarch64-linux-gnu:/opt/ros/jazzy/opt/gz_math_vendor/lib:/opt/ros/jazzy/opt/gz_utils_vendor/lib:/opt/ros/jazzy/opt/gz_cmake_vendor/lib:/opt/ros/jazzy/lib PYTHONPATH=/home/jimmy/ros2_ws/install/realsense2_camera_msgs/lib/python3.12/site-packages:/home/jimmy/ros2_ws/install/realsense2_camera/lib/python3.13/site-packages:/home/jimmy/ros2_ws/install/realsense2_camera_msgs/lib/python3.13/site-packages:/home/jimmy/ros2_ws/install/interfaces/lib/python3.13/site-packages:/home/jimmy/ros2_ws/install/realsense2_camera/lib/python3.12/site-packages:/home/jimmy/ros2_ws/install/interfaces/lib/python3.12/site-packages:/opt/ros/jazzy/lib/python3.12/site-packages /usr/bin/cmake --install /home/jimmy/ros2_ws/build/realsense2_description
+[2.260s] Level 1:colcon.colcon_core.environment:checking '/home/jimmy/ros2_ws/install/realsense2_description' for CMake config files
+[2.261s] Level 1:colcon.colcon_core.shell:create_environment_hook('realsense2_description', 'cmake_prefix_path')
+[2.262s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/jimmy/ros2_ws/install/realsense2_description/share/realsense2_description/hook/cmake_prefix_path.ps1'
+[2.262s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/jimmy/ros2_ws/install/realsense2_description/share/realsense2_description/hook/cmake_prefix_path.dsv'
+[2.263s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/jimmy/ros2_ws/install/realsense2_description/share/realsense2_description/hook/cmake_prefix_path.sh'
+[2.264s] Level 1:colcon.colcon_core.environment:checking '/home/jimmy/ros2_ws/install/realsense2_description/bin'
+[2.264s] Level 1:colcon.colcon_core.environment:checking '/home/jimmy/ros2_ws/install/realsense2_description/lib/pkgconfig/realsense2_description.pc'
+[2.265s] Level 1:colcon.colcon_core.environment:checking '/home/jimmy/ros2_ws/install/realsense2_description/lib/python3.12/site-packages'
+[2.265s] Level 1:colcon.colcon_core.environment:checking '/home/jimmy/ros2_ws/install/realsense2_description/bin'
+[2.266s] INFO:colcon.colcon_core.shell:Creating package script '/home/jimmy/ros2_ws/install/realsense2_description/share/realsense2_description/package.ps1'
+[2.266s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/jimmy/ros2_ws/install/realsense2_description/share/realsense2_description/package.dsv'
+[2.267s] INFO:colcon.colcon_core.shell:Creating package script '/home/jimmy/ros2_ws/install/realsense2_description/share/realsense2_description/package.sh'
+[2.268s] INFO:colcon.colcon_core.shell:Creating package script '/home/jimmy/ros2_ws/install/realsense2_description/share/realsense2_description/package.bash'
+[2.269s] INFO:colcon.colcon_core.shell:Creating package script '/home/jimmy/ros2_ws/install/realsense2_description/share/realsense2_description/package.zsh'
+[2.270s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/jimmy/ros2_ws/install/realsense2_description/share/colcon-core/packages/realsense2_description)
+[2.271s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(realsense2_description)
+[2.272s] Level 1:colcon.colcon_core.environment:checking '/home/jimmy/ros2_ws/install/realsense2_description' for CMake module files
+[2.273s] Level 1:colcon.colcon_core.environment:checking '/home/jimmy/ros2_ws/install/realsense2_description' for CMake config files
+[2.273s] Level 1:colcon.colcon_core.shell:create_environment_hook('realsense2_description', 'cmake_prefix_path')
+[2.273s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/jimmy/ros2_ws/install/realsense2_description/share/realsense2_description/hook/cmake_prefix_path.ps1'
+[2.274s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/jimmy/ros2_ws/install/realsense2_description/share/realsense2_description/hook/cmake_prefix_path.dsv'
+[2.275s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/jimmy/ros2_ws/install/realsense2_description/share/realsense2_description/hook/cmake_prefix_path.sh'
+[2.276s] Level 1:colcon.colcon_core.environment:checking '/home/jimmy/ros2_ws/install/realsense2_description/bin'
+[2.276s] Level 1:colcon.colcon_core.environment:checking '/home/jimmy/ros2_ws/install/realsense2_description/lib/pkgconfig/realsense2_description.pc'
+[2.277s] Level 1:colcon.colcon_core.environment:checking '/home/jimmy/ros2_ws/install/realsense2_description/lib/python3.12/site-packages'
+[2.277s] Level 1:colcon.colcon_core.environment:checking '/home/jimmy/ros2_ws/install/realsense2_description/bin'
+[2.278s] INFO:colcon.colcon_core.shell:Creating package script '/home/jimmy/ros2_ws/install/realsense2_description/share/realsense2_description/package.ps1'
+[2.279s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/jimmy/ros2_ws/install/realsense2_description/share/realsense2_description/package.dsv'
+[2.280s] INFO:colcon.colcon_core.shell:Creating package script '/home/jimmy/ros2_ws/install/realsense2_description/share/realsense2_description/package.sh'
+[2.281s] INFO:colcon.colcon_core.shell:Creating package script '/home/jimmy/ros2_ws/install/realsense2_description/share/realsense2_description/package.bash'
+[2.282s] INFO:colcon.colcon_core.shell:Creating package script '/home/jimmy/ros2_ws/install/realsense2_description/share/realsense2_description/package.zsh'
+[2.283s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/jimmy/ros2_ws/install/realsense2_description/share/colcon-core/packages/realsense2_description)
+[8.938s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/jimmy/ros2_ws/build/realsense2_camera' returned '0': CMAKE_PREFIX_PATH=/home/jimmy/ros2_ws/install/realsense2_camera_msgs:/home/jimmy/ros2_ws/install/servo:/home/jimmy/ros2_ws/install/realsense2_description:/home/jimmy/ros2_ws/install/realsense2_camera:/home/jimmy/ros2_ws/install/interfaces:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy CONDA_PROMPT_MODIFIER=(base) DEBUGINFOD_URLS=https://debuginfod.ubuntu.com LD_LIBRARY_PATH=/home/jimmy/ros2_ws/install/realsense2_camera_msgs/lib:/home/jimmy/ros2_ws/install/realsense2_camera/lib:/home/jimmy/ros2_ws/install/interfaces/lib:/opt/ros/jazzy/opt/rviz_ogre_vendor/lib:/opt/ros/jazzy/lib/aarch64-linux-gnu:/opt/ros/jazzy/opt/gz_math_vendor/lib:/opt/ros/jazzy/opt/gz_utils_vendor/lib:/opt/ros/jazzy/opt/gz_cmake_vendor/lib:/opt/ros/jazzy/lib PYTHONPATH=/home/jimmy/ros2_ws/install/realsense2_camera_msgs/lib/python3.12/site-packages:/home/jimmy/ros2_ws/install/realsense2_camera/lib/python3.13/site-packages:/home/jimmy/ros2_ws/install/realsense2_camera_msgs/lib/python3.13/site-packages:/home/jimmy/ros2_ws/install/interfaces/lib/python3.13/site-packages:/home/jimmy/ros2_ws/install/realsense2_camera/lib/python3.12/site-packages:/home/jimmy/ros2_ws/install/interfaces/lib/python3.12/site-packages:/opt/ros/jazzy/lib/python3.12/site-packages /usr/bin/cmake --build /home/jimmy/ros2_ws/build/realsense2_camera -- -j4 -l4
+[8.940s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/jimmy/ros2_ws/build/realsense2_camera': CMAKE_PREFIX_PATH=/home/jimmy/ros2_ws/install/realsense2_camera_msgs:/home/jimmy/ros2_ws/install/servo:/home/jimmy/ros2_ws/install/realsense2_description:/home/jimmy/ros2_ws/install/realsense2_camera:/home/jimmy/ros2_ws/install/interfaces:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy CONDA_PROMPT_MODIFIER=(base) DEBUGINFOD_URLS=https://debuginfod.ubuntu.com LD_LIBRARY_PATH=/home/jimmy/ros2_ws/install/realsense2_camera_msgs/lib:/home/jimmy/ros2_ws/install/realsense2_camera/lib:/home/jimmy/ros2_ws/install/interfaces/lib:/opt/ros/jazzy/opt/rviz_ogre_vendor/lib:/opt/ros/jazzy/lib/aarch64-linux-gnu:/opt/ros/jazzy/opt/gz_math_vendor/lib:/opt/ros/jazzy/opt/gz_utils_vendor/lib:/opt/ros/jazzy/opt/gz_cmake_vendor/lib:/opt/ros/jazzy/lib PYTHONPATH=/home/jimmy/ros2_ws/install/realsense2_camera_msgs/lib/python3.12/site-packages:/home/jimmy/ros2_ws/install/realsense2_camera/lib/python3.13/site-packages:/home/jimmy/ros2_ws/install/realsense2_camera_msgs/lib/python3.13/site-packages:/home/jimmy/ros2_ws/install/interfaces/lib/python3.13/site-packages:/home/jimmy/ros2_ws/install/realsense2_camera/lib/python3.12/site-packages:/home/jimmy/ros2_ws/install/interfaces/lib/python3.12/site-packages:/opt/ros/jazzy/lib/python3.12/site-packages /usr/bin/cmake --install /home/jimmy/ros2_ws/build/realsense2_camera
+[9.059s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(realsense2_camera)
+[9.059s] Level 1:colcon.colcon_core.environment:checking '/home/jimmy/ros2_ws/install/realsense2_camera' for CMake module files
+[9.060s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/jimmy/ros2_ws/build/realsense2_camera' returned '0': CMAKE_PREFIX_PATH=/home/jimmy/ros2_ws/install/realsense2_camera_msgs:/home/jimmy/ros2_ws/install/servo:/home/jimmy/ros2_ws/install/realsense2_description:/home/jimmy/ros2_ws/install/realsense2_camera:/home/jimmy/ros2_ws/install/interfaces:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy CONDA_PROMPT_MODIFIER=(base) DEBUGINFOD_URLS=https://debuginfod.ubuntu.com LD_LIBRARY_PATH=/home/jimmy/ros2_ws/install/realsense2_camera_msgs/lib:/home/jimmy/ros2_ws/install/realsense2_camera/lib:/home/jimmy/ros2_ws/install/interfaces/lib:/opt/ros/jazzy/opt/rviz_ogre_vendor/lib:/opt/ros/jazzy/lib/aarch64-linux-gnu:/opt/ros/jazzy/opt/gz_math_vendor/lib:/opt/ros/jazzy/opt/gz_utils_vendor/lib:/opt/ros/jazzy/opt/gz_cmake_vendor/lib:/opt/ros/jazzy/lib PYTHONPATH=/home/jimmy/ros2_ws/install/realsense2_camera_msgs/lib/python3.12/site-packages:/home/jimmy/ros2_ws/install/realsense2_camera/lib/python3.13/site-packages:/home/jimmy/ros2_ws/install/realsense2_camera_msgs/lib/python3.13/site-packages:/home/jimmy/ros2_ws/install/interfaces/lib/python3.13/site-packages:/home/jimmy/ros2_ws/install/realsense2_camera/lib/python3.12/site-packages:/home/jimmy/ros2_ws/install/interfaces/lib/python3.12/site-packages:/opt/ros/jazzy/lib/python3.12/site-packages /usr/bin/cmake --install /home/jimmy/ros2_ws/build/realsense2_camera
+[9.061s] Level 1:colcon.colcon_core.environment:checking '/home/jimmy/ros2_ws/install/realsense2_camera' for CMake config files
+[9.062s] Level 1:colcon.colcon_core.shell:create_environment_hook('realsense2_camera', 'cmake_prefix_path')
+[9.062s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/jimmy/ros2_ws/install/realsense2_camera/share/realsense2_camera/hook/cmake_prefix_path.ps1'
+[9.062s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/jimmy/ros2_ws/install/realsense2_camera/share/realsense2_camera/hook/cmake_prefix_path.dsv'
+[9.063s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/jimmy/ros2_ws/install/realsense2_camera/share/realsense2_camera/hook/cmake_prefix_path.sh'
+[9.064s] Level 1:colcon.colcon_core.environment:checking '/home/jimmy/ros2_ws/install/realsense2_camera/lib'
+[9.064s] Level 1:colcon.colcon_core.shell:create_environment_hook('realsense2_camera', 'ld_library_path_lib')
+[9.065s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/jimmy/ros2_ws/install/realsense2_camera/share/realsense2_camera/hook/ld_library_path_lib.ps1'
+[9.065s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/jimmy/ros2_ws/install/realsense2_camera/share/realsense2_camera/hook/ld_library_path_lib.dsv'
+[9.066s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/jimmy/ros2_ws/install/realsense2_camera/share/realsense2_camera/hook/ld_library_path_lib.sh'
+[9.067s] Level 1:colcon.colcon_core.environment:checking '/home/jimmy/ros2_ws/install/realsense2_camera/bin'
+[9.067s] Level 1:colcon.colcon_core.environment:checking '/home/jimmy/ros2_ws/install/realsense2_camera/lib/pkgconfig/realsense2_camera.pc'
+[9.067s] Level 1:colcon.colcon_core.environment:checking '/home/jimmy/ros2_ws/install/realsense2_camera/lib/python3.12/site-packages'
+[9.067s] Level 1:colcon.colcon_core.shell:create_environment_hook('realsense2_camera', 'pythonpath')
+[9.067s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/jimmy/ros2_ws/install/realsense2_camera/share/realsense2_camera/hook/pythonpath.ps1'
+[9.068s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/jimmy/ros2_ws/install/realsense2_camera/share/realsense2_camera/hook/pythonpath.dsv'
+[9.069s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/jimmy/ros2_ws/install/realsense2_camera/share/realsense2_camera/hook/pythonpath.sh'
+[9.070s] Level 1:colcon.colcon_core.environment:checking '/home/jimmy/ros2_ws/install/realsense2_camera/bin'
+[9.071s] INFO:colcon.colcon_core.shell:Creating package script '/home/jimmy/ros2_ws/install/realsense2_camera/share/realsense2_camera/package.ps1'
+[9.072s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/jimmy/ros2_ws/install/realsense2_camera/share/realsense2_camera/package.dsv'
+[9.072s] INFO:colcon.colcon_core.shell:Creating package script '/home/jimmy/ros2_ws/install/realsense2_camera/share/realsense2_camera/package.sh'
+[9.073s] INFO:colcon.colcon_core.shell:Creating package script '/home/jimmy/ros2_ws/install/realsense2_camera/share/realsense2_camera/package.bash'
+[9.074s] INFO:colcon.colcon_core.shell:Creating package script '/home/jimmy/ros2_ws/install/realsense2_camera/share/realsense2_camera/package.zsh'
+[9.075s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/jimmy/ros2_ws/install/realsense2_camera/share/colcon-core/packages/realsense2_camera)
+[9.077s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(realsense2_camera)
+[9.077s] Level 1:colcon.colcon_core.environment:checking '/home/jimmy/ros2_ws/install/realsense2_camera' for CMake module files
+[9.078s] Level 1:colcon.colcon_core.environment:checking '/home/jimmy/ros2_ws/install/realsense2_camera' for CMake config files
+[9.079s] Level 1:colcon.colcon_core.shell:create_environment_hook('realsense2_camera', 'cmake_prefix_path')
+[9.079s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/jimmy/ros2_ws/install/realsense2_camera/share/realsense2_camera/hook/cmake_prefix_path.ps1'
+[9.080s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/jimmy/ros2_ws/install/realsense2_camera/share/realsense2_camera/hook/cmake_prefix_path.dsv'
+[9.081s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/jimmy/ros2_ws/install/realsense2_camera/share/realsense2_camera/hook/cmake_prefix_path.sh'
+[9.082s] Level 1:colcon.colcon_core.environment:checking '/home/jimmy/ros2_ws/install/realsense2_camera/lib'
+[9.082s] Level 1:colcon.colcon_core.shell:create_environment_hook('realsense2_camera', 'ld_library_path_lib')
+[9.083s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/jimmy/ros2_ws/install/realsense2_camera/share/realsense2_camera/hook/ld_library_path_lib.ps1'
+[9.083s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/jimmy/ros2_ws/install/realsense2_camera/share/realsense2_camera/hook/ld_library_path_lib.dsv'
+[9.085s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/jimmy/ros2_ws/install/realsense2_camera/share/realsense2_camera/hook/ld_library_path_lib.sh'
+[9.086s] Level 1:colcon.colcon_core.environment:checking '/home/jimmy/ros2_ws/install/realsense2_camera/bin'
+[9.086s] Level 1:colcon.colcon_core.environment:checking '/home/jimmy/ros2_ws/install/realsense2_camera/lib/pkgconfig/realsense2_camera.pc'
+[9.086s] Level 1:colcon.colcon_core.environment:checking '/home/jimmy/ros2_ws/install/realsense2_camera/lib/python3.12/site-packages'
+[9.087s] Level 1:colcon.colcon_core.shell:create_environment_hook('realsense2_camera', 'pythonpath')
+[9.087s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/jimmy/ros2_ws/install/realsense2_camera/share/realsense2_camera/hook/pythonpath.ps1'
+[9.089s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/jimmy/ros2_ws/install/realsense2_camera/share/realsense2_camera/hook/pythonpath.dsv'
+[9.090s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/jimmy/ros2_ws/install/realsense2_camera/share/realsense2_camera/hook/pythonpath.sh'
+[9.091s] Level 1:colcon.colcon_core.environment:checking '/home/jimmy/ros2_ws/install/realsense2_camera/bin'
+[9.091s] INFO:colcon.colcon_core.shell:Creating package script '/home/jimmy/ros2_ws/install/realsense2_camera/share/realsense2_camera/package.ps1'
+[9.092s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/jimmy/ros2_ws/install/realsense2_camera/share/realsense2_camera/package.dsv'
+[9.092s] INFO:colcon.colcon_core.shell:Creating package script '/home/jimmy/ros2_ws/install/realsense2_camera/share/realsense2_camera/package.sh'
+[9.093s] INFO:colcon.colcon_core.shell:Creating package script '/home/jimmy/ros2_ws/install/realsense2_camera/share/realsense2_camera/package.bash'
+[9.094s] INFO:colcon.colcon_core.shell:Creating package script '/home/jimmy/ros2_ws/install/realsense2_camera/share/realsense2_camera/package.zsh'
+[9.094s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/jimmy/ros2_ws/install/realsense2_camera/share/colcon-core/packages/realsense2_camera)
+[9.095s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:closing loop
+[9.096s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:loop closed
+[9.096s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete finished with '0'
+[9.097s] DEBUG:colcon.colcon_core.event_reactor:joining thread
+[9.113s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.terminal_notifier': Not used on non-Darwin systems
+[9.113s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.win32': Not used on non-Windows systems
+[9.113s] INFO:colcon.colcon_notification.desktop_notification:Sending desktop notification using 'notify2'
+[9.139s] DEBUG:colcon.colcon_core.event_reactor:joined thread
+[9.140s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/jimmy/ros2_ws/install/local_setup.ps1'
+[9.141s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/jimmy/ros2_ws/install/_local_setup_util_ps1.py'
+[9.143s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/jimmy/ros2_ws/install/setup.ps1'
+[9.146s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/jimmy/ros2_ws/install/local_setup.sh'
+[9.147s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/jimmy/ros2_ws/install/_local_setup_util_sh.py'
+[9.148s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/jimmy/ros2_ws/install/setup.sh'
+[9.150s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/jimmy/ros2_ws/install/local_setup.bash'
+[9.151s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/jimmy/ros2_ws/install/setup.bash'
+[9.153s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/jimmy/ros2_ws/install/local_setup.zsh'
+[9.154s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/jimmy/ros2_ws/install/setup.zsh'
