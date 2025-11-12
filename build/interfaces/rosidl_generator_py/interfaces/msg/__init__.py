@@ -1,1 +1,1 @@
-from interfaces.msg._motor_cmds import MotorCmds  # noqa: F401
+from interfaces.msg._hand_location import HandLocation  # noqa: F401

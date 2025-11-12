@@ -3,7 +3,7 @@
   "output_dir": "/home/jimmy/ros2_ws/build/interfaces/rosidl_typesupport_introspection_cpp/interfaces",
   "template_dir": "/opt/ros/jazzy/share/rosidl_typesupport_introspection_cpp/resource",
   "idl_tuples": [
-    "/home/jimmy/ros2_ws/build/interfaces/rosidl_adapter/interfaces:msg/MotorCmds.idl"
+    "/home/jimmy/ros2_ws/build/interfaces/rosidl_adapter/interfaces:msg/HandLocation.idl"
   ],
   "target_dependencies": [
     "/opt/ros/jazzy/lib/rosidl_typesupport_introspection_cpp/rosidl_typesupport_introspection_cpp",
@@ -14,6 +14,6 @@
     "/opt/ros/jazzy/share/rosidl_typesupport_introspection_cpp/resource/msg__type_support.cpp.em",
     "/opt/ros/jazzy/share/rosidl_typesupport_introspection_cpp/resource/srv__rosidl_typesupport_introspection_cpp.hpp.em",
     "/opt/ros/jazzy/share/rosidl_typesupport_introspection_cpp/resource/srv__type_support.cpp.em",
-    "/home/jimmy/ros2_ws/build/interfaces/rosidl_adapter/interfaces/msg/MotorCmds.idl"
+    "/home/jimmy/ros2_ws/build/interfaces/rosidl_adapter/interfaces/msg/HandLocation.idl"
   ]
 }

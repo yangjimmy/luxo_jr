@@ -1,10 +1,10 @@
 file(REMOVE_RECURSE
   "CMakeFiles/interfaces__cpp"
-  "rosidl_generator_cpp/interfaces/msg/detail/motor_cmds__builder.hpp"
-  "rosidl_generator_cpp/interfaces/msg/detail/motor_cmds__struct.hpp"
-  "rosidl_generator_cpp/interfaces/msg/detail/motor_cmds__traits.hpp"
-  "rosidl_generator_cpp/interfaces/msg/detail/motor_cmds__type_support.hpp"
-  "rosidl_generator_cpp/interfaces/msg/motor_cmds.hpp"
+  "rosidl_generator_cpp/interfaces/msg/detail/hand_location__builder.hpp"
+  "rosidl_generator_cpp/interfaces/msg/detail/hand_location__struct.hpp"
+  "rosidl_generator_cpp/interfaces/msg/detail/hand_location__traits.hpp"
+  "rosidl_generator_cpp/interfaces/msg/detail/hand_location__type_support.hpp"
+  "rosidl_generator_cpp/interfaces/msg/hand_location.hpp"
   "rosidl_generator_cpp/interfaces/msg/rosidl_generator_cpp__visibility_control.hpp"
 )
 

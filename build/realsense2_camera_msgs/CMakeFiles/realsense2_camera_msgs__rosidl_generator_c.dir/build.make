@@ -195,7 +195,7 @@ rosidl_generator_c/realsense2_camera_msgs/msg/imu_info.h: /opt/ros/jazzy/share/a
 rosidl_generator_c/realsense2_camera_msgs/msg/imu_info.h: /opt/ros/jazzy/share/action_msgs/srv/CancelGoal.idl
 rosidl_generator_c/realsense2_camera_msgs/msg/imu_info.h: /opt/ros/jazzy/share/unique_identifier_msgs/msg/UUID.idl
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/home/jimmy/ros2_ws/build/realsense2_camera_msgs/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating C code for ROS interfaces"
-	/home/jimmy/miniconda3/bin/python3 /opt/ros/jazzy/share/rosidl_generator_c/cmake/../../../lib/rosidl_generator_c/rosidl_generator_c --generator-arguments-file /home/jimmy/ros2_ws/build/realsense2_camera_msgs/rosidl_generator_c__arguments.json
+	/home/jimmy/.venv/bin/python3 /opt/ros/jazzy/share/rosidl_generator_c/cmake/../../../lib/rosidl_generator_c/rosidl_generator_c --generator-arguments-file /home/jimmy/ros2_ws/build/realsense2_camera_msgs/rosidl_generator_c__arguments.json
 
 rosidl_generator_c/realsense2_camera_msgs/msg/detail/imu_info__functions.h: rosidl_generator_c/realsense2_camera_msgs/msg/imu_info.h
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_c/realsense2_camera_msgs/msg/detail/imu_info__functions.h

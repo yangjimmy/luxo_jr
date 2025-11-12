@@ -367,19 +367,19 @@ ament_cmake_symlink_install_files("/home/jimmy/ros2_ws/src/realsense-ros/realsen
 # install(FILES "/home/jimmy/ros2_ws/build/realsense2_camera_msgs/ament_cmake_environment_hooks/pythonpath.dsv" "DESTINATION" "share/realsense2_camera_msgs/environment")
 ament_cmake_symlink_install_files("/home/jimmy/ros2_ws/src/realsense-ros/realsense2_camera_msgs" FILES "/home/jimmy/ros2_ws/build/realsense2_camera_msgs/ament_cmake_environment_hooks/pythonpath.dsv" "DESTINATION" "share/realsense2_camera_msgs/environment")
 
-# install(DIRECTORY "/home/jimmy/ros2_ws/build/realsense2_camera_msgs/ament_cmake_python/realsense2_camera_msgs/realsense2_camera_msgs.egg-info/" "DESTINATION" "lib/python3.13/site-packages/realsense2_camera_msgs-4.56.4-py3.13.egg-info")
-ament_cmake_symlink_install_directory("/home/jimmy/ros2_ws/src/realsense-ros/realsense2_camera_msgs" DIRECTORY "/home/jimmy/ros2_ws/build/realsense2_camera_msgs/ament_cmake_python/realsense2_camera_msgs/realsense2_camera_msgs.egg-info/" "DESTINATION" "lib/python3.13/site-packages/realsense2_camera_msgs-4.56.4-py3.13.egg-info")
+# install(DIRECTORY "/home/jimmy/ros2_ws/build/realsense2_camera_msgs/ament_cmake_python/realsense2_camera_msgs/realsense2_camera_msgs.egg-info/" "DESTINATION" "lib/python3.12/site-packages/realsense2_camera_msgs-4.56.4-py3.12.egg-info")
+ament_cmake_symlink_install_directory("/home/jimmy/ros2_ws/src/realsense-ros/realsense2_camera_msgs" DIRECTORY "/home/jimmy/ros2_ws/build/realsense2_camera_msgs/ament_cmake_python/realsense2_camera_msgs/realsense2_camera_msgs.egg-info/" "DESTINATION" "lib/python3.12/site-packages/realsense2_camera_msgs-4.56.4-py3.12.egg-info")
 
-# install(DIRECTORY "/home/jimmy/ros2_ws/build/realsense2_camera_msgs/rosidl_generator_py/realsense2_camera_msgs/" "DESTINATION" "lib/python3.13/site-packages/realsense2_camera_msgs" "PATTERN_EXCLUDE" "*.pyc" "PATTERN_EXCLUDE" "__pycache__")
-ament_cmake_symlink_install_directory("/home/jimmy/ros2_ws/src/realsense-ros/realsense2_camera_msgs" DIRECTORY "/home/jimmy/ros2_ws/build/realsense2_camera_msgs/rosidl_generator_py/realsense2_camera_msgs/" "DESTINATION" "lib/python3.13/site-packages/realsense2_camera_msgs" "PATTERN_EXCLUDE" "*.pyc" "PATTERN_EXCLUDE" "__pycache__")
+# install(DIRECTORY "/home/jimmy/ros2_ws/build/realsense2_camera_msgs/rosidl_generator_py/realsense2_camera_msgs/" "DESTINATION" "lib/python3.12/site-packages/realsense2_camera_msgs" "PATTERN_EXCLUDE" "*.pyc" "PATTERN_EXCLUDE" "__pycache__")
+ament_cmake_symlink_install_directory("/home/jimmy/ros2_ws/src/realsense-ros/realsense2_camera_msgs" DIRECTORY "/home/jimmy/ros2_ws/build/realsense2_camera_msgs/rosidl_generator_py/realsense2_camera_msgs/" "DESTINATION" "lib/python3.12/site-packages/realsense2_camera_msgs" "PATTERN_EXCLUDE" "*.pyc" "PATTERN_EXCLUDE" "__pycache__")
 
-# install("TARGETS" "realsense2_camera_msgs_s__rosidl_typesupport_fastrtps_c" "DESTINATION" "lib/python3.13/site-packages/realsense2_camera_msgs")
+# install("TARGETS" "realsense2_camera_msgs_s__rosidl_typesupport_fastrtps_c" "DESTINATION" "lib/python3.12/site-packages/realsense2_camera_msgs")
 include("/home/jimmy/ros2_ws/build/realsense2_camera_msgs/ament_cmake_symlink_install_targets_0_${CMAKE_INSTALL_CONFIG_NAME}.cmake")
 
-# install("TARGETS" "realsense2_camera_msgs_s__rosidl_typesupport_introspection_c" "DESTINATION" "lib/python3.13/site-packages/realsense2_camera_msgs")
+# install("TARGETS" "realsense2_camera_msgs_s__rosidl_typesupport_introspection_c" "DESTINATION" "lib/python3.12/site-packages/realsense2_camera_msgs")
 include("/home/jimmy/ros2_ws/build/realsense2_camera_msgs/ament_cmake_symlink_install_targets_1_${CMAKE_INSTALL_CONFIG_NAME}.cmake")
 
-# install("TARGETS" "realsense2_camera_msgs_s__rosidl_typesupport_c" "DESTINATION" "lib/python3.13/site-packages/realsense2_camera_msgs")
+# install("TARGETS" "realsense2_camera_msgs_s__rosidl_typesupport_c" "DESTINATION" "lib/python3.12/site-packages/realsense2_camera_msgs")
 include("/home/jimmy/ros2_ws/build/realsense2_camera_msgs/ament_cmake_symlink_install_targets_2_${CMAKE_INSTALL_CONFIG_NAME}.cmake")
 
 # install(FILES "/home/jimmy/ros2_ws/build/realsense2_camera_msgs/rosidl_adapter/realsense2_camera_msgs/msg/IMUInfo.idl" "DESTINATION" "share/realsense2_camera_msgs/msg")

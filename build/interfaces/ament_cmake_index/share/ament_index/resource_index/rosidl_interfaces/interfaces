@@ -1,2 +1,2 @@
-msg/MotorCmds.idl
-msg/MotorCmds.msg
+msg/HandLocation.idl
+msg/HandLocation.msg

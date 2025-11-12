@@ -69,30 +69,30 @@ include CMakeFiles/interfaces__rosidl_generator_py.dir/progress.make
 # Include the compile flags for this target's objects.
 include CMakeFiles/interfaces__rosidl_generator_py.dir/flags.make
 
-CMakeFiles/interfaces__rosidl_generator_py.dir/rosidl_generator_py/interfaces/msg/_motor_cmds_s.c.o: CMakeFiles/interfaces__rosidl_generator_py.dir/flags.make
-CMakeFiles/interfaces__rosidl_generator_py.dir/rosidl_generator_py/interfaces/msg/_motor_cmds_s.c.o: rosidl_generator_py/interfaces/msg/_motor_cmds_s.c
-CMakeFiles/interfaces__rosidl_generator_py.dir/rosidl_generator_py/interfaces/msg/_motor_cmds_s.c.o: CMakeFiles/interfaces__rosidl_generator_py.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/jimmy/ros2_ws/build/interfaces/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object CMakeFiles/interfaces__rosidl_generator_py.dir/rosidl_generator_py/interfaces/msg/_motor_cmds_s.c.o"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/interfaces__rosidl_generator_py.dir/rosidl_generator_py/interfaces/msg/_motor_cmds_s.c.o -MF CMakeFiles/interfaces__rosidl_generator_py.dir/rosidl_generator_py/interfaces/msg/_motor_cmds_s.c.o.d -o CMakeFiles/interfaces__rosidl_generator_py.dir/rosidl_generator_py/interfaces/msg/_motor_cmds_s.c.o -c /home/jimmy/ros2_ws/build/interfaces/rosidl_generator_py/interfaces/msg/_motor_cmds_s.c
+CMakeFiles/interfaces__rosidl_generator_py.dir/rosidl_generator_py/interfaces/msg/_hand_location_s.c.o: CMakeFiles/interfaces__rosidl_generator_py.dir/flags.make
+CMakeFiles/interfaces__rosidl_generator_py.dir/rosidl_generator_py/interfaces/msg/_hand_location_s.c.o: rosidl_generator_py/interfaces/msg/_hand_location_s.c
+CMakeFiles/interfaces__rosidl_generator_py.dir/rosidl_generator_py/interfaces/msg/_hand_location_s.c.o: CMakeFiles/interfaces__rosidl_generator_py.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/jimmy/ros2_ws/build/interfaces/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object CMakeFiles/interfaces__rosidl_generator_py.dir/rosidl_generator_py/interfaces/msg/_hand_location_s.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/interfaces__rosidl_generator_py.dir/rosidl_generator_py/interfaces/msg/_hand_location_s.c.o -MF CMakeFiles/interfaces__rosidl_generator_py.dir/rosidl_generator_py/interfaces/msg/_hand_location_s.c.o.d -o CMakeFiles/interfaces__rosidl_generator_py.dir/rosidl_generator_py/interfaces/msg/_hand_location_s.c.o -c /home/jimmy/ros2_ws/build/interfaces/rosidl_generator_py/interfaces/msg/_hand_location_s.c
 
-CMakeFiles/interfaces__rosidl_generator_py.dir/rosidl_generator_py/interfaces/msg/_motor_cmds_s.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/interfaces__rosidl_generator_py.dir/rosidl_generator_py/interfaces/msg/_motor_cmds_s.c.i"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/jimmy/ros2_ws/build/interfaces/rosidl_generator_py/interfaces/msg/_motor_cmds_s.c > CMakeFiles/interfaces__rosidl_generator_py.dir/rosidl_generator_py/interfaces/msg/_motor_cmds_s.c.i
+CMakeFiles/interfaces__rosidl_generator_py.dir/rosidl_generator_py/interfaces/msg/_hand_location_s.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/interfaces__rosidl_generator_py.dir/rosidl_generator_py/interfaces/msg/_hand_location_s.c.i"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/jimmy/ros2_ws/build/interfaces/rosidl_generator_py/interfaces/msg/_hand_location_s.c > CMakeFiles/interfaces__rosidl_generator_py.dir/rosidl_generator_py/interfaces/msg/_hand_location_s.c.i
 
-CMakeFiles/interfaces__rosidl_generator_py.dir/rosidl_generator_py/interfaces/msg/_motor_cmds_s.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/interfaces__rosidl_generator_py.dir/rosidl_generator_py/interfaces/msg/_motor_cmds_s.c.s"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/jimmy/ros2_ws/build/interfaces/rosidl_generator_py/interfaces/msg/_motor_cmds_s.c -o CMakeFiles/interfaces__rosidl_generator_py.dir/rosidl_generator_py/interfaces/msg/_motor_cmds_s.c.s
+CMakeFiles/interfaces__rosidl_generator_py.dir/rosidl_generator_py/interfaces/msg/_hand_location_s.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/interfaces__rosidl_generator_py.dir/rosidl_generator_py/interfaces/msg/_hand_location_s.c.s"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/jimmy/ros2_ws/build/interfaces/rosidl_generator_py/interfaces/msg/_hand_location_s.c -o CMakeFiles/interfaces__rosidl_generator_py.dir/rosidl_generator_py/interfaces/msg/_hand_location_s.c.s
 
 # Object files for target interfaces__rosidl_generator_py
 interfaces__rosidl_generator_py_OBJECTS = \
-"CMakeFiles/interfaces__rosidl_generator_py.dir/rosidl_generator_py/interfaces/msg/_motor_cmds_s.c.o"
+"CMakeFiles/interfaces__rosidl_generator_py.dir/rosidl_generator_py/interfaces/msg/_hand_location_s.c.o"
 
 # External object files for target interfaces__rosidl_generator_py
 interfaces__rosidl_generator_py_EXTERNAL_OBJECTS =
 
-libinterfaces__rosidl_generator_py.so: CMakeFiles/interfaces__rosidl_generator_py.dir/rosidl_generator_py/interfaces/msg/_motor_cmds_s.c.o
+libinterfaces__rosidl_generator_py.so: CMakeFiles/interfaces__rosidl_generator_py.dir/rosidl_generator_py/interfaces/msg/_hand_location_s.c.o
 libinterfaces__rosidl_generator_py.so: CMakeFiles/interfaces__rosidl_generator_py.dir/build.make
-libinterfaces__rosidl_generator_py.so: /home/jimmy/miniconda3/lib/libpython3.13.so
+libinterfaces__rosidl_generator_py.so: /usr/lib/aarch64-linux-gnu/libpython3.12.so
 libinterfaces__rosidl_generator_py.so: libinterfaces__rosidl_typesupport_c.so
 libinterfaces__rosidl_generator_py.so: libinterfaces__rosidl_generator_c.so
 libinterfaces__rosidl_generator_py.so: /opt/ros/jazzy/lib/librosidl_runtime_c.so

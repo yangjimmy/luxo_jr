@@ -210,8 +210,8 @@ endif()
 if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
   execute_process(
         COMMAND
-        "/home/jimmy/miniconda3/bin/python3" "-m" "compileall"
-        "/home/jimmy/ros2_ws/install/realsense2_camera_msgs/lib/python3.13/site-packages/realsense2_camera_msgs"
+        "/home/jimmy/.venv/bin/python3" "-m" "compileall"
+        "/home/jimmy/ros2_ws/install/realsense2_camera_msgs/lib/python3.12/site-packages/realsense2_camera_msgs"
       )
 endif()
 
@@ -227,7 +227,7 @@ if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT
      NOT IS_SYMLINK "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/librealsense2_camera_msgs__rosidl_generator_py.so")
     file(RPATH_CHANGE
          FILE "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/librealsense2_camera_msgs__rosidl_generator_py.so"
-         OLD_RPATH "/home/jimmy/ros2_ws/build/realsense2_camera_msgs:/opt/ros/jazzy/lib:/home/jimmy/miniconda3/lib:"
+         OLD_RPATH "/home/jimmy/ros2_ws/build/realsense2_camera_msgs:/opt/ros/jazzy/lib:"
          NEW_RPATH "")
     if(CMAKE_INSTALL_DO_STRIP)
       execute_process(COMMAND "/usr/bin/strip" "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/librealsense2_camera_msgs__rosidl_generator_py.so")

@@ -86,7 +86,7 @@ rosidl_generator_type_description/realsense2_camera_msgs/msg/IMUInfo.json: rosid
 rosidl_generator_type_description/realsense2_camera_msgs/msg/IMUInfo.json: rosidl_adapter/realsense2_camera_msgs/srv/CalibConfigWrite.idl
 rosidl_generator_type_description/realsense2_camera_msgs/msg/IMUInfo.json: rosidl_adapter/realsense2_camera_msgs/action/TriggeredCalibration.idl
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/home/jimmy/ros2_ws/build/realsense2_camera_msgs/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating type hashes for ROS interfaces"
-	/home/jimmy/miniconda3/bin/python3 /opt/ros/jazzy/lib/rosidl_generator_type_description/rosidl_generator_type_description --generator-arguments-file /home/jimmy/ros2_ws/build/realsense2_camera_msgs/rosidl_generator_type_description__arguments.json
+	/home/jimmy/.venv/bin/python3 /opt/ros/jazzy/lib/rosidl_generator_type_description/rosidl_generator_type_description --generator-arguments-file /home/jimmy/ros2_ws/build/realsense2_camera_msgs/rosidl_generator_type_description__arguments.json
 
 rosidl_generator_type_description/realsense2_camera_msgs/msg/Extrinsics.json: rosidl_generator_type_description/realsense2_camera_msgs/msg/IMUInfo.json
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_type_description/realsense2_camera_msgs/msg/Extrinsics.json

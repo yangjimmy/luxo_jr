@@ -1,10 +1,10 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/interfaces/msg/detail/dds_fastrtps/motor_cmds__type_support.cpp.o"
-  "CMakeFiles/interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/interfaces/msg/detail/dds_fastrtps/motor_cmds__type_support.cpp.o.d"
+  "CMakeFiles/interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/interfaces/msg/detail/dds_fastrtps/hand_location__type_support.cpp.o"
+  "CMakeFiles/interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/interfaces/msg/detail/dds_fastrtps/hand_location__type_support.cpp.o.d"
   "libinterfaces__rosidl_typesupport_fastrtps_cpp.pdb"
   "libinterfaces__rosidl_typesupport_fastrtps_cpp.so"
-  "rosidl_typesupport_fastrtps_cpp/interfaces/msg/detail/dds_fastrtps/motor_cmds__type_support.cpp"
-  "rosidl_typesupport_fastrtps_cpp/interfaces/msg/detail/motor_cmds__rosidl_typesupport_fastrtps_cpp.hpp"
+  "rosidl_typesupport_fastrtps_cpp/interfaces/msg/detail/dds_fastrtps/hand_location__type_support.cpp"
+  "rosidl_typesupport_fastrtps_cpp/interfaces/msg/detail/hand_location__rosidl_typesupport_fastrtps_cpp.hpp"
 )
 
 # Per-language clean rules from dependency scanning.

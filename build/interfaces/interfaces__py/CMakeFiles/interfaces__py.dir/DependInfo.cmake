@@ -15,8 +15,8 @@ set(CMAKE_MULTIPLE_OUTPUT_PAIRS
   "/home/jimmy/ros2_ws/build/interfaces/rosidl_generator_py/interfaces/_interfaces_s.ep.rosidl_typesupport_c.c" "/home/jimmy/ros2_ws/build/interfaces/rosidl_generator_py/interfaces/_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c"
   "/home/jimmy/ros2_ws/build/interfaces/rosidl_generator_py/interfaces/_interfaces_s.ep.rosidl_typesupport_introspection_c.c" "/home/jimmy/ros2_ws/build/interfaces/rosidl_generator_py/interfaces/_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c"
   "/home/jimmy/ros2_ws/build/interfaces/rosidl_generator_py/interfaces/msg/__init__.py" "/home/jimmy/ros2_ws/build/interfaces/rosidl_generator_py/interfaces/_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c"
-  "/home/jimmy/ros2_ws/build/interfaces/rosidl_generator_py/interfaces/msg/_motor_cmds.py" "/home/jimmy/ros2_ws/build/interfaces/rosidl_generator_py/interfaces/_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c"
-  "/home/jimmy/ros2_ws/build/interfaces/rosidl_generator_py/interfaces/msg/_motor_cmds_s.c" "/home/jimmy/ros2_ws/build/interfaces/rosidl_generator_py/interfaces/_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c"
+  "/home/jimmy/ros2_ws/build/interfaces/rosidl_generator_py/interfaces/msg/_hand_location.py" "/home/jimmy/ros2_ws/build/interfaces/rosidl_generator_py/interfaces/_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c"
+  "/home/jimmy/ros2_ws/build/interfaces/rosidl_generator_py/interfaces/msg/_hand_location_s.c" "/home/jimmy/ros2_ws/build/interfaces/rosidl_generator_py/interfaces/_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c"
   )
 
 

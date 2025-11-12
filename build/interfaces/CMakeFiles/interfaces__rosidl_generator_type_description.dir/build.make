@@ -66,16 +66,16 @@ include CMakeFiles/interfaces__rosidl_generator_type_description.dir/compiler_de
 # Include the progress variables for this target.
 include CMakeFiles/interfaces__rosidl_generator_type_description.dir/progress.make
 
-CMakeFiles/interfaces__rosidl_generator_type_description: rosidl_generator_type_description/interfaces/msg/MotorCmds.json
+CMakeFiles/interfaces__rosidl_generator_type_description: rosidl_generator_type_description/interfaces/msg/HandLocation.json
 
-rosidl_generator_type_description/interfaces/msg/MotorCmds.json: /opt/ros/jazzy/lib/rosidl_generator_type_description/rosidl_generator_type_description
-rosidl_generator_type_description/interfaces/msg/MotorCmds.json: /opt/ros/jazzy/lib/python3.12/site-packages/rosidl_generator_type_description/__init__.py
-rosidl_generator_type_description/interfaces/msg/MotorCmds.json: rosidl_adapter/interfaces/msg/MotorCmds.idl
+rosidl_generator_type_description/interfaces/msg/HandLocation.json: /opt/ros/jazzy/lib/rosidl_generator_type_description/rosidl_generator_type_description
+rosidl_generator_type_description/interfaces/msg/HandLocation.json: /opt/ros/jazzy/lib/python3.12/site-packages/rosidl_generator_type_description/__init__.py
+rosidl_generator_type_description/interfaces/msg/HandLocation.json: rosidl_adapter/interfaces/msg/HandLocation.idl
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/home/jimmy/ros2_ws/build/interfaces/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating type hashes for ROS interfaces"
-	/home/jimmy/miniconda3/bin/python3 /opt/ros/jazzy/lib/rosidl_generator_type_description/rosidl_generator_type_description --generator-arguments-file /home/jimmy/ros2_ws/build/interfaces/rosidl_generator_type_description__arguments.json
+	/home/jimmy/.venv/bin/python3 /opt/ros/jazzy/lib/rosidl_generator_type_description/rosidl_generator_type_description --generator-arguments-file /home/jimmy/ros2_ws/build/interfaces/rosidl_generator_type_description__arguments.json
 
 interfaces__rosidl_generator_type_description: CMakeFiles/interfaces__rosidl_generator_type_description
-interfaces__rosidl_generator_type_description: rosidl_generator_type_description/interfaces/msg/MotorCmds.json
+interfaces__rosidl_generator_type_description: rosidl_generator_type_description/interfaces/msg/HandLocation.json
 interfaces__rosidl_generator_type_description: CMakeFiles/interfaces__rosidl_generator_type_description.dir/build.make
 .PHONY : interfaces__rosidl_generator_type_description
 

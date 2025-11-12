@@ -49,8 +49,8 @@ endif()
 if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
   execute_process(
         COMMAND
-        "/home/jimmy/miniconda3/bin/python3" "-m" "compileall"
-        "/home/jimmy/ros2_ws/install/realsense2_camera/lib/python3.13/site-packages/realsense2_camera"
+        "/home/jimmy/.venv/bin/python3" "-m" "compileall"
+        "/home/jimmy/ros2_ws/install/realsense2_camera/lib/python3.12/site-packages/realsense2_camera"
       )
 endif()
 

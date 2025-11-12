@@ -4,10 +4,10 @@
 
 #include <string.h>
 
+#include "realsense2_camera_msgs/srv/detail/calib_config_read__struct.h"
 #include "realsense2_camera_msgs/srv/detail/calib_config_read__functions.h"
 #include "realsense2_camera_msgs/srv/detail/calib_config_read__type_support.h"
 #include "rosidl_typesupport_interface/macros.h"
-#include "realsense2_camera_msgs/srv/detail/calib_config_read__struct.h"
 
 #ifdef __cplusplus
 extern "C"

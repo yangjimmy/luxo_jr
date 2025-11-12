@@ -3,10 +3,10 @@
   "output_dir": "/home/jimmy/ros2_ws/build/interfaces/rosidl_generator_c/interfaces",
   "template_dir": "/opt/ros/jazzy/share/rosidl_generator_c/cmake/../resource",
   "idl_tuples": [
-    "/home/jimmy/ros2_ws/build/interfaces/rosidl_adapter/interfaces:msg/MotorCmds.idl"
+    "/home/jimmy/ros2_ws/build/interfaces/rosidl_adapter/interfaces:msg/HandLocation.idl"
   ],
   "ros_interface_files": [
-    "/home/jimmy/ros2_ws/src/interfaces/msg/MotorCmds.msg"
+    "/home/jimmy/ros2_ws/src/interfaces/msg/HandLocation.msg"
   ],
   "target_dependencies": [
     "/opt/ros/jazzy/share/rosidl_generator_c/cmake/../../../lib/rosidl_generator_c/rosidl_generator_c",
@@ -28,9 +28,9 @@
     "/opt/ros/jazzy/share/rosidl_generator_c/cmake/../resource/msg__type_support.h.em",
     "/opt/ros/jazzy/share/rosidl_generator_c/cmake/../resource/srv__type_support.c.em",
     "/opt/ros/jazzy/share/rosidl_generator_c/cmake/../resource/srv__type_support.h.em",
-    "/home/jimmy/ros2_ws/build/interfaces/rosidl_adapter/interfaces/msg/MotorCmds.idl"
+    "/home/jimmy/ros2_ws/build/interfaces/rosidl_adapter/interfaces/msg/HandLocation.idl"
   ],
   "type_description_tuples": [
-    "msg/MotorCmds.idl:/home/jimmy/ros2_ws/build/interfaces/rosidl_generator_type_description/interfaces/msg/MotorCmds.json"
+    "msg/HandLocation.idl:/home/jimmy/ros2_ws/build/interfaces/rosidl_generator_type_description/interfaces/msg/HandLocation.json"
   ]
 }

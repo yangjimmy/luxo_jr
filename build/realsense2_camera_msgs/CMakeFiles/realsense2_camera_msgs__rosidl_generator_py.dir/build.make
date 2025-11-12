@@ -267,7 +267,7 @@ librealsense2_camera_msgs__rosidl_generator_py.so: /opt/ros/jazzy/lib/librmw.so
 librealsense2_camera_msgs__rosidl_generator_py.so: /opt/ros/jazzy/lib/librosidl_dynamic_typesupport.so
 librealsense2_camera_msgs__rosidl_generator_py.so: /opt/ros/jazzy/lib/librosidl_typesupport_introspection_cpp.so
 librealsense2_camera_msgs__rosidl_generator_py.so: /opt/ros/jazzy/lib/librosidl_typesupport_introspection_c.so
-librealsense2_camera_msgs__rosidl_generator_py.so: /home/jimmy/miniconda3/lib/libpython3.13.so
+librealsense2_camera_msgs__rosidl_generator_py.so: /usr/lib/aarch64-linux-gnu/libpython3.12.so
 librealsense2_camera_msgs__rosidl_generator_py.so: /opt/ros/jazzy/lib/libunique_identifier_msgs__rosidl_typesupport_c.so
 librealsense2_camera_msgs__rosidl_generator_py.so: /opt/ros/jazzy/lib/libunique_identifier_msgs__rosidl_generator_c.so
 librealsense2_camera_msgs__rosidl_generator_py.so: /opt/ros/jazzy/lib/librosidl_runtime_c.so

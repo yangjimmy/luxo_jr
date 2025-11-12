@@ -210,8 +210,8 @@ endif()
 if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
   execute_process(
         COMMAND
-        "/home/jimmy/miniconda3/bin/python3" "-m" "compileall"
-        "/home/jimmy/ros2_ws/install/interfaces/lib/python3.13/site-packages/interfaces"
+        "/home/jimmy/.venv/bin/python3" "-m" "compileall"
+        "/home/jimmy/ros2_ws/install/interfaces/lib/python3.12/site-packages/interfaces"
       )
 endif()
 
@@ -227,7 +227,7 @@ if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT
      NOT IS_SYMLINK "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libinterfaces__rosidl_generator_py.so")
     file(RPATH_CHANGE
          FILE "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libinterfaces__rosidl_generator_py.so"
-         OLD_RPATH "/home/jimmy/miniconda3/lib:/home/jimmy/ros2_ws/build/interfaces:/opt/ros/jazzy/lib:"
+         OLD_RPATH "/home/jimmy/ros2_ws/build/interfaces:/opt/ros/jazzy/lib:"
          NEW_RPATH "")
     if(CMAKE_INSTALL_DO_STRIP)
       execute_process(COMMAND "/usr/bin/strip" "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libinterfaces__rosidl_generator_py.so")

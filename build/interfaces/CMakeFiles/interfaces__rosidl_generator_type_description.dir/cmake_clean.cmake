@@ -1,6 +1,6 @@
 file(REMOVE_RECURSE
   "CMakeFiles/interfaces__rosidl_generator_type_description"
-  "rosidl_generator_type_description/interfaces/msg/MotorCmds.json"
+  "rosidl_generator_type_description/interfaces/msg/HandLocation.json"
 )
 
 # Per-language clean rules from dependency scanning.

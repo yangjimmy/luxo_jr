@@ -2,6 +2,6 @@
   "package_name": "interfaces",
   "output_dir": "/home/jimmy/ros2_ws/build/interfaces/rosidl_generator_type_description/interfaces",
   "idl_tuples": [
-    "/home/jimmy/ros2_ws/build/interfaces/rosidl_adapter/interfaces:msg/MotorCmds.idl"
+    "/home/jimmy/ros2_ws/build/interfaces/rosidl_adapter/interfaces:msg/HandLocation.idl"
   ]
 }

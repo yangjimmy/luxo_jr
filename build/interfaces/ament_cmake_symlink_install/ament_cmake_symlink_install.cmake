@@ -313,8 +313,8 @@ message(STATUS "Execute custom install script")
 # install(FILES "/home/jimmy/ros2_ws/build/interfaces/ament_cmake_index/share/ament_index/resource_index/rosidl_interfaces/interfaces" "DESTINATION" "share/ament_index/resource_index/rosidl_interfaces")
 ament_cmake_symlink_install_files("/home/jimmy/ros2_ws/src/interfaces" FILES "/home/jimmy/ros2_ws/build/interfaces/ament_cmake_index/share/ament_index/resource_index/rosidl_interfaces/interfaces" "DESTINATION" "share/ament_index/resource_index/rosidl_interfaces")
 
-# install(FILES "/home/jimmy/ros2_ws/build/interfaces/rosidl_generator_type_description/interfaces/msg/MotorCmds.json" "DESTINATION" "share/interfaces/msg")
-ament_cmake_symlink_install_files("/home/jimmy/ros2_ws/src/interfaces" FILES "/home/jimmy/ros2_ws/build/interfaces/rosidl_generator_type_description/interfaces/msg/MotorCmds.json" "DESTINATION" "share/interfaces/msg")
+# install(FILES "/home/jimmy/ros2_ws/build/interfaces/rosidl_generator_type_description/interfaces/msg/HandLocation.json" "DESTINATION" "share/interfaces/msg")
+ament_cmake_symlink_install_files("/home/jimmy/ros2_ws/src/interfaces" FILES "/home/jimmy/ros2_ws/build/interfaces/rosidl_generator_type_description/interfaces/msg/HandLocation.json" "DESTINATION" "share/interfaces/msg")
 
 # install(DIRECTORY "/home/jimmy/ros2_ws/build/interfaces/rosidl_generator_c/interfaces/" "DESTINATION" "include/interfaces/interfaces" "PATTERN" "*.h")
 ament_cmake_symlink_install_directory("/home/jimmy/ros2_ws/src/interfaces" DIRECTORY "/home/jimmy/ros2_ws/build/interfaces/rosidl_generator_c/interfaces/" "DESTINATION" "include/interfaces/interfaces" "PATTERN" "*.h")
@@ -346,26 +346,26 @@ ament_cmake_symlink_install_files("/home/jimmy/ros2_ws/src/interfaces" FILES "/h
 # install(FILES "/home/jimmy/ros2_ws/build/interfaces/ament_cmake_environment_hooks/pythonpath.dsv" "DESTINATION" "share/interfaces/environment")
 ament_cmake_symlink_install_files("/home/jimmy/ros2_ws/src/interfaces" FILES "/home/jimmy/ros2_ws/build/interfaces/ament_cmake_environment_hooks/pythonpath.dsv" "DESTINATION" "share/interfaces/environment")
 
-# install(DIRECTORY "/home/jimmy/ros2_ws/build/interfaces/ament_cmake_python/interfaces/interfaces.egg-info/" "DESTINATION" "lib/python3.13/site-packages/interfaces-0.0.0-py3.13.egg-info")
-ament_cmake_symlink_install_directory("/home/jimmy/ros2_ws/src/interfaces" DIRECTORY "/home/jimmy/ros2_ws/build/interfaces/ament_cmake_python/interfaces/interfaces.egg-info/" "DESTINATION" "lib/python3.13/site-packages/interfaces-0.0.0-py3.13.egg-info")
+# install(DIRECTORY "/home/jimmy/ros2_ws/build/interfaces/ament_cmake_python/interfaces/interfaces.egg-info/" "DESTINATION" "lib/python3.12/site-packages/interfaces-0.0.0-py3.12.egg-info")
+ament_cmake_symlink_install_directory("/home/jimmy/ros2_ws/src/interfaces" DIRECTORY "/home/jimmy/ros2_ws/build/interfaces/ament_cmake_python/interfaces/interfaces.egg-info/" "DESTINATION" "lib/python3.12/site-packages/interfaces-0.0.0-py3.12.egg-info")
 
-# install(DIRECTORY "/home/jimmy/ros2_ws/build/interfaces/rosidl_generator_py/interfaces/" "DESTINATION" "lib/python3.13/site-packages/interfaces" "PATTERN_EXCLUDE" "*.pyc" "PATTERN_EXCLUDE" "__pycache__")
-ament_cmake_symlink_install_directory("/home/jimmy/ros2_ws/src/interfaces" DIRECTORY "/home/jimmy/ros2_ws/build/interfaces/rosidl_generator_py/interfaces/" "DESTINATION" "lib/python3.13/site-packages/interfaces" "PATTERN_EXCLUDE" "*.pyc" "PATTERN_EXCLUDE" "__pycache__")
+# install(DIRECTORY "/home/jimmy/ros2_ws/build/interfaces/rosidl_generator_py/interfaces/" "DESTINATION" "lib/python3.12/site-packages/interfaces" "PATTERN_EXCLUDE" "*.pyc" "PATTERN_EXCLUDE" "__pycache__")
+ament_cmake_symlink_install_directory("/home/jimmy/ros2_ws/src/interfaces" DIRECTORY "/home/jimmy/ros2_ws/build/interfaces/rosidl_generator_py/interfaces/" "DESTINATION" "lib/python3.12/site-packages/interfaces" "PATTERN_EXCLUDE" "*.pyc" "PATTERN_EXCLUDE" "__pycache__")
 
-# install("TARGETS" "interfaces_s__rosidl_typesupport_fastrtps_c" "DESTINATION" "lib/python3.13/site-packages/interfaces")
+# install("TARGETS" "interfaces_s__rosidl_typesupport_fastrtps_c" "DESTINATION" "lib/python3.12/site-packages/interfaces")
 include("/home/jimmy/ros2_ws/build/interfaces/ament_cmake_symlink_install_targets_0_${CMAKE_INSTALL_CONFIG_NAME}.cmake")
 
-# install("TARGETS" "interfaces_s__rosidl_typesupport_introspection_c" "DESTINATION" "lib/python3.13/site-packages/interfaces")
+# install("TARGETS" "interfaces_s__rosidl_typesupport_introspection_c" "DESTINATION" "lib/python3.12/site-packages/interfaces")
 include("/home/jimmy/ros2_ws/build/interfaces/ament_cmake_symlink_install_targets_1_${CMAKE_INSTALL_CONFIG_NAME}.cmake")
 
-# install("TARGETS" "interfaces_s__rosidl_typesupport_c" "DESTINATION" "lib/python3.13/site-packages/interfaces")
+# install("TARGETS" "interfaces_s__rosidl_typesupport_c" "DESTINATION" "lib/python3.12/site-packages/interfaces")
 include("/home/jimmy/ros2_ws/build/interfaces/ament_cmake_symlink_install_targets_2_${CMAKE_INSTALL_CONFIG_NAME}.cmake")
 
-# install(FILES "/home/jimmy/ros2_ws/build/interfaces/rosidl_adapter/interfaces/msg/MotorCmds.idl" "DESTINATION" "share/interfaces/msg")
-ament_cmake_symlink_install_files("/home/jimmy/ros2_ws/src/interfaces" FILES "/home/jimmy/ros2_ws/build/interfaces/rosidl_adapter/interfaces/msg/MotorCmds.idl" "DESTINATION" "share/interfaces/msg")
+# install(FILES "/home/jimmy/ros2_ws/build/interfaces/rosidl_adapter/interfaces/msg/HandLocation.idl" "DESTINATION" "share/interfaces/msg")
+ament_cmake_symlink_install_files("/home/jimmy/ros2_ws/src/interfaces" FILES "/home/jimmy/ros2_ws/build/interfaces/rosidl_adapter/interfaces/msg/HandLocation.idl" "DESTINATION" "share/interfaces/msg")
 
-# install(FILES "/home/jimmy/ros2_ws/src/interfaces/msg/MotorCmds.msg" "DESTINATION" "share/interfaces/msg")
-ament_cmake_symlink_install_files("/home/jimmy/ros2_ws/src/interfaces" FILES "/home/jimmy/ros2_ws/src/interfaces/msg/MotorCmds.msg" "DESTINATION" "share/interfaces/msg")
+# install(FILES "/home/jimmy/ros2_ws/src/interfaces/msg/HandLocation.msg" "DESTINATION" "share/interfaces/msg")
+ament_cmake_symlink_install_files("/home/jimmy/ros2_ws/src/interfaces" FILES "/home/jimmy/ros2_ws/src/interfaces/msg/HandLocation.msg" "DESTINATION" "share/interfaces/msg")
 
 # install(FILES "/home/jimmy/ros2_ws/build/interfaces/ament_cmake_index/share/ament_index/resource_index/package_run_dependencies/interfaces" "DESTINATION" "share/ament_index/resource_index/package_run_dependencies")
 ament_cmake_symlink_install_files("/home/jimmy/ros2_ws/src/interfaces" FILES "/home/jimmy/ros2_ws/build/interfaces/ament_cmake_index/share/ament_index/resource_index/package_run_dependencies/interfaces" "DESTINATION" "share/ament_index/resource_index/package_run_dependencies")

@@ -334,14 +334,14 @@ ament_cmake_symlink_install_files("/home/jimmy/ros2_ws/src/realsense-ros/realsen
 # install(FILES "/home/jimmy/ros2_ws/build/realsense2_camera/ament_cmake_environment_hooks/pythonpath.dsv" "DESTINATION" "share/realsense2_camera/environment")
 ament_cmake_symlink_install_files("/home/jimmy/ros2_ws/src/realsense-ros/realsense2_camera" FILES "/home/jimmy/ros2_ws/build/realsense2_camera/ament_cmake_environment_hooks/pythonpath.dsv" "DESTINATION" "share/realsense2_camera/environment")
 
-# install(DIRECTORY "/home/jimmy/ros2_ws/build/realsense2_camera/ament_cmake_python/realsense2_camera/realsense2_camera.egg-info/" "DESTINATION" "lib/python3.13/site-packages/realsense2_camera-4.56.4-py3.13.egg-info")
-ament_cmake_symlink_install_directory("/home/jimmy/ros2_ws/src/realsense-ros/realsense2_camera" DIRECTORY "/home/jimmy/ros2_ws/build/realsense2_camera/ament_cmake_python/realsense2_camera/realsense2_camera.egg-info/" "DESTINATION" "lib/python3.13/site-packages/realsense2_camera-4.56.4-py3.13.egg-info")
+# install(DIRECTORY "/home/jimmy/ros2_ws/build/realsense2_camera/ament_cmake_python/realsense2_camera/realsense2_camera.egg-info/" "DESTINATION" "lib/python3.12/site-packages/realsense2_camera-4.56.4-py3.12.egg-info")
+ament_cmake_symlink_install_directory("/home/jimmy/ros2_ws/src/realsense-ros/realsense2_camera" DIRECTORY "/home/jimmy/ros2_ws/build/realsense2_camera/ament_cmake_python/realsense2_camera/realsense2_camera.egg-info/" "DESTINATION" "lib/python3.12/site-packages/realsense2_camera-4.56.4-py3.12.egg-info")
 
-# install(DIRECTORY "/home/jimmy/ros2_ws/src/realsense-ros/realsense2_camera/realsense2_camera/" "DESTINATION" "lib/python3.13/site-packages/realsense2_camera" "PATTERN_EXCLUDE" "*.pyc" "PATTERN_EXCLUDE" "__pycache__")
-ament_cmake_symlink_install_directory("/home/jimmy/ros2_ws/src/realsense-ros/realsense2_camera" DIRECTORY "/home/jimmy/ros2_ws/src/realsense-ros/realsense2_camera/realsense2_camera/" "DESTINATION" "lib/python3.13/site-packages/realsense2_camera" "PATTERN_EXCLUDE" "*.pyc" "PATTERN_EXCLUDE" "__pycache__")
+# install(DIRECTORY "/home/jimmy/ros2_ws/src/realsense-ros/realsense2_camera/realsense2_camera/" "DESTINATION" "lib/python3.12/site-packages/realsense2_camera" "PATTERN_EXCLUDE" "*.pyc" "PATTERN_EXCLUDE" "__pycache__")
+ament_cmake_symlink_install_directory("/home/jimmy/ros2_ws/src/realsense-ros/realsense2_camera" DIRECTORY "/home/jimmy/ros2_ws/src/realsense-ros/realsense2_camera/realsense2_camera/" "DESTINATION" "lib/python3.12/site-packages/realsense2_camera" "PATTERN_EXCLUDE" "*.pyc" "PATTERN_EXCLUDE" "__pycache__")
 
-# install(PROGRAMS "scripts/predict_node.py" "DESTINATION" "lib/realsense2_camera")
-ament_cmake_symlink_install_programs("/home/jimmy/ros2_ws/src/realsense-ros/realsense2_camera" PROGRAMS "scripts/predict_node.py" "DESTINATION" "lib/realsense2_camera")
+# install(PROGRAMS "scripts/predict_node.py" "scripts/listen_node.py" "DESTINATION" "lib/realsense2_camera")
+ament_cmake_symlink_install_programs("/home/jimmy/ros2_ws/src/realsense-ros/realsense2_camera" PROGRAMS "scripts/predict_node.py" "scripts/listen_node.py" "DESTINATION" "lib/realsense2_camera")
 
 # install(FILES "/opt/ros/jazzy/lib/python3.12/site-packages/ament_package/template/environment_hook/library_path.sh" "DESTINATION" "share/realsense2_camera/environment")
 ament_cmake_symlink_install_files("/home/jimmy/ros2_ws/src/realsense-ros/realsense2_camera" FILES "/opt/ros/jazzy/lib/python3.12/site-packages/ament_package/template/environment_hook/library_path.sh" "DESTINATION" "share/realsense2_camera/environment")

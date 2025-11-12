@@ -1,4 +1,4 @@
 # generated from rosidl_cmake/cmake/rosidl_cmake-extras.cmake.in
 
-set(interfaces_IDL_FILES "msg/MotorCmds.idl")
-set(interfaces_INTERFACE_FILES "msg/MotorCmds.msg")
+set(interfaces_IDL_FILES "msg/HandLocation.idl")
+set(interfaces_INTERFACE_FILES "msg/HandLocation.msg")

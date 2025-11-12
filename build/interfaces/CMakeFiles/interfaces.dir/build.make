@@ -66,7 +66,7 @@ include CMakeFiles/interfaces.dir/compiler_depend.make
 # Include the progress variables for this target.
 include CMakeFiles/interfaces.dir/progress.make
 
-CMakeFiles/interfaces: /home/jimmy/ros2_ws/src/interfaces/msg/MotorCmds.msg
+CMakeFiles/interfaces: /home/jimmy/ros2_ws/src/interfaces/msg/HandLocation.msg
 
 interfaces: CMakeFiles/interfaces
 interfaces: CMakeFiles/interfaces.dir/build.make

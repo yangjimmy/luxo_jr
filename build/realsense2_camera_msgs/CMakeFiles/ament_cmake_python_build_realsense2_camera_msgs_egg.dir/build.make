@@ -67,7 +67,7 @@ include CMakeFiles/ament_cmake_python_build_realsense2_camera_msgs_egg.dir/compi
 include CMakeFiles/ament_cmake_python_build_realsense2_camera_msgs_egg.dir/progress.make
 
 CMakeFiles/ament_cmake_python_build_realsense2_camera_msgs_egg:
-	cd /home/jimmy/ros2_ws/build/realsense2_camera_msgs/ament_cmake_python/realsense2_camera_msgs && /home/jimmy/miniconda3/bin/python3 setup.py egg_info
+	cd /home/jimmy/ros2_ws/build/realsense2_camera_msgs/ament_cmake_python/realsense2_camera_msgs && /home/jimmy/.venv/bin/python3 setup.py egg_info
 
 ament_cmake_python_build_realsense2_camera_msgs_egg: CMakeFiles/ament_cmake_python_build_realsense2_camera_msgs_egg
 ament_cmake_python_build_realsense2_camera_msgs_egg: CMakeFiles/ament_cmake_python_build_realsense2_camera_msgs_egg.dir/build.make
