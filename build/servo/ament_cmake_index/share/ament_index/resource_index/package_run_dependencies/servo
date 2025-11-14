@@ -1,1 +1,1 @@
-ament_lint_auto;ament_lint_common
+eigen;builtin_interfaces;cv_bridge;image_transport;rclcpp;rclpy;rclcpp_lifecycle;lifecycle_msgs;rclcpp_components;sensor_msgs;geometry_msgs;std_srvs;std_msgs;nav_msgs;tf2;tf2_ros;diagnostic_updater;rviz;xacro;ament_lint_auto;ament_lint_common;ament_cmake_gtest;launch_testing;ament_cmake_pytest;launch_pytest;sensor_msgs_py;python3-numpy;python3-tqdm;python3-requests;tf2_ros_py;ros2topic;python3-pytest

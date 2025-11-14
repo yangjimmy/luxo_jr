@@ -197,6 +197,45 @@ servo_uninstall/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/servo_uninstall.dir/build.make CMakeFiles/servo_uninstall.dir/build
 .PHONY : servo_uninstall/fast
 
+#=============================================================================
+# Target rules for targets named ament_cmake_python_symlink_servo
+
+# Build rule for target.
+ament_cmake_python_symlink_servo: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 ament_cmake_python_symlink_servo
+.PHONY : ament_cmake_python_symlink_servo
+
+# fast build rule for target.
+ament_cmake_python_symlink_servo/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ament_cmake_python_symlink_servo.dir/build.make CMakeFiles/ament_cmake_python_symlink_servo.dir/build
+.PHONY : ament_cmake_python_symlink_servo/fast
+
+#=============================================================================
+# Target rules for targets named ament_cmake_python_symlink_servo_setup
+
+# Build rule for target.
+ament_cmake_python_symlink_servo_setup: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 ament_cmake_python_symlink_servo_setup
+.PHONY : ament_cmake_python_symlink_servo_setup
+
+# fast build rule for target.
+ament_cmake_python_symlink_servo_setup/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ament_cmake_python_symlink_servo_setup.dir/build.make CMakeFiles/ament_cmake_python_symlink_servo_setup.dir/build
+.PHONY : ament_cmake_python_symlink_servo_setup/fast
+
+#=============================================================================
+# Target rules for targets named ament_cmake_python_build_servo_egg
+
+# Build rule for target.
+ament_cmake_python_build_servo_egg: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 ament_cmake_python_build_servo_egg
+.PHONY : ament_cmake_python_build_servo_egg
+
+# fast build rule for target.
+ament_cmake_python_build_servo_egg/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ament_cmake_python_build_servo_egg.dir/build.make CMakeFiles/ament_cmake_python_build_servo_egg.dir/build
+.PHONY : ament_cmake_python_build_servo_egg/fast
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -210,6 +249,9 @@ help:
 	@echo "... list_install_components"
 	@echo "... rebuild_cache"
 	@echo "... test"
+	@echo "... ament_cmake_python_build_servo_egg"
+	@echo "... ament_cmake_python_symlink_servo"
+	@echo "... ament_cmake_python_symlink_servo_setup"
 	@echo "... servo_uninstall"
 	@echo "... uninstall"
 .PHONY : help

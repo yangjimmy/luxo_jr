@@ -1,3 +1,11 @@
+/home/jimmy/ros2_ws/install/servo/share/servo/environment/pythonpath.sh
+/home/jimmy/ros2_ws/install/servo/share/servo/environment/pythonpath.dsv
+/home/jimmy/ros2_ws/install/servo/lib/python3.12/site-packages/servo-0.0.0-py3.12.egg-info/PKG-INFO
+/home/jimmy/ros2_ws/install/servo/lib/python3.12/site-packages/servo-0.0.0-py3.12.egg-info/SOURCES.txt
+/home/jimmy/ros2_ws/install/servo/lib/python3.12/site-packages/servo-0.0.0-py3.12.egg-info/dependency_links.txt
+/home/jimmy/ros2_ws/install/servo/lib/python3.12/site-packages/servo-0.0.0-py3.12.egg-info/top_level.txt
+/home/jimmy/ros2_ws/install/servo/lib/python3.12/site-packages/servo/__init__.py
+/home/jimmy/ros2_ws/install/servo/lib/servo/motor_node.py
 /home/jimmy/ros2_ws/install/servo/share/ament_index/resource_index/package_run_dependencies/servo
 /home/jimmy/ros2_ws/install/servo/share/ament_index/resource_index/parent_prefix_path/servo
 /home/jimmy/ros2_ws/install/servo/share/servo/environment/ament_prefix_path.sh

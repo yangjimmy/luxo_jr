@@ -310,6 +310,21 @@ message(STATUS "Execute custom install script")
 
 # begin of custom install code
 
+# install(FILES "/home/jimmy/ros2_ws/build/servo/ament_cmake_environment_hooks/pythonpath.sh" "DESTINATION" "share/servo/environment")
+ament_cmake_symlink_install_files("/home/jimmy/ros2_ws/src/servo" FILES "/home/jimmy/ros2_ws/build/servo/ament_cmake_environment_hooks/pythonpath.sh" "DESTINATION" "share/servo/environment")
+
+# install(FILES "/home/jimmy/ros2_ws/build/servo/ament_cmake_environment_hooks/pythonpath.dsv" "DESTINATION" "share/servo/environment")
+ament_cmake_symlink_install_files("/home/jimmy/ros2_ws/src/servo" FILES "/home/jimmy/ros2_ws/build/servo/ament_cmake_environment_hooks/pythonpath.dsv" "DESTINATION" "share/servo/environment")
+
+# install(DIRECTORY "/home/jimmy/ros2_ws/build/servo/ament_cmake_python/servo/servo.egg-info/" "DESTINATION" "lib/python3.12/site-packages/servo-0.0.0-py3.12.egg-info")
+ament_cmake_symlink_install_directory("/home/jimmy/ros2_ws/src/servo" DIRECTORY "/home/jimmy/ros2_ws/build/servo/ament_cmake_python/servo/servo.egg-info/" "DESTINATION" "lib/python3.12/site-packages/servo-0.0.0-py3.12.egg-info")
+
+# install(DIRECTORY "/home/jimmy/ros2_ws/src/servo/servo/" "DESTINATION" "lib/python3.12/site-packages/servo" "PATTERN_EXCLUDE" "*.pyc" "PATTERN_EXCLUDE" "__pycache__")
+ament_cmake_symlink_install_directory("/home/jimmy/ros2_ws/src/servo" DIRECTORY "/home/jimmy/ros2_ws/src/servo/servo/" "DESTINATION" "lib/python3.12/site-packages/servo" "PATTERN_EXCLUDE" "*.pyc" "PATTERN_EXCLUDE" "__pycache__")
+
+# install(PROGRAMS "scripts/motor_node.py" "DESTINATION" "lib/servo")
+ament_cmake_symlink_install_programs("/home/jimmy/ros2_ws/src/servo" PROGRAMS "scripts/motor_node.py" "DESTINATION" "lib/servo")
+
 # install(FILES "/home/jimmy/ros2_ws/build/servo/ament_cmake_index/share/ament_index/resource_index/package_run_dependencies/servo" "DESTINATION" "share/ament_index/resource_index/package_run_dependencies")
 ament_cmake_symlink_install_files("/home/jimmy/ros2_ws/src/servo" FILES "/home/jimmy/ros2_ws/build/servo/ament_cmake_index/share/ament_index/resource_index/package_run_dependencies/servo" "DESTINATION" "share/ament_index/resource_index/package_run_dependencies")
 

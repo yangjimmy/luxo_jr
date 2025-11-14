@@ -1,5 +1,8 @@
 /home/jimmy/ros2_ws/build/servo/CMakeFiles/uninstall.dir
 /home/jimmy/ros2_ws/build/servo/CMakeFiles/servo_uninstall.dir
+/home/jimmy/ros2_ws/build/servo/CMakeFiles/ament_cmake_python_symlink_servo.dir
+/home/jimmy/ros2_ws/build/servo/CMakeFiles/ament_cmake_python_symlink_servo_setup.dir
+/home/jimmy/ros2_ws/build/servo/CMakeFiles/ament_cmake_python_build_servo_egg.dir
 /home/jimmy/ros2_ws/build/servo/CMakeFiles/test.dir
 /home/jimmy/ros2_ws/build/servo/CMakeFiles/edit_cache.dir
 /home/jimmy/ros2_ws/build/servo/CMakeFiles/rebuild_cache.dir

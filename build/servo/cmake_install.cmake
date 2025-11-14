@@ -46,6 +46,14 @@ if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT
   include("/home/jimmy/ros2_ws/build/servo/ament_cmake_symlink_install/ament_cmake_symlink_install.cmake")
 endif()
 
+if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
+  execute_process(
+        COMMAND
+        "/home/jimmy/.venv/bin/python3" "-m" "compileall"
+        "/home/jimmy/ros2_ws/install/servo/lib/python3.12/site-packages/servo"
+      )
+endif()
+
 if(CMAKE_INSTALL_COMPONENT)
   set(CMAKE_INSTALL_MANIFEST "install_manifest_${CMAKE_INSTALL_COMPONENT}.txt")
 else()
