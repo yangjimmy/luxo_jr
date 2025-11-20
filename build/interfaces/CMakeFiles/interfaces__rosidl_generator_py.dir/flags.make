@@ -4,7 +4,7 @@
 # compile C with /usr/bin/cc
 C_DEFINES = -DROS_PACKAGE_NAME=\"interfaces\" -Dinterfaces__rosidl_generator_py_EXPORTS
 
-C_INCLUDES = -I/home/jimmy/ros2_ws/build/interfaces/rosidl_generator_c -I/home/jimmy/ros2_ws/build/interfaces/rosidl_generator_py -isystem /opt/ros/jazzy/include/rosidl_runtime_c -isystem /opt/ros/jazzy/include/rcutils -isystem /opt/ros/jazzy/include/rosidl_typesupport_interface -isystem /home/jimmy/.venv/lib/python3.12/site-packages/numpy/_core/include -isystem /usr/include/python3.12
+C_INCLUDES = -I/home/jimmy/ros2_ws/build/interfaces/rosidl_generator_c -I/home/jimmy/ros2_ws/build/interfaces/rosidl_generator_py -isystem /opt/ros/jazzy/include/rosidl_runtime_c -isystem /opt/ros/jazzy/include/rcutils -isystem /opt/ros/jazzy/include/rosidl_typesupport_interface -isystem /home/jimmy/.venv/lib/python3.12/site-packages/numpy/core/include -isystem /usr/include/python3.12
 
 C_FLAGS = -fPIC -Wall -Wextra
 

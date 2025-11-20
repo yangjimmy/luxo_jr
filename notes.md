@@ -3,7 +3,13 @@ IMU on Realsense does not work with RPi
 See: https://github.com/IntelRealSense/librealsense/issues/13108 
 
 To get rbg and depth images only,
+```bash
 ros2 launch realsense2_camera rs_launch.py enable_color:=true enable_depth:=true
+```
+To align rgb and depth images,
+```bash
+ros2 launch realsense2_camera rs_launch.py enable_color:=true enable_depth:=true align_depth.enable:=true
+```
 
 # Usage
 ros2 run <pkg> <>.py (needs .py extension)

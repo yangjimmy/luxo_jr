@@ -610,7 +610,7 @@ CMAKE_UNAME:INTERNAL=/usr/bin/uname
 //ADVANCED property for variable: CMAKE_VERBOSE_MAKEFILE
 CMAKE_VERBOSE_MAKEFILE-ADVANCED:INTERNAL=1
 //Details about finding Python3
-FIND_PACKAGE_MESSAGE_DETAILS_Python3:INTERNAL=[/home/jimmy/.venv/bin/python3][/usr/include/python3.12][/usr/lib/aarch64-linux-gnu/libpython3.12.so][/home/jimmy/.venv/lib/python3.12/site-packages/numpy/_core/include][cfound components: Interpreter Development NumPy Development.Module Development.Embed ][v3.12.3()]
+FIND_PACKAGE_MESSAGE_DETAILS_Python3:INTERNAL=[/home/jimmy/.venv/bin/python3][/usr/include/python3.12][/usr/lib/aarch64-linux-gnu/libpython3.12.so][/home/jimmy/.venv/lib/python3.12/site-packages/numpy/core/include][cfound components: Interpreter Development NumPy Development.Module Development.Embed ][v3.12.3()]
 //Details about finding PythonExtra
 FIND_PACKAGE_MESSAGE_DETAILS_PythonExtra:INTERNAL=[/home/jimmy/.venv/bin/python3][/home/jimmy/.venv/bin/python3][v()]
 //The directory for Python library installation. This needs to
@@ -636,7 +636,7 @@ _Python3_Interpreter_REASON_FAILURE:INTERNAL=
 _Python3_LIBRARY_RELEASE:INTERNAL=/usr/lib/aarch64-linux-gnu/libpython3.12.so
 _Python3_NUMPY_SIGNATURE:INTERNAL=8ce8bc837a456e244b13d679422b322a
 //Path to a file.
-_Python3_NumPy_INCLUDE_DIR:INTERNAL=/home/jimmy/.venv/lib/python3.12/site-packages/numpy/_core/include
+_Python3_NumPy_INCLUDE_DIR:INTERNAL=/home/jimmy/.venv/lib/python3.12/site-packages/numpy/core/include
 //Index for unique symlink install targets
 __AMENT_CMAKE_SYMLINK_INSTALL_TARGETS_INDEX:INTERNAL=3
 
