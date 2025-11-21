@@ -1,7 +1,13 @@
+# ROS2 specific ignores
 build/
 log/
-.vscode/
 install/
+
+# Python specific ignores
+*.pyc
 __pycache__/
 *.npy
 *.jpg
+
+# vscode settings
+.vscode/
