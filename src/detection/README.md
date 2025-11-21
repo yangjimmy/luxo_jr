@@ -31,26 +31,37 @@ Ensure your environment is set up with ROS2 and required dependencies:
 source install/setup.bash
 ```
 
-### Launch RealSense Camera
-Start the RealSense camera with RGB and depth enabled:
+### Launch Detection Pipeline (Recommended)
+Start RealSense camera and hand detection together using the centralized launch configuration:
+```bash
+ros2 launch robot_launch detection.launch.py
+```
+
+This launches both the RealSense camera (with RGB and depth enabled) and the hand detection node in one command.
+
+For more launch configurations and how to create new ones, see [robot_launch/README.md](../robot_launch/README.md).
+
+### Alternative: Run Detection Node Manually
+If you prefer to start the camera separately:
+
+1. Start the RealSense camera:
 ```bash
 ros2 launch realsense2_camera rs_launch.py enable_color:=true enable_depth:=true
 ```
 
-### Run Hand Detection Node
-Start the hand detection/prediction node:
+2. In another terminal, run the hand detection node:
 ```bash
 ros2 run detection predict_node
 ```
 
-This node:
+The node:
 - Subscribes to `/camera/camera/color/image_raw` for RGB frames
 - Subscribes to `/camera/camera/depth/image_rect_raw` for depth frames
 - Subscribes to `/camera/camera/color/camera_info` for camera intrinsics
 - Publishes hand location to `/camera/camera/hand_loc` as a `geometry_msgs/Point`
 
 ### Run Debug Listener Node
-To monitor camera topics without detection:
+To monitor camera topics without running detection:
 ```bash
 ros2 run detection listen_node
 ```
