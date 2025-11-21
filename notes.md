@@ -1,32 +1,61 @@
-# Known issues
-IMU on Realsense does not work with RPi
-See: https://github.com/IntelRealSense/librealsense/issues/13108 
+# Known Issues
 
-To get rbg and depth images only,
+## RealSense IMU
+- IMU on RealSense does not work with Raspberry Pi
+- See: https://github.com/IntelRealSense/librealsense/issues/13108 
+
+## NumPy Compatibility
+- cv-bridge is not compatible with NumPy 2.x; only supports NumPy 1.x
+- cv-bridge should already be installed with ROS2 Jazzy
+
+---
+
+# RealSense Launch Commands
+
+## RGB and Depth Images Only
 ```bash
 ros2 launch realsense2_camera rs_launch.py enable_color:=true enable_depth:=true
 ```
-To align rgb and depth images,
+
+## RGB and Depth Images with Alignment
 ```bash
 ros2 launch realsense2_camera rs_launch.py enable_color:=true enable_depth:=true align_depth.enable:=true
 ```
 
-# Usage
-ros2 run <pkg> <>.py (needs .py extension)
+---
 
-does not support conda env
+# Usage & Configuration
 
-to change git to use ssh for authentication:
-under <repository>/.git/config
-url should have this format
-url=ssh://git@github.com/yangjimmy/realsense-ros.git
+## Running ROS2 Nodes
+```bash
+ros2 run <package> <node>.py  # Note: requires .py extension
+```
 
-instead of 
+Examples:
+```bash
+ros2 run realsense2_camera predict_node.py
+ros2 run servo *.py
+```
+
+## Environment
+- Does not support conda environments
+- Use system Python instead
+
+## Git Authentication (SSH Setup)
+Edit `<repository>/.git/config` and change the URL format:
+
+**SSH format (recommended):**
+```
+url = ssh://git@github.com/yangjimmy/realsense-ros.git
+```
+
+**HTTPS format (alternative):**
+```
 url = https://github.com/yangjimmy/realsense-ros.git
+```
 
-convert between ros img and opencv image: use cv bridge
-sudo apt-get install ros-(ROS version name)-cv-bridge
-NOTE: cv-bridge should already be installed with ROS2 Jazzy
-NOTE 2: current cv-bridge is not compatible with numpy 2; only supports np 1
+## OpenCV Integration
+- Use `cv-bridge` to convert between ROS images and OpenCV images
+- Install: `sudo apt-get install ros-(ROS_VERSION)-cv-bridge`
 
 
