@@ -1,3 +1,18 @@
+# Project Structure
+
+```
+src/
+├── camera/              # Camera module with hand detection (primary camera work)
+│   ├── nodes/          # ROS2 nodes (predict_node.py, listen_node.py)
+│   ├── detection/      # YOLO hand detection system
+│   └── README.md       # Detailed camera module documentation
+├── servo/              # Servo/robotic arm control module
+├── interfaces/         # ROS2 message/service definitions
+└── realsense-ros/      # RealSense camera driver (for reference)
+```
+
+---
+
 # Known Issues
 
 ## RealSense IMU
@@ -26,14 +41,28 @@ ros2 launch realsense2_camera rs_launch.py enable_color:=true enable_depth:=true
 
 # Usage & Configuration
 
-## Running ROS2 Nodes
+## Running Camera Module (Hand Detection)
+The camera module is now organized in `src/camera/` with clean separation of concerns.
+
+**Start RealSense Camera:**
+```bash
+ros2 launch realsense2_camera rs_launch.py enable_color:=true enable_depth:=true
+```
+
+**Run Hand Detection Node:**
+```bash
+ros2 run realsense2_camera predict_node.py
+```
+
+For more details, see `src/camera/README.md`
+
+## Running ROS2 Nodes (General)
 ```bash
 ros2 run <package> <node>.py  # Note: requires .py extension
 ```
 
 Examples:
 ```bash
-ros2 run realsense2_camera predict_node.py
 ros2 run servo *.py
 ```
 
