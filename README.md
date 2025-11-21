@@ -2,21 +2,21 @@
 
 ```
 src/
-├── camera/              # Camera module with hand detection (primary camera work)
-│   ├── nodes/          # ROS2 nodes (predict_node.py, listen_node.py)
-│   ├── detection/      # YOLO hand detection system
-│   └── README.md       # Detailed camera module documentation
-├── servo/              # Servo/robotic arm control module
-├── interfaces/         # ROS2 message/service definitions
-└── realsense-ros/      # RealSense camera driver (for reference)
+├── detection/          # Hand detection with YOLO (primary detection work)
+│   ├── nodes/         # ROS2 nodes (predict_node.py, listen_node.py)
+│   ├── detection/     # YOLO hand detection system
+│   └── README.md      # Detailed detection module documentation
+├── servo/             # Servo/robotic arm control module
+├── interfaces/        # ROS2 message/service definitions
+└── realsense-ros/     # RealSense camera driver (for reference)
 ```
 
 ---
 
 # Usage & Configuration
 
-## Running Camera Module (Hand Detection)
-The camera module is now organized in `src/camera/` with clean separation of concerns.
+## Running Detection Module (Hand Detection)
+The detection module is now organized in `src/detection/` with clean separation of concerns.
 
 **Start RealSense Camera:**
 ```bash
@@ -25,10 +25,10 @@ ros2 launch realsense2_camera rs_launch.py enable_color:=true enable_depth:=true
 
 **Run Hand Detection Node:**
 ```bash
-ros2 run camera predict_node
+ros2 run detection predict_node
 ```
 
-For more details, see `src/camera/README.md`
+For more details, see `src/detection/README.md`
 
 ## Running ROS2 Nodes (General)
 ```bash
@@ -95,26 +95,31 @@ Notes:
 - If `ros2 run camera predict_node` reports "No executable found", make sure you sourced `install/setup.bash` in the same shell after building.
 
 
-# RealSense Launch Commands
+## How to Run
 
-## RGB and Depth Images Only
+- RealSense: RGB and Depth Images Only
 ```bash
 ros2 launch realsense2_camera rs_launch.py enable_color:=true enable_depth:=true
 ```
 
-## RGB and Depth Images with Alignment
+- RealSense: RGB and Depth Images with Alignment
 ```bash
 ros2 launch realsense2_camera rs_launch.py enable_color:=true enable_depth:=true align_depth.enable:=true
 ```
 
+- Detaction Node
+```bash
+ros2 run camera predict_node
+```
+
 ---
 
-# Known Issues
+## Known Issues
 
-## RealSense IMU
+### RealSense IMU
 - IMU on RealSense does not work with Raspberry Pi
 - See: https://github.com/IntelRealSense/librealsense/issues/13108 
 
-## NumPy Compatibility
+### NumPy Compatibility
 - cv-bridge is not compatible with NumPy 2.x; only supports NumPy 1.x
 - cv-bridge should already be installed with ROS2 Jazzy

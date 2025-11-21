@@ -1,12 +1,12 @@
-# Camera Module
+# Detection Module
 
-This module contains all camera-related ROS2 nodes and hand detection logic for the RealSense camera integration.
+This module contains all hand detection ROS2 nodes and YOLO detection logic for the RealSense camera integration.
 
 ## Directory Structure
 
 ```
-camera/
-├── nodes/                      # ROS2 camera nodes
+detection/
+├── nodes/                      # ROS2 detection nodes
 │   ├── predict_node.py        # Hand detection node using YOLO
 │   └── listen_node.py         # Camera listener/debug node
 ├── detection/                 # YOLO hand detection system
@@ -22,7 +22,7 @@ camera/
 └── README.md
 ```
 
-## Running the Camera Module
+## Running the Detection Module
 
 ### Prerequisites
 Ensure your environment is set up with ROS2 and required dependencies:
@@ -40,7 +40,7 @@ ros2 launch realsense2_camera rs_launch.py enable_color:=true enable_depth:=true
 ### Run Hand Detection Node
 Start the hand detection/prediction node:
 ```bash
-ros2 run realsense2_camera predict_node.py
+ros2 run detection predict_node
 ```
 
 This node:
@@ -52,7 +52,7 @@ This node:
 ### Run Debug Listener Node
 To monitor camera topics without detection:
 ```bash
-ros2 run realsense2_camera listen_node.py
+ros2 run detection listen_node
 ```
 
 ## YOLO Hand Detection
@@ -114,8 +114,8 @@ YOLO(config, model, labels, size=416, confidence=0.5, threshold=0.3)
 ### Model files not found
 Ensure the model weights and config files exist:
 ```bash
-ls -la src/camera/detection/configs/
-ls -la src/camera/detection/models/
+ls -la src/detection/detection/configs/
+ls -la src/detection/detection/models/
 ```
 
 ### Topic names don't match

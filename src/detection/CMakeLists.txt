@@ -1,5 +1,5 @@
 cmake_minimum_required(VERSION 3.8)
-project(camera)
+project(detection)
 
 if(CMAKE_COMPILER_IS_GNUCXX OR CMAKE_CXX_COMPILER_ID MATCHES "Clang")
   add_compile_options(-Wall -Wextra -Wpedantic)
@@ -9,7 +9,14 @@ find_package(ament_cmake REQUIRED)
 find_package(ament_cmake_python REQUIRED)
 
 # Install Python package
-ament_python_install_package(camera)
+ament_python_install_package(detection)
+
+# Install entry point scripts
+install(PROGRAMS
+  scripts/predict_node
+  scripts/listen_node
+  DESTINATION lib/${PROJECT_NAME}
+)
 
 if(BUILD_TESTING)
   find_package(ament_lint_auto REQUIRED)

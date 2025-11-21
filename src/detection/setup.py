@@ -1,7 +1,7 @@
 from setuptools import find_packages, setup
 import os
 
-package_name = 'camera'
+package_name = 'detection'
 
 setup(
     name=package_name,
@@ -15,13 +15,13 @@ setup(
     zip_safe=True,
     maintainer='jimmy',
     maintainer_email='jimmyyang@ucla.edu',
-    description='Camera module with hand detection using YOLO',
+    description='Hand detection module using YOLO',
     license='Apache License 2.0',
     tests_require=['pytest'],
     entry_points={
         'console_scripts': [
-            'predict_node = camera.nodes.predict_node:main',
-            'listen_node = camera.nodes.listen_node:main',
+            'predict_node = detection.nodes.predict_node:main',
+            'listen_node = detection.nodes.listen_node:main',
         ],
     },
 )
