@@ -51,7 +51,7 @@ ros2 launch realsense2_camera rs_launch.py enable_color:=true enable_depth:=true
 
 **Run Hand Detection Node:**
 ```bash
-ros2 run realsense2_camera predict_node.py
+ros2 run camera predict_node
 ```
 
 For more details, see `src/camera/README.md`
