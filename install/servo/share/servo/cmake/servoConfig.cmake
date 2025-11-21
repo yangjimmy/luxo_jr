@@ -1,1 +1,0 @@
-/home/jimmy/ros2_ws/build/servo/ament_cmake_core/servoConfig.cmake

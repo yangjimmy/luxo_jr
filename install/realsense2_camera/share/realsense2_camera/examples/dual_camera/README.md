@@ -1,1 +1,0 @@
-/home/jimmy/ros2_ws/src/realsense-ros/realsense2_camera/examples/dual_camera/README.md

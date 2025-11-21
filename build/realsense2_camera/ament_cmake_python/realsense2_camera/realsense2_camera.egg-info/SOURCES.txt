@@ -1,7 +1,0 @@
-setup.cfg
-setup.py
-realsense2_camera/__init__.py
-realsense2_camera.egg-info/PKG-INFO
-realsense2_camera.egg-info/SOURCES.txt
-realsense2_camera.egg-info/dependency_links.txt
-realsense2_camera.egg-info/top_level.txt
