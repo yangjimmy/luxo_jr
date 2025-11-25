@@ -17,7 +17,6 @@ import os
 from pathlib import Path
 
 # Add detection module to path
-sys.path.insert(0, str(Path(__file__).parent.parent / 'detection'))
 from yolo import YOLO
 from collections import deque
 
@@ -35,9 +34,11 @@ class PredictNode(Node):
         super().__init__('PredictNode')
         # use tiny model for fast inference
         # Get paths relative to this script
-        detection_dir = Path(__file__).parent.parent / 'detection'
-        config_file = str(detection_dir / 'configs' / 'cross-hands-tiny-prn.cfg')
-        weights_file = str(detection_dir / 'models' / 'cross-hands-tiny-prn.weights')
+        detection_dir = Path(__file__).parent.parent
+        config_file = str('/home/jimmy/ros2_ws/src/detection/configs/cross-hands-tiny-prn.cfg')
+        print(config_file)
+        weights_file = str('/home/jimmy/ros2_ws/src/detection/models/cross-hands-tiny-prn.weights')
+        print(weights_file)
         
         self.model = YOLO(config_file, weights_file, ["hand"])
         self.depth_subscriber = self.create_subscription(msg_Image, '/camera/camera/depth/image_rect_raw', self.depth_received_callback, 2)
@@ -83,7 +84,7 @@ class PredictNode(Node):
         img =  self.bridge.imgmsg_to_cv2(msg, msg.encoding)
         img = cv2.cvtColor(img, cv2.COLOR_BGR2RGB)
         self.image_queue.append(img)
-        
+
     def cam_info_received_callback(self, msg):
         # TODO: process camera info to get camera parameters and convert px to mm
         cam_info_all = msg

@@ -22,8 +22,8 @@ setup(
     tests_require=['pytest'],
     entry_points={
         'console_scripts': [
-            'predict_node = detection.nodes.predict_node:main',
-            'listen_node = detection.nodes.listen_node:main',
+            'predict_node = predict_node:main',
+            'listen_node = listen_node:main',
         ],
     },
 )

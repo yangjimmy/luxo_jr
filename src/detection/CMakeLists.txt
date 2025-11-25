@@ -7,14 +7,15 @@ endif()
 
 find_package(ament_cmake REQUIRED)
 find_package(ament_cmake_python REQUIRED)
+find_package(rclpy REQUIRED)
 
 # Install Python package
 ament_python_install_package(detection)
 
 # Install entry point scripts
 install(PROGRAMS
-  scripts/predict_node
-  scripts/listen_node
+  scripts/predict_node.py
+  scripts/listen_node.py
   DESTINATION lib/${PROJECT_NAME}
 )
 
