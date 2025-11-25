@@ -125,12 +125,19 @@ class PredictNode(Node):
             self.detected = detected
             # convert to original frame coordinates
             self.hand_loc_px = [round((x+w/2) * self.model2og_dim[0]), round((y+h/2)*self.model2og_dim[1])]
+        else:
+            cv2.imwrite(f"/home/jimmy/ros2_ws/hand.jpg", cv2.resize(img, self.og_dim))
 
         # hand_loc_rgb is [x,y] in pixels in the original image frame
         depth = self.depth_img[self.hand_loc_px[1], self.hand_loc_px[0]]  # depth in mm
         x = (self.hand_loc_px[0] - self.cx) * depth / self.fx
         y = (self.hand_loc_px[1] - self.cy) * depth / self.fy
         z = depth
+
+        if z < 200 or z > 1200:    # invalid depth
+            x, y, z = 0, 0, 0
+            detected = False
+            print(f"Depth out of range at {z} mm")
 
         x, y, z = z, -x, -y
         if detected:
