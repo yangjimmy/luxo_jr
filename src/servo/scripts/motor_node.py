@@ -24,8 +24,9 @@ class MotorNode(Node):
         timer_ts = 0.1 # Timer Period
         self.timer = self.create_timer(timer_ts, self.timer_callback)
         self.MotorIDs = [1,2,3,4,5,6]
-        self.MotorZeroPos = [3.14, 3.14, 3.14, 3.14, 3.14, 2.45]
-        self.MotorDirection = [1, 1, 1, 1, 1, 1] # put 1 and -1
+        #self.MotorZeroPos = [3.14, 3.14, 3.14, 3.14, 3.14, 2.45]
+        self.MotorZeroPos = [3.215, 3.127, 3.044, 1.666, 4.303, 2.47]
+        self.MotorDirection = [1, 1, -1, -1, 1, 1] # put 1 and -1
         self.L1 = 300 #mm # Linkage Length Information
         self.L2 = 50 #mm 
         self.L3 = 40 #mm 
@@ -42,6 +43,9 @@ class MotorNode(Node):
         self.DH_d     = [self.L4,self.L11,0,0,0,0,0]; # Link offsets (d_i)
         while not self.CurrentPosClient.wait_for_service(timeout_sec = 1.0):
             self.get_logger().info('Waiting for get_position service')
+        self.x = 0
+        self.y = 0
+        self.z = 0
         
     def hand_loc_received_callback(self, msg):
         """
@@ -50,17 +54,16 @@ class MotorNode(Node):
         msg: message (Array.Array)
         returns: None
         """
-        x,y,z = msg.x, msg.y, msg.z
-        pass
+        self.x,self.y,self.z = msg.x, msg.y, msg.z
         
     def timer_callback(self):
-        CommandingMotors = [1,1,1,1,1,1] # Driving which Motor: put one for motor you want to command, put zero for the others
-        TargetPos = [0.1,-1.6,-0.1,-np.pi/2,0,0] # in rad  # Leave zero for the motors not being commanded
+        CommandingMotors = [1,0,0,0,0,0] # Driving which Motor: put one for motor you want to command, put zero for the others
+        TargetPos = [0.1,0,-0,-1.6,-1.6,0] # in rad  # Leave zero for the motors not being commanded
+        #TargetPos = [0,0,0,0,0,0] # in rad  # Leave zero for the motors not being commanded
         CurrentMotorPos = self.AllMotorsGo(CommandingMotors, TargetPos)
         FK_TransformationMatrix = self.FK(CurrentMotorPos)
         self.get_logger().info(f'Current Motor Pos:{CurrentMotorPos}')
         self.get_logger().info(f'Current Transformation Matrix from M5(camera) base to M6(feed):{FK_TransformationMatrix}')
-        
         
     def FK(self, MotorAngles):
         theta_M1, theta_M2, theta_M3, theta_M4, theta_M5, theta_M6 = MotorAngles
@@ -70,24 +73,23 @@ class MotorNode(Node):
         temp_a = self.L2*np.cos(theta_M2)-self.L4-self.L1*np.cos(theta_M1)
         temp_b = self.L2*np.sin(theta_M2)-self.L3-self.L1*np.sin(theta_M1)
         temp_c = (self.L6**2 - self.L5**2 + temp_a**2 + temp_b**2)/(2*self.L6)
-        temp_t = (temp_b-2*np.sqrt(temp_b**2+temp_a**2-temp_c**2))/(temp_a+temp_c)
-        P1 = [self.L1*np.cos(theta_M1), self.L1*np.sin(theta_M1)]
-        P2 = [self.L2*np.cos(theta_M2) - self.L4, self.L2*np.sin(theta_M2) - self.L3]
-        theta_3R = np.arctan2((1-temp_t**2)/(1+temp_t**2),2*temp_t/(1+temp_t**2))
+        temp_t = (temp_b+np.sqrt(temp_b**2+temp_a**2-temp_c**2))/(temp_a+temp_c)
+        theta_3R = np.arctan2(2*temp_t/(1+temp_t**2),(1-temp_t**2)/(1+temp_t**2))
         P3R = [self.L1*np.cos(theta_M1) + self.L6*np.cos(theta_3R), self.L1*np.sin(theta_M1) + self.L6*np.sin(theta_3R)]
         theta_array[2] = theta_3R
         theta_array[3] = np.pi/(-2) 
         temp_a = self.L2*np.cos(theta_M4)-self.L4-self.L1*np.cos(theta_M3)
         temp_b = self.L2*np.sin(theta_M4)-self.L3-self.L1*np.sin(theta_M3)
         temp_c = (self.L6**2 - self.L5**2 + temp_a**2 + temp_b**2)/(2*self.L6)
-        temp_t = (temp_b-2*np.sqrt(temp_b**2+temp_a**2-temp_c**2))/(temp_a+temp_c)
-        theta_3L = np.arctan2((1-temp_t**2)/(1+temp_t**2),2*temp_t/(1+temp_t**2))
+        temp_t = (temp_b+np.sqrt(temp_b**2+temp_a**2-temp_c**2))/(temp_a+temp_c)
+        theta_3L = np.arctan2(2*temp_t/(1+temp_t**2),(1-temp_t**2)/(1+temp_t**2))
         P3L = [self.L1*np.cos(theta_M3) + self.L6*np.cos(theta_3L), self.L1*np.sin(theta_M3) + self.L6*np.sin(theta_3L)]
         theta_array[4] = np.arcsin((P3L[0]-P3R[0])/self.L9)
         theta_array[5] = np.arcsin((P3R[1]-P3L[1])/self.L9)
         theta_array[6] = theta_M6
         Whole_FK_matrix = self.ForwardK_with_Arrays(self.DH_alpha, self.DH_a, self.DH_d, theta_array)
         return Whole_FK_matrix
+    
     def ForwardK_with_Arrays(self, Alpha_Array, a_array, d_array, theta_array):
         JointNumber = np.shape(d_array)[0]
         Whole_FK_matrix = np.eye(4)
@@ -98,13 +100,15 @@ class MotorNode(Node):
             Tz = [[np.cos(theta_array[i]),-1*np.sin(theta_array[i]),0,0],[np.sin(theta_array[i]),np.cos(theta_array[i]),0,0],[0,0,1,0],[0,0,0,1]]
             FK_matrix_per_joint = np.array(Tx)@np.array(Dx)@np.array(Tz)@np.array(Dz)
             Whole_FK_matrix = np.dot(Whole_FK_matrix,FK_matrix_per_joint)
-        return Whole_FK_matrix    
+        return Whole_FK_matrix
+    
     def CommandMotor(self, motor_id, CmdPos):
         Motor_msg = SetPosition()
         Motor_msg.id = motor_id
         Motor_msg.position = CmdPos
         self.publisher_.publish(Motor_msg)
         self.get_logger().info(f'Publishing: ID={Motor_msg.id}, position = {Motor_msg.position}')
+
     def MotorGoInRad(self, MotorID, TargetPositionInRad):
         TargetPosition = int((TargetPositionInRad*self.MotorDirection[MotorID-1]+self.MotorZeroPos[MotorID-1])*2048/np.pi)
         Motor_msg = SetPosition()
@@ -112,8 +116,8 @@ class MotorNode(Node):
         Motor_msg.position = TargetPosition
         self.publisher_.publish(Motor_msg)
         #self.get_logger().info(f'Publishing: ID={Motor_msg.id}, position = {Motor_msg.position}')        
+
     def AllMotorsGo(self, IDarrayToGo, motorTargetPos):
-        FeedbackPos = np.zeros(6)
         for k in range(6):
             if IDarrayToGo[k] == 1:
                 self.MotorGoInRad(self.MotorIDs[k], motorTargetPos[k])
