@@ -10,7 +10,6 @@ from dynamixel_sdk_custom_interfaces.srv import GetPosition
 from scipy.spatial.transform import Rotation as R
 import numpy as np
 import os
-import time
 
 # Outline:
 # Receive hand location message
@@ -23,7 +22,7 @@ class MotorNode(Node):
         self.hand_location_subscriber = self.create_subscription(msg_Point, '/camera/camera/hand_loc', self.hand_loc_received_callback, 10)
         self.publisher_ = self.create_publisher(SetPosition, 'set_position', 10)
         self.CurrentPosClient = self.create_client(GetPosition, 'get_position')
-        self.timer_ts = 0.1 # Timer Period
+        self.timer_ts = 1 # Timer Period
         self.timer = self.create_timer(self.timer_ts, self.timer_callback)
         self.MotorIDs = [1,2,3,4,5,6]
         self.MotorZeroPos = [3.215+0.035, 4.303, 3.044, 1.666, 3.127, 5.61]
@@ -53,10 +52,6 @@ class MotorNode(Node):
         self.DesiredTransformMatrix = self.CurrentTransformMatrix.copy()
         self.InitialTransformMatrix = self.CurrentTransformMatrix.copy()
         self.TimerCounter = 0
-        self.Handx_camera = 0
-        self.Handy_camera = 0
-        self.Handz_camera = 0
-        
         
     def hand_loc_received_callback(self, msg):
         """
@@ -65,26 +60,23 @@ class MotorNode(Node):
         msg: message (Array.Array)
         returns: None
         """
-        self.Handx_camera, self.Handy_camera, self.Handz_camera = msg.x, msg.y, msg.z
+        x,y,z = msg.x, msg.y, msg.z
+        pass
         
     def timer_callback(self):
-        start = time.time()
-        self.CurrentMotorPos = self.AllMotorsGo(self.CommandingMotors, self.TargetPos) # Target pos in rad
+        self.CurrentMotorPos = self.AllMotorsGo(self.CommandingMotors, self.TargetPos)
         self.CurrentJointAngles = self.MotorPos2JointAngle(self.CurrentMotorPos)
         self.CurrentTransformMatrix = self.FK(self.CurrentJointAngles)
-        omega = 0.5
+        omega = 0.05
         t = self.TimerCounter*self.timer_ts
         CircleRadius = 80 # in mm
-        #CircleCenter = np.array([self.InitialTransformMatrix[0,3] - CircleRadius, self.InitialTransformMatrix[1,3]]) # in mm
-        #self.DesiredTransformMatrix[0,3] = CircleCenter[0] + CircleRadius * np.cos(t*omega)
-        #self.DesiredTransformMatrix[1,3] = CircleCenter[1] + CircleRadius * np.sin(t*omega)
-        CircleCenter = np.array([self.InitialTransformMatrix[0,3] - CircleRadius, self.InitialTransformMatrix[2,3]]) # in mm
+        CircleCenter = np.array([self.InitialTransformMatrix[0,3] - CircleRadius, self.InitialTransformMatrix[1,3]]) # in mm
         self.DesiredTransformMatrix[0,3] = CircleCenter[0] + CircleRadius * np.cos(t*omega)
-        self.DesiredTransformMatrix[2,3] = CircleCenter[1] + CircleRadius * np.sin(t*omega)
+        self.DesiredTransformMatrix[1,3] = CircleCenter[1] + CircleRadius * np.sin(t*omega)
         
-        SolvedJointAngles, success = self.IK(self.DesiredTransformMatrix, self.CurrentJointAngles)
+        SolvedJointAngles, success = self.IK(self.DesiredTransformMatrix, CurrentJointAngles)
         if success:
-            SolvedMotorPos, success2 = self.JointAngle2MotorPos(SolvedJointAngles, np.array(self.CurrentMotorPos))
+            SolvedMotorPos, success2 = self.JointAngle2MotorPos(SolvedJointAngles, np.array(self.CurrentMotorsPos))
             pass
             if success2:
                 pass
@@ -95,9 +87,7 @@ class MotorNode(Node):
             SolvedMotorPos = None
             self.get_logger().info(f"IK solver did not converge")
         self.TargetPos = SolvedMotorPos
-        end = time.time()
         self.TimerCounter = self.TimerCounter + 1
-        #self.get_logger().info(f"Elapsed Time = {end - start}")
 
     def CommandMotor(self, motor_id, CmdPos):
         Motor_msg = SetPosition()
