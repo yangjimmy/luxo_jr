@@ -117,16 +117,16 @@ class PredictNode(Node):
             label = f"hand {confidence:.2f}"
             cv2.putText(img, label, (x1, max(15, y1 - 5)), cv2.FONT_HERSHEY_SIMPLEX, 0.5, (0, 255, 0), 2)
             # upscale to original image size and save with timestamp
-            vis_og = cv2.resize(img, self.og_dim)
-            fname = f"/home/jimmy/ros2_ws/hand.jpg"
-            cv2.imwrite(fname, vis_og)
-            print("Saved bbox image to:", fname)
+            # vis_og = cv2.resize(img, self.og_dim)
+            # fname = f"/home/jimmy/ros2_ws/hand.jpg"
+            # cv2.imwrite(fname, vis_og)
+            # print("Saved bbox image to:", fname)
             detected = (confidence > .5)
             self.detected = detected
             # convert to original frame coordinates
             self.hand_loc_px = [round((x+w/2) * self.model2og_dim[0]), round((y+h/2)*self.model2og_dim[1])]
-        else:
-            cv2.imwrite(f"/home/jimmy/ros2_ws/hand.jpg", cv2.resize(img, self.og_dim))
+        # else:
+            # cv2.imwrite(f"/home/jimmy/ros2_ws/hand.jpg", cv2.resize(img, self.og_dim))
 
         # hand_loc_rgb is [x,y] in pixels in the original image frame
         depth = self.depth_img[self.hand_loc_px[1], self.hand_loc_px[0]]  # depth in mm
