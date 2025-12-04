@@ -35,9 +35,11 @@ class PredictNode(Node):
         # use tiny model for fast inference
         # Get paths relative to this script
         detection_dir = Path(__file__).parent.parent
-        config_file = str('/home/jimmy/ros2_ws/src/detection/configs/cross-hands-tiny-prn.cfg')
+        # config_file = str('/home/jimmy/ros2_ws/src/detection/configs/cross-hands-tiny-prn.cfg')
+        config_file = str('/home/jimmy/ros2_ws/src/detection/configs/cross-hands-yolov4-tiny.cfg')
         print(config_file)
-        weights_file = str('/home/jimmy/ros2_ws/src/detection/models/cross-hands-tiny-prn.weights')
+        # weights_file = str('/home/jimmy/ros2_ws/src/detection/models/cross-hands-tiny-prn.weights')
+        weights_file = str('/home/jimmy/ros2_ws/src/detection/configs/cross-hands-yolov4-tiny.weights')
         print(weights_file)
         
         self.model = YOLO(config_file, weights_file, ["hand"])
@@ -72,6 +74,10 @@ class PredictNode(Node):
         self.depth_img = np.zeros((480,640), dtype=np.uint16)
         
         self.image_queue = deque(maxlen=10)
+
+        # write video
+        self.fourcc = cv2.VideoWriter_fourcc(*'mp4v')
+        self.vstream = cv2.VideoWriter('output.mp4', self.fourcc, 1, (640, 480))
 
     
     def img_recieved_callback(self, msg):
@@ -116,22 +122,34 @@ class PredictNode(Node):
             cv2.rectangle(img, (x1, y1), (x2, y2), (0, 255, 0), 2)
             label = f"hand {confidence:.2f}"
             cv2.putText(img, label, (x1, max(15, y1 - 5)), cv2.FONT_HERSHEY_SIMPLEX, 0.5, (0, 255, 0), 2)
+            
             # upscale to original image size and save with timestamp
-            # vis_og = cv2.resize(img, self.og_dim)
-            # fname = f"/home/jimmy/ros2_ws/hand.jpg"
-            # cv2.imwrite(fname, vis_og)
-            # print("Saved bbox image to:", fname)
-            detected = (confidence > .5)
+            vis_og = cv2.resize(img, self.og_dim)
+            fname = f"/home/jimmy/ros2_ws/hand.jpg"
+            cv2.imwrite(fname, vis_og)
+            detected = (confidence > 0)
             self.detected = detected
-            # convert to original frame coordinates
-            self.hand_loc_px = [round((x+w/2) * self.model2og_dim[0]), round((y+h/2)*self.model2og_dim[1])]
-        # else:
+            depth = 0
+            if detected:
+                # convert to original frame coordinates
+                self.hand_loc_px = [round((x+w/2) * self.model2og_dim[0]), round((y+h/2)*self.model2og_dim[1])]
+                depth = self.depth_img[self.hand_loc_px[1], self.hand_loc_px[0]]  # depth in mm
+                z = depth
+                x = (self.hand_loc_px[0] - self.cx) * depth / self.fx
+                y = (self.hand_loc_px[1] - self.cy) * depth / self.fy
+                # Add coordinates to video frame before writing
+                cv2.putText(vis_og, f"X: {x:.2f} mm", (10, 30), cv2.FONT_HERSHEY_SIMPLEX, 0.7, (0, 255, 0), 2)
+                cv2.putText(vis_og, f"Y: {y:.2f} mm", (10, 60), cv2.FONT_HERSHEY_SIMPLEX, 0.7, (0, 255, 0), 2)
+                cv2.putText(vis_og, f"Z: {z:.2f} mm", (10, 90), cv2.FONT_HERSHEY_SIMPLEX, 0.7, (0, 255, 0), 2)
+                self.vstream.write(vis_og)
+                print("Write frame to video")
+        else:
             # cv2.imwrite(f"/home/jimmy/ros2_ws/hand.jpg", cv2.resize(img, self.og_dim))
+            depth = 0
+            x, y, z = 0, 0, 0
 
         # hand_loc_rgb is [x,y] in pixels in the original image frame
-        depth = self.depth_img[self.hand_loc_px[1], self.hand_loc_px[0]]  # depth in mm
-        x = (self.hand_loc_px[0] - self.cx) * depth / self.fx
-        y = (self.hand_loc_px[1] - self.cy) * depth / self.fy
+       
         z = depth
 
         if z < 200 or z > 1200:    # invalid depth
@@ -155,6 +173,9 @@ class PredictNode(Node):
         # print("Hand location (mm): ", self.hand_loc_3d)
         msg.x, msg.y, msg.z = float(self.hand_loc_3d[0]), float(self.hand_loc_3d[1]), float(self.hand_loc_3d[2])
         self.hand_loc_publisher.publish(msg)
+    
+    def __del__(self):
+        self.vstream.release()
 
 
 def main(args=None):

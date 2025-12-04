@@ -33,6 +33,7 @@ from dynamixel_sdk_custom_interfaces.srv import GetPosition
 import rclpy
 from rclpy.node import Node
 from rclpy.qos import QoSProfile
+import time
 
 # Control table address
 ADDR_OPERATING_MODE = 11  # Control table address is different in Dynamixel model
@@ -45,12 +46,13 @@ PROTOCOL_VERSION = 2.0  # Default Protocol version of DYNAMIXEL X series.
 
 # Default settings
 DXL_ID = 1  # Dynamixel ID : 1
-BAUDRATE = 57600  # Dynamixel default baudrate : 57600
+BAUDRATE = 115200  # Dynamixel default baudrate : 57600
 DEVICE_NAME = '/dev/ttyUSB0'  # Check which port is being used on your controller
 
 TORQUE_ENABLE = 1  # Value for enabling the torque
 TORQUE_DISABLE = 0  # Value for disabling the torque
 POSITION_CONTROL = 3  # Value for position control mode
+EXTENDED_POSITION_CONTROL = 4  # Value for extended position control mode
 
 
 class ReadWriteNode(Node):
@@ -90,14 +92,14 @@ class ReadWriteNode(Node):
         self.srv = self.create_service(GetPosition, 'get_position', self.get_position_callback)
 
     def setup_dynamixel(self, dxl_id):
-        dxl_comm_result, dxl_error = self.packet_handler.write1ByteTxRx(
-            self.port_handler, dxl_id, ADDR_OPERATING_MODE, POSITION_CONTROL
-        )
-        if dxl_comm_result != COMM_SUCCESS:
-            self.get_logger().error(f'Failed to set Position Control Mode: \
-                                    {self.packet_handler.getTxRxResult(dxl_comm_result)}')
-        else:
-            self.get_logger().info('Succeeded to set Position Control Mode.')
+        # dxl_comm_result, dxl_error = self.packet_handler.write1ByteTxRx(
+        #     self.port_handler, dxl_id, ADDR_OPERATING_MODE, EXTENDED_POSITION_CONTROL
+        # )
+        # if dxl_comm_result != COMM_SUCCESS:
+        #     self.get_logger().error(f'Failed to set Extended Position Control Mode: \
+        #                             {self.packet_handler.getTxRxResult(dxl_comm_result)}')
+        # else:
+        #     self.get_logger().info('Succeeded to set ExtendedPosition Control Mode.')
 
         dxl_comm_result, dxl_error = self.packet_handler.write1ByteTxRx(
             self.port_handler, dxl_id, ADDR_TORQUE_ENABLE, TORQUE_ENABLE
@@ -140,12 +142,75 @@ class ReadWriteNode(Node):
         return response
 
     def __del__(self):
+        print("Shutting down node...")
         self.packet_handler.write1ByteTxRx(self.port_handler,
                                            1,
                                            ADDR_TORQUE_ENABLE,
                                            TORQUE_DISABLE)
+        time.sleep(0.1)
+        self.packet_handler.write1ByteTxRx(self.port_handler,
+                                           2,
+                                           ADDR_TORQUE_ENABLE,
+                                           TORQUE_DISABLE)
+        time.sleep(0.1)
+        self.packet_handler.write1ByteTxRx(self.port_handler,
+                                           3,
+                                           ADDR_TORQUE_ENABLE,
+                                           TORQUE_DISABLE)
+        time.sleep(0.1)
+        self.packet_handler.write1ByteTxRx(self.port_handler,
+                                           4,
+                                           ADDR_TORQUE_ENABLE,
+                                           TORQUE_DISABLE)
+        time.sleep(0.1)
+        self.packet_handler.write1ByteTxRx(self.port_handler,
+                                           5,
+                                           ADDR_TORQUE_ENABLE,
+                                           TORQUE_DISABLE)
+        time.sleep(0.1)
+        self.packet_handler.write1ByteTxRx(self.port_handler,
+                                           6,
+                                           ADDR_TORQUE_ENABLE,
+                                           TORQUE_DISABLE)
+        time.sleep(0.1)
         self.port_handler.closePort()
-        self.get_logger().info('Shutting down read_write_node')
+        self.get_logger().info('Shutting down read_write_node. Check __del__ method.')
+    
+    def destroy_node(self):
+        print("Shutting down node...")
+        self.packet_handler.write1ByteTxRx(self.port_handler,
+                                           1,
+                                           ADDR_TORQUE_ENABLE,
+                                           TORQUE_DISABLE)
+        time.sleep(0.1)
+        self.packet_handler.write1ByteTxRx(self.port_handler,
+                                           2,
+                                           ADDR_TORQUE_ENABLE,
+                                           TORQUE_DISABLE)
+        time.sleep(0.1)
+        self.packet_handler.write1ByteTxRx(self.port_handler,
+                                           3,
+                                           ADDR_TORQUE_ENABLE,
+                                           TORQUE_DISABLE)
+        time.sleep(0.1)
+        self.packet_handler.write1ByteTxRx(self.port_handler,
+                                           4,
+                                           ADDR_TORQUE_ENABLE,
+                                           TORQUE_DISABLE)
+        time.sleep(0.1)
+        self.packet_handler.write1ByteTxRx(self.port_handler,
+                                           5,
+                                           ADDR_TORQUE_ENABLE,
+                                           TORQUE_DISABLE)
+        time.sleep(0.1)
+        self.packet_handler.write1ByteTxRx(self.port_handler,
+                                           6,
+                                           ADDR_TORQUE_ENABLE,
+                                           TORQUE_DISABLE)
+        time.sleep(0.1)
+        self.port_handler.closePort()
+        self.get_logger().info('Shutting down read_write_node. Check destroy_node method.')
+        super().destroy_node()
 
 
 def main(args=None):
