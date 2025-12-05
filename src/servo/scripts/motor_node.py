@@ -59,8 +59,10 @@ class MotorNode(Node):
         self.Current_pitch = 0
         self.Current_yaw = 0
         
+        
         self.DemoEndPos = [] #  Pos for looking aside
-        self.EndPos = [0.53,-0.85,0.76,-0.51,0.47,0.88] #  Pos for looking aside
+        #self.EndPos = [0.53,-0.85,0.76,-0.51,0.47,0.88] #  Pos for looking aside
+        self.EndPos = [0.53,-0.85,0.76,-0.51,0.47,0.68] #  Pos for looking aside
         self.EndPosInterpolateSteps = 100
         self.EndPosInterpolateStepsCounter = 0
         self.EndPosDiff = []
@@ -87,6 +89,8 @@ class MotorNode(Node):
         self.Handx_camera = 100
         self.Handy_camera = 100
         self.Handz_camera = 100
+        self.DemoNumber = 10   # 1 : 6 DOF Demo, 3 : Circle in XY plane, 4 : Circle in XZ plane, 10 : Move to end pos
+        self.InverseKinematicsDemo = False
         
         self.InitialWaitTime = int(1*(1/self.timer_ts)) # 1 seconds initial wait time
         self.PrintMotorAngles = False
@@ -104,9 +108,103 @@ class MotorNode(Node):
         
         # d = 600     # distance from camera to object
         self.Handx_camera, self.Handy_camera, self.Handz_camera = msg.x , msg.y, msg.z # adjust for offset between camera and robot base
-
+    
+    def timer_callback(self, demo=True):
         
-    def timer_callback(self, demo=False):
+        if(self.InitialWaitTime > 0):
+            self.InitialWaitTime -= 1
+            return
+        if self.InverseKinematicsDemo == True:
+            self.CurrentMotorPos = self.AllMotorsGo(self.CommandingMotors, self.TargetPos) # Target pos in rad
+            self.Current9JointAngles = self.MotorPos2JointAngle2(self.CurrentMotorPos) # 9 joints
+            self.Current9TransformMatrix = self.FK2(self.Current9JointAngles) # 9 joints
+            pass
+        
+        if self.DemoNumber == 0:
+            pass
+        if self.DemoNumber == 1:
+            self.InverseKinematicsDemo = True
+            self.Desired9TransformMatrix = self.Demo6DOF(self.Initial9TransformMatrix, self.Desired9TransformMatrix , Xrange=75, Yrange=90, Zrange=90, PitchAngleRange=0.4, RollAngleRange=0.7, YawAngleRange=0.4)
+            
+            if self.DemoStage == 20:
+                print("6 DOF Demo Finished, Waiting at the end position")
+                self.DemoNumber = 0
+        elif self.DemoNumber == 10:
+            self.DemoStage = 20
+            self.DemoNumber = 11
+        elif self.DemoNumber == 11:
+            self.InverseKinematicsDemo = False
+            if self.DemoStage == 20:
+                #self.CurrentMotorPos = self.TargetPos.copy()
+                self.DemoEndPos = self.CurrentMotorPos.copy()
+                self.EndPosDiff = self.EndPos - self.DemoEndPos
+                self.EndPosInterpolateSteps = np.linalg.norm(self.EndPosDiff, ord=2)/0.05
+                print("Current Motor Positions (rad):", self.CurrentMotorPos)
+                print("Target Motor Positions (rad):", self.EndPos)
+                print("Steps To end point :", self.EndPosInterpolateSteps)
+                self.DemoStage = 21
+            elif self.DemoStage == 21:
+                TempPosToGo = self.EndPosInterpolateStepsCounter*self.EndPosDiff/self.EndPosInterpolateSteps + self.DemoEndPos
+                self.CurrentMotorPos = self.AllMotorsGo(self.CommandingMotors, TempPosToGo) # Target pos in rad
+                print("Current Motor Positions (rad):", self.CurrentMotorPos)
+                self.EndPosInterpolateStepsCounter += 1
+                if self.EndPosInterpolateStepsCounter > self.EndPosInterpolateSteps:
+                    self.DemoStage = 22
+                    self.EndPosInterpolateStepsCounter = 0
+                    print("End Position Reached")
+            elif self.DemoStage == 22:
+                print("End Position reached. Demo Finished.")
+                self.DemoNumber = 0
+                pass
+        
+        elif self.DemoNumber == 3:
+            self.InverseKinematicsDemo = True
+            omega = 0.5
+            t = self.TimerCounter*self.timer_ts
+            CircleRadius = 40 # in mm
+            CircleCenter = np.array([self.Initial9TransformMatrix[0,3] - CircleRadius, self.Initial9TransformMatrix[1,3]]) # in mm
+            self.Desired9TransformMatrix[0,3] = CircleCenter[0] + CircleRadius * np.cos(t*omega)
+            self.Desired9TransformMatrix[1,3] = CircleCenter[1] + CircleRadius * np.sin(t*omega)
+            pass
+        
+        elif self.DemoNumber == 4:
+            self.InverseKinematicsDemo = True
+            omega = 0.5
+            t = self.TimerCounter*self.timer_ts
+            CircleRadius = 40 # in mm
+            CircleCenter = np.array([self.Initial9TransformMatrix[0,3] - CircleRadius, self.Initial9TransformMatrix[2,3]]) # in mm
+            self.Desired9TransformMatrix[0,3] = CircleCenter[0] + CircleRadius * np.cos(t*omega)
+            self.Desired9TransformMatrix[2,3] = CircleCenter[1] + CircleRadius * np.sin(t*omega)
+        else:
+            pass
+        
+        
+        if self.InverseKinematicsDemo == True:
+            Solved9JointAngles, success = self.IK2(self.Desired9TransformMatrix, self.Current9JointAngles)  # 9 joints
+            if success:
+                #SolvedMotorPos, success2 = self.JointAngle2MotorPos(SolvedJointAngles, np.array(self.CurrentMotorPos))  # 7 joints
+                SolvedMotorPos, success2 = self.JointAngle2MotorPos(Solved9JointAngles, np.array(self.CurrentMotorPos)) # 9 joints
+                if not success2:
+                    self.get_logger().info(f"Motor position solver did not converge")
+                else:
+                    # self.TargetPos = SolvedMotorPos
+                    #print("Current Motor Positions (rad):", self.CurrentMotorPos)
+                    if self.PrintMotorAngles == True:
+                        print("Solved Motor Positions (rad):", SolvedMotorPos)
+                    pass
+            else:
+                SolvedMotorPos = None
+                self.get_logger().info(f"IK solver did not converge")
+            if SolvedMotorPos is not None:
+                self.TargetPos = SolvedMotorPos
+                pass
+            pass
+        
+        self.TimerCounter = self.TimerCounter + 1
+        pass
+        
+        
+    def timer_callback0(self, demo=False):
         
         if(self.InitialWaitTime > 0):
             self.InitialWaitTime -= 1
@@ -199,14 +297,12 @@ class MotorNode(Node):
         # command motor
         
         self.TimerCounter = self.TimerCounter + 1
-
     def CommandMotor(self, motor_id, CmdPos):
         Motor_msg = SetPosition()
         Motor_msg.id = motor_id
         Motor_msg.position = CmdPos
         self.publisher_.publish(Motor_msg)
         #self.get_logger().info(f'Publishing: ID={Motor_msg.id}, position = {Motor_msg.position}')
-        
     def MotorGoInRad(self, MotorID, TargetPositionInRad):
         TargetPosition = int((TargetPositionInRad*self.MotorDirection[MotorID-1]+self.MotorZeroPos[MotorID-1])*2048/np.pi)
         Motor_msg = SetPosition()
@@ -214,7 +310,6 @@ class MotorNode(Node):
         Motor_msg.position = TargetPosition
         self.publisher_.publish(Motor_msg)
         #self.get_logger().info(f'Publishing: ID={Motor_msg.id}, position = {Motor_msg.position}')
-          
     def AllMotorsGo(self, IDarrayToGo, motorTargetPos, initial=False):
         
         # IDarrayToGo = [1,1,1,1,1,1] # For testing, command all motors --- IGNORE ---
