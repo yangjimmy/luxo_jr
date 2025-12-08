@@ -1,13 +1,16 @@
 clc; clear; close all;
 addpath('.\utils\');
 
-l1 = 300;
+% l1 = 300;
+l1 = 200;
 l2 = 50;
 l3 = 40;
 l4 = 25;
-l5 = 317;
+% l5 = 317;
+l5 = 217;
 l6 = 80;
-l7 = 300;
+% l7 = 300;
+l7 = 245;
 l8 = 50;
 l9 = 73;
 
@@ -30,7 +33,7 @@ t2 = deg2rad(-90+3);   % deg
 t4 = deg2rad(-5);                 % deg
 t1_d = deg2rad(7);        % deg
 t2_d = deg2rad(-90+5);   % deg
-t7 = deg2rad(-90);
+t7 = deg2rad(5);
 
 t = 0:0.001:15;
 
